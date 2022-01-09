@@ -19,17 +19,17 @@
                             </li>
                             <li>
                                 <a href="{{route('factor.index')}}">
-                                    <span class="lnr lnr-cart"></span>فاکتور ها
+                                    <span class="lnr lnr-list"></span>فاکتور ها
                                      
                                 </a>
                             </li>
                             <li>
                                 <a href="{{url('profile')}}">
-                                    <span class="lnr lnr-briefcase"></span>پروفایل</a>
+                                    <span class="lnr lnr-user"></span>پروفایل</a>
                             </li>
                             <li>
                                 <a href="{{ route('user.logout') }}">
-                                    <span class="lnr lnr-user"></span>خروج</a>
+                                    <span class="lnr lnr-exit"></span>خروج</a>
                             </li>
                         </ul>
                         <!-- end /.dashboard_menu -->

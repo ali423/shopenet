@@ -65,7 +65,7 @@ START MENU AREA
                                         </li>
                                         <li>
                                             <a href="{{route('factor.index')}}">
-                                                <span class="lnr lnr-cog"></span> فاکتور ها</a>
+                                                <span class="lnr lnr-list"></span> فاکتور ها</a>
                                         </li>
                                         <li>
                                             <a href="{{url('profile')}}">
