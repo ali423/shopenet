@@ -42,7 +42,7 @@
 
 @section('content')
 
-    @include('layouts.errors')
+
 
     <!--================================
         START BREADCRUMB AREA

@@ -2,7 +2,7 @@
 
 @section('dashboard-content')
 
-    @include('layouts.errors')
+
 
 
         <div class="col-md-12">

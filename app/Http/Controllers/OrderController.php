@@ -31,7 +31,7 @@ class OrderController extends Controller
             return redirect(route(url('/templates/list')))->withErrors(' ابتدا یک قالب انتخاب کنید ');
         }
         $request->session()->put('plan', $request->get('plan'));
-        return redirect(route('order.confirm'));
+        return redirect(route('order.confirm'))->with('successful', 'طرح شما با موفقیت انتخاب شد .');
     }
 
     public function orderConfirm(Request $request)
