@@ -14,4 +14,11 @@
 <!-- Favicon -->
 <link rel="icon" type="image/png" sizes="16x16" href="{{ asset("images/new/favicon.png") }}">
 
+<!-- row overflow -->
+<style>
+    .row{
+        margin-right: 0 !important;
+    }
+</style>
+
 @yield('page_styles')
