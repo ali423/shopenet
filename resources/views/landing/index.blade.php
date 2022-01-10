@@ -3,7 +3,6 @@
 @section('content')
     <!-- Main Content Area -->
 
-    @include('layouts.errors')
 
 
     <!--================================

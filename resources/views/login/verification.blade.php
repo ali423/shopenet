@@ -8,7 +8,6 @@
 
     <section class="login_area section--padding2 dir-rtl">
         <div class="container">
-            @include('layouts.errors')
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="cardify login text-center">
