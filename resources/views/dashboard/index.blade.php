@@ -124,6 +124,13 @@
                                                 <p>
                                                 <a href="{{$service->login_page}}" class="btn btn--md btn--round">ورود </a>
                                             @endif
+                                                    <a href="{{ route('service.extension',$service) }}" class="btn btn--md btn--round btn--white rating--btn not--rated"  data-target="#myModal">
+                                                <P class="rate_it">تمدید</P>
+                                                <div class="rating product--rating">
+                                                    <span>{{\Carbon\Carbon::parse($service->expire_date)->diffInDays(\Carbon\Carbon::now())}} روز اعتبار</span>
+                                                </div>
+                                                </a>
+
 
                                         </div>
                                         <!-- end /.item_action -->

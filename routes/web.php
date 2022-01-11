@@ -70,6 +70,7 @@ Route::middleware('user.auth')->group(function () {
 
     Route::resource('user', UserController::class);
 
+    Route::get('/service/extension/{service:id}', [OrderController::class, 'extension'])->name('service.extension');
 
     Route::get('payment/success/{factor:id}',[PaymentController::class,'success'])->name('payment.success');
 

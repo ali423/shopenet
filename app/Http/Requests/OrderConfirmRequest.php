@@ -25,6 +25,7 @@ class OrderConfirmRequest extends FormRequest
     {
         return [
             'confirm'=>['required','boolean','in:1'],
+            'extension'=>['required','boolean'],
         ];
 
     }

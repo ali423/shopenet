@@ -33,10 +33,15 @@
                                 <div class="single_product clearfix">
                                     <div class="col-lg-5 col-md-7 v_middle">
                                         <div class="product__description">
-                                            <img src="{{ asset(str_replace('public','storage',$template->icon))}}" width="150 px" alt="Purchase image">
+                                            <img src="{{ asset(str_replace('public','storage',$template->icon))}}"
+                                                 width="150 px" alt="Purchase image">
                                             <div class="short_desc">
                                                 <a href="/template/{{$template->id}}">
-                                                    <h4>{{$template->title}}</h4>
+                                                    <h4>{{$template->title}}
+                                                        @if(isset($service))
+                                                            (تمدید سرویس)
+                                                        @endif
+                                                    </h4>
                                                 </a>
                                                 <p>{{$template->description}}</p>
                                             </div>
@@ -49,7 +54,10 @@
                                         <div class="product__additional_info">
                                             <ul>
                                                 <li>
-                                                        {{$plan['name']}}
+                                                    {{$plan['name']}}
+                                                    @if(isset($service))
+                                                        (تمدید سرویس)
+                                                    @endif
                                                 </li>
                                             </ul>
                                         </div>
@@ -86,11 +94,18 @@
                                         <p>
                                             <span>مجموع</span> تومان{{number_format($plan['amount'])}} </p>
                                     </div>
-                                     <form action="{{ route('order.confirm.store') }}"  method="POST" >
-                                         @csrf
-                                         <input type="text" class="d-none" name="confirm" value="{{ true }}" readonly>
-                                         <button type="submit" class="btn btn--round btn--md checkout_link">ادامه به پرداخت</button>
-                                     </form>
+                                    <form action="{{ route('order.confirm.store') }}" method="POST">
+                                        @csrf
+                                        <input type="text" class="d-none" name="confirm" value="1" readonly>
+                                        @if(isset($service))
+                                        <input type="text" class="d-none" name="extension" value="1" readonly>
+                                        @else
+                                            <input type="text" class="d-none" name="extension" value="0" readonly>
+                                        @endif
+                                        <button type="submit" class="btn btn--round btn--md checkout_link">ادامه به
+                                            پرداخت
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                             <!-- end .col-md-12 -->
