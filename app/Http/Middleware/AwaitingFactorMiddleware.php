@@ -19,8 +19,8 @@ class AwaitingFactorMiddleware
     {
 
        $user=auth()->user();
-     $factor= $user->factors()->where('status','awaiting_payment')->exists();
-       if ($factor){
+     $factor= $user->factors()->where('status','awaiting_payment')->latest()->first();
+        if (isset($factor)){
            return redirect(route('factor.show',$factor))->withErrors('شما یک صورت حساب در انتظار تعیین وضعیت دارید ');
        }
         return $next($request);

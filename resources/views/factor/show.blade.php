@@ -13,6 +13,9 @@
                             <span>تاریخ صورت حساب </span>{{\Morilog\Jalali\CalendarUtils::strftime('Y/m/d', strtotime($factor->created_at))}}</p>
                         <p>
                             <span>به نام </span>{{$factor->user->name}}</p>
+                        @if(isset($factor->extension_service_id))
+                        <span>تمدید سرویس</span>
+                        @endif
                     </div>
 
                     <div class="info">
@@ -64,9 +67,17 @@
                                     $obj=new \App\Http\Controllers\Controller();
                                       $plan=$obj->getPlanData($factor->plan);
                                 @endphp
-                                <td class="author">{{$plan['name']}}</td>
+                                <td class="author">{{$plan['name']}}
+                                    @if(isset($factor->extension_service_id))
+                                        (تمدید)
+                                    @endif
+                                </td>
                                 <td class="detail">
-                                    <a href="/template/{{$factor->template->id}}">{{$factor->template->title}} </a>
+                                    <a href="/template/{{$factor->template->id}}">{{$factor->template->title}}
+                                        @if(isset($factor->extension_service_id))
+                                            (تمدید)
+                                        @endif
+                                    </a>
                                 </td>
                                 <td> {{$factor->amount}} تومان </td>
                             </tr>

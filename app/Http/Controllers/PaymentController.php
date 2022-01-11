@@ -151,13 +151,23 @@ class PaymentController extends Controller
                 ]);
                 if ($response['status'] == 100) {
                     $plan = $this->getPlanData($factor->plan);
-                    $service = Service::query()->create([
-                        'user_id' => auth()->user()->id,
-                        'template_id' => $factor->template_id,
-                        'plan' => $factor->plan,
-                        'status' => 'activating',
-                        'expire_date' => $plan['expire_date'],
-                    ]);
+                    if (isset($factor->extension_service_id)){
+                        $service=Service::query()->findOrFail($factor->extension_service_id);
+                        $service->update([
+                            'template_id' => $factor->template_id,
+                            'plan' => $factor->plan,
+                            'status' => 'activating',
+                            'expire_date' => $plan['expire_date'],
+                        ]);
+                    }else{
+                        $service = Service::query()->create([
+                            'user_id' => auth()->user()->id,
+                            'template_id' => $factor->template_id,
+                            'plan' => $factor->plan,
+                            'status' => 'activating',
+                            'expire_date' => $plan['expire_date'],
+                        ]);
+                    }
                     $factor->update([
                         'status' => 'paid',
                         'payment_status' => $response['status'] ?? null,
