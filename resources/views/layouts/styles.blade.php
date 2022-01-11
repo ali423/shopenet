@@ -9,16 +9,12 @@
 <link rel="stylesheet" href="{{ asset("css/trumbowyg.min.css") }}">
 <link rel="stylesheet" href="{{ asset("css/bootstrap/bootstrap.min.css") }}">
 <link rel="stylesheet" href="{{ asset("style.css") }}">
+
+<!-- My custom styles -->
+<link rel="stylesheet" href="{{ asset("css/customstyle.css") }}">
 <!-- endinject -->
 
 <!-- Favicon -->
 <link rel="icon" type="image/png" sizes="16x16" href="{{ asset("images/new/favicon.png") }}">
-
-<!-- row overflow -->
-<style>
-    .row{
-        margin-right: 0 !important;
-    }
-</style>
 
 @yield('page_styles')

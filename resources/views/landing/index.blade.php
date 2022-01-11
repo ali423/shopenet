@@ -19,7 +19,7 @@ START HERO AREA
                 <!-- start .container -->
                 <div class="container">
                     <!-- start row -->
-                    <div class="row" style="margin: auto">
+                    <div id="header-row" class="row" style="margin: auto">
                         <div class="col-lg-6">
                             <div class="hero__content__title">
                                 <h1>
