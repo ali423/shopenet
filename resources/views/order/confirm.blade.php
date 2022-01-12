@@ -68,7 +68,7 @@
                                     <div class="col-lg-4 col-md-3 v_middle">
                                         <div class="product__price_download">
                                             <div class="item_price v_middle">
-                                                <span> تومان{{number_format($plan['amount'])}}</span>
+                                                <span>{{number_format($plan['amount'])}} تومان</span>
                                             </div>
                                             <div class="item_action v_middle">
                                                 <a href="{{route('order.delete')}}" class="remove_from_cart">
@@ -92,7 +92,7 @@
                                 <div class="cart_calculation">
                                     <div class="cart--total">
                                         <p>
-                                            <span>مجموع</span> تومان{{number_format($plan['amount'])}} </p>
+                                             تومان:{{number_format($plan['amount'])}} </p>
                                     </div>
                                     <form action="{{ route('order.confirm.store') }}" method="POST">
                                         @csrf

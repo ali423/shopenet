@@ -8,145 +8,124 @@
                     <div class="filter-bar clearfix filter-bar2">
                         <br>
                         @if(count($services) == 0)
-                            <div class="col-md-12 text-center">
-                                        <h2>شما در حال حاظر سرویس ثبت شده ندارید</h2>
-                            </div>
+                        <div class="dashboard__title pull-right">
+                            <h3>شما در حال حاضر سرویس ثبت شده ندارید</h3>
+                            <br>
+                        </div>
                         @else
                         <div class="dashboard__title pull-right">
-                            <h3>سرویس های شما </h3>
+                            <h3>سرویس شما</h3>
+                            @foreach($services as $service)
+                            @if($service->status=='activating')
+                            <p>(وضعیت: <span>درحال آماده سازی</span>)</p>
+                            @elseif($service->status=='active')
+                            <p>(وضعیت: <span>فعال</span>)</p>
+                            @elseif($service->status=='inactive')
+                            <p>(وضعیت: <span>غیرفعال</span>)</p>
+                            @elseif($service->status=='expired')
+                            <p>(وضعیت: <span>منقضی شده</span>)</p>
+                            @endif
                             <br>
-
                         </div>
-
                     </div>
                     <!-- end /.filter-bar -->
                 </div>
                 <!-- end /.col-md-12 -->
             </div>
             <!-- end /.row -->
-
-            <div class="product_archive">
-                <div class="title_area">
-                    <div class="row">
-
-                        <div class="col-md-5">
-                            <h4>قالب  </h4>
-                        </div>
-                        <div class="col-md-3">
-                            <h4 class="add_info">مشخصات</h4>
-                        </div>
-                        <div class="col-md-2">
-                            <h4>وضعیت </h4>
-                        </div>
-                        <div class="col-md-2">
-                            <h4>صفحه مدیریت </h4>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="dash-sub filter-bar clearfix filter-bar2 p-4">
+                        <h4 class="text-white">قالب</h4>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <img src="{{ asset(str_replace('public','storage',$service->template->icon))}}" width="150 px" alt="Purchase image">
+                            </div>
+                            <div class="col-lg-10">
+                                <h4 class="text-white">{{$service->template->title}}</h4>
+                                <p class="text-white">{{$service->template->description}}</p>
+                            </div>
                         </div>
                     </div>
+                    <!-- end /.filter-bar -->
                 </div>
-
-                <div class="row">
-                    @foreach($services as $service)
-                    <div class="col-md-12">
-                        <div class="single_product clearfix">
-                            <div class="row">
-                                <div class="col-lg-5 col-md-5">
-                                    <div class="product__description">
-                                        <img src="{{ asset(str_replace('public','storage',$service->template->icon))}}" width="150 px" alt="Purchase image">
-                                        <div class="short_desc">
-                                            <h4>{{$service->template->title}}</h4>
-                                            <p>{{$service->template->description}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end /.col-md-5 -->
-
-                                <div class="col-lg-3 col-md-3 col-6 xs-fullwidth">
-                                    <div class="product__additional_info">
+                <!-- end /.col-md-12 -->
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class=" dash-sub1  filter-bar clearfix filter-bar2 p-4">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="text-white">مشخصات</h4>
+                                <br>
+                                <div class="row">
+                                    <div class="col">
                                         <ul>
                                             <li>
-                                                <p>
-                                                    <span>تاریخ سر رسید: </span>{{\Morilog\Jalali\CalendarUtils::strftime('Y/m/d', strtotime($service->expire_date))}}</p>
+                                                <p class="text-white"><span>تاریخ سر رسید: </span>{{\Morilog\Jalali\CalendarUtils::strftime('Y/m/d', strtotime($service->expire_date))}}</p>
                                             </li>
-                                            <li class="license">
+                                            <li>
                                                 @if($service->login_page == null)
-                                                    <span>صفحه مدیریت:</span>  <span> درحال ثبت</span>
+                                                    <p class="text-white"><span>صفحه مدیریت:</span>  <span> درحال ثبت</span></p>
                                                 @else
-                                                    <p>
-                                                        <span>صفحه مدیریت:</span> <a href="{{$service->login_page}}">ورود</a></p>
+                                                    <p class="text-white"><span>صفحه مدیریت:</span> <a href="{{$service->login_page}}" class="text-white">ورود</a></p>
                                                 @endif
                                             </li>
                                             <li>
                                                 @php
                                                     $obj=new \App\Http\Controllers\Controller();
-                                                      $plan=$obj->getPlanData($service->plan);
+                                                    $plan=$obj->getPlanData($service->plan);
                                                 @endphp
-                                                <p>
-                                                    <span>پلن :</span>{{$plan['name']}}</p>
+                                                <p class="text-white"><span>پلن :</span>{{$plan['name']}}</p>
                                             </li>
                                             <li>
                                                 @if($service->domain == null)
-                                                    <span>دامنه:</span>  <span> درحال ثبت</span>
+                                                <p class="text-white"><span>دامنه:</span>  <span> درحال ثبت</span></p>
                                                 @else
-                                                        <span>دامنه:</span> <a href="https://{{$service->domain}}/">{{$service->domain}}</a>
+                                                <p class="text-white"><span>دامنه:</span> <a href="https://{{$service->domain}}/" class="text-white">{{$service->domain}}</a></p>
                                                 @endif
-
                                             </li>
                                         </ul>
                                     </div>
-                                    <!-- end /.product__additional_info -->
                                 </div>
-                                <!-- end /.col-md-3 -->
-
-                                <div class="col-lg-4 col-md-4 col-6 xs-fullwidth">
-                                    <div class="product__price_download">
-                                        @if($service->status=='activating')
-                                            <div class="item_price v_middle">
-                                                <span>درحال آماده سازی</span>
-                                            </div>
-                                        @elseif($service->status=='active')
-                                            <div class="item_price v_middle">
-                                                <span>فعال</span>
-                                            </div>
-                                        @elseif($service->status=='inactive')
-                                            <div class="item_price v_middle">
-                                                <span>غیر فعال</span>
-                                            </div>
-                                        @elseif($service->status=='expired')
-                                            <div class="item_price v_middle">
-                                                <span>منقضی شده </span>
-                                            </div>
-                                        @endif
-
-                                        <div class="item_action v_middle">
-                                            @if($service->login_page == null)
-                                                <a  class="btn btn--md btn--round disabled">ورود </a>
-                                            @else
-                                                <p>
-                                                <a href="{{$service->login_page}}" class="btn btn--md btn--round">ورود </a>
-                                            @endif
-                                                    <a href="{{ route('service.extension',$service) }}" class="btn btn--md btn--round btn--white rating--btn not--rated"  data-target="#myModal">
-                                                <P class="rate_it">تمدید</P>
-                                                <div class="rating product--rating">
-                                                    <span>{{\Carbon\Carbon::parse($service->expire_date)->diffInDays(\Carbon\Carbon::now())}} روز اعتبار</span>
-                                                </div>
-                                                </a>
-
-
-                                        </div>
-                                        <!-- end /.item_action -->
-                                    </div>
-                                    <!-- end /.product__price_download -->
-                                </div>
-                                <!-- end /.col-md-4 -->
                             </div>
                         </div>
-                        <!-- end /.single_product -->
                     </div>
-                    @endforeach
-                    @endif
+                    <!-- end /.filter-bar -->
                 </div>
-                <!-- end /.row -->
+                <div class="col-md-6">
+                    <div class="dash-sub2  filter-bar clearfix filter-bar2 p-4">
+                        <div class="row">
+                            <div class="col">
+                                <h4 class="text-white">صفحه مدیریت</h4>
+                                <br>
+                                <div class="row" style="height: 150px">
+                                    <div class="col-4">
+                                        @if($service->login_page == null)
+                                            <a href="" class="dash-enter shadow"><span></span><span></span><span></span><span></span>ورود </a>
+                                        @else
+                                            <a href="{{$service->login_page}}" class="dash-enter shadow"><span></span><span></span><span></span><span></span>ورود </a>
+                                        @endif
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="h-100 d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h6 class="text-white mb-2">مدت زمان اعتبار: <span>{{\Carbon\Carbon::parse($service->expire_date)->diffInDays(\Carbon\Carbon::now())}} روز </span></h6>
+                                                <a href="{{ route('service.extension',$service) }}" class="text-white" ><u> &#x3e; سرویس خود را تمدید می کنید؟</u></a>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end /.filter-bar -->
+                </div>
+                <!-- end /.col-md-12 -->
             </div>
+            @endforeach
+            @endif
             <!-- end /.product_archive2 -->
         </div>
         <!-- end /.container -->

@@ -89,11 +89,13 @@
                         <p class="bold">مجموع :  {{$factor->amount}} تومان </p>
                     </div>
                     @if($factor->status=='awaiting_payment')
-                    <form action="{{ route('factor.pay',$factor) }}" class="setting_form" method="POST" >
+                    <form action="{{ route('factor.pay',$factor) }}" class="setting_form d-inline" method="POST" >
                         @csrf
-                        <div class="col-md-12 ltr">
                             <button type="submit" class="btn btn--round btn--default ">پرداخت</button>
-                        </div>
+                    </form>
+                    <form action="" class="setting_form d-inline" method="POST" >
+                        @csrf
+                            <button type="submit" class="btn btn--round btn-danger p-3 px-4">انصراف</button>
                     </form>
                     @endif
                 </div>

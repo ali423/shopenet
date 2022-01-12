@@ -112,6 +112,129 @@
     -o-animation: moves 4s infinite linear;
     animation: moves 4s infinite linear;
 }
+
+/* dashboard */
+.dash-sub{
+    background: rgb(86,0,176) !important;
+    background: linear-gradient(90deg, rgba(86,0,176,1) 0%, rgba(0,183,227,1) 100%) !important;
+}
+.dash-sub1{
+    position: relative;
+    height: 250px;
+    background: rgb(12,0,121) !important;
+    background: linear-gradient(90deg, rgba(12,0,121,1) 0%, rgba(71,47,255,1) 100%) !important;
+    overflow: hidden;
+}
+.dash-sub2{
+    position: relative;
+    height: 250px;
+    background: rgb(144,0,44) !important;
+    background: linear-gradient(90deg, rgba(144,0,44,1) 0%, rgba(255,44,102,1) 100%) !important;
+    overflow: hidden;
+}
+.dash-sub2:before,.dash-sub1:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    transform-origin: 60% 60%;
+    transform: rotate(-20deg);
+    background: rgba(255,255,255,.2);
+}
+.dash-enter{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(144,0,44,1);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.dash-enter:hover{
+    /* background: rgb(218, 218, 218); */
+    color: white;
+}
+.dash-enter span{
+	position: absolute;
+	display: block;
+	transition: 0.5s ease;
+}
+.dash-enter span:nth-child(1)
+{
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+}
+.dash-enter:hover span:nth-child(1)
+{
+	width: 100%;
+	transform: translateX(100%);
+}
+.dash-enter span:nth-child(3)
+{
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 1px;
+	background: #fff;
+}
+.dash-enter:hover span:nth-child(3)
+{
+	width: 100%;
+	transform: translateX(-100%);
+}
+.dash-enter span:nth-child(2)
+{
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+.dash-enter:hover span:nth-child(2)
+{
+	height: 100%;
+	transform: translateY(100%);
+}
+.dash-enter span:nth-child(4)
+{
+	bottom: 0;
+	right: 0;
+	width: 1px;
+	height: 0;
+	background: #fff;
+}
+.dash-enter:hover span:nth-child(4)
+{
+	height: 100%;
+	transform: translateY(-100%);
+}
+.dash-enter:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);
+	transition: 0.5s;
+	transition-delay: 0.1s;
+}
+.dash-enter:hover:after{
+	left: 100%;
+}
+
+.text-white{
+    color: #fff;
+}
+
 @keyframes moves {
     6% {
         left: 100%;
