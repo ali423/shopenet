@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="{{ asset("css/trumbowyg.min.css") }}">
 <link rel="stylesheet" href="{{ asset("css/bootstrap/bootstrap.min.css") }}">
 <link rel="stylesheet" href="{{ asset("style.css") }}">
+
+<!-- My custom styles -->
+<link rel="stylesheet" href="{{ asset("css/customstyle.css") }}">
 <!-- endinject -->
 
 <!-- Favicon -->

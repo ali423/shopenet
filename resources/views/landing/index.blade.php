@@ -19,9 +19,8 @@ START HERO AREA
                 <!-- start .container -->
                 <div class="container">
                     <!-- start row -->
-                    <div class="row">
-                        <!-- start col-md-12 -->
-                        <div class="col-md-12">
+                    <div id="header-row" class="row" style="margin: auto">
+                        <div class="col-lg-6">
                             <div class="hero__content__title">
                                 <h1>
                                     <span class="light">خودت بساز </span>
@@ -37,7 +36,9 @@ START HERO AREA
                             </div>
                             <!-- end .hero__btn-area-->
                         </div>
-                        <!-- end /.col-md-12 -->
+                        <div class="col-lg-6">
+                            <img src="images/svg/header.svg" class="d-none d-lg-inline">
+                        </div>
                     </div>
                     <!-- end /.row -->
                 </div>

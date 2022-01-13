@@ -22,6 +22,9 @@
 <script src="{{ asset("js/dashboard.js") }}"></script>
 <script src="{{ asset("js/main.js") }}"></script>
 <script src="{{ asset("js/map.js") }}"></script>
+
+<!-- my custom script -->
+<script src="{{ asset("js/customjs.js") }}"></script>
 <!-- endinject -->
 
 <script>
