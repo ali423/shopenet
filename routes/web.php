@@ -43,7 +43,7 @@ Route::middleware('user.auth')->group(function () {
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('user.logout');
 
-    Route::middleware('awaiting_payment')->group(function () {
+    Route::middleware(['awaiting_payment','available_service'])->group(function () {
 
         Route::get('/select-template/{template:id}', [OrderController::class, 'selectTemplate'])->name('select.template');
 
@@ -61,6 +61,8 @@ Route::middleware('user.auth')->group(function () {
     Route::get('/order/delete', [OrderController::class, 'destroy'])->name('order.delete');
 
     Route::post('factor/pay/{factor:id}', [FactorController::class, 'pay'])->name('factor.pay');
+
+    Route::post('factor/cancel/{factor:id}', [FactorController::class, 'cancel'])->name('factor.cancel');
 
     Route::resource('plan', PlanController::class)->only('index');
 

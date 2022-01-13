@@ -22,7 +22,7 @@ class CreateFactorsTable extends Migration
             $table->bigInteger('extension_service_id')->nullable();
             $table->string('plan')->nullable();
             $table->string('about')->nullable();
-            $table->enum('status',['paid','failed','rejected','awaiting_payment'])->default('awaiting_payment');
+            $table->enum('status',['paid','failed','rejected','canceled','awaiting_payment'])->default('awaiting_payment');
             $table->double('amount')->nullable();
             $table->text('payment_id')->nullable();
             $table->text('description')->nullable();

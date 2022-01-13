@@ -9,7 +9,7 @@ class DashboardController extends Controller
 {
     public function index(){
         return view('dashboard.index',[
-            'services'=>auth()->user()->services,
+            'service'=>auth()->user()->service()->latest()->first(),
         ]);
     }
 }
