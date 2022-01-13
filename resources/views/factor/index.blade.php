@@ -39,6 +39,8 @@
                                     <span class="withdrawal">ردشده</span>
                             @elseif($factor->status=='awaiting_payment')
                                 <span class="credited">در انتضار پرداخت</span>
+                            @elseif($factor->status=='canceled')
+                                <span class="withdrawal">انصراف</span>
                             @endif
                         </td>
                         <td>{{number_format($factor->amount)}} تومان </td>

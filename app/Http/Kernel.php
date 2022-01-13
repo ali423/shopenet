@@ -3,6 +3,7 @@
 namespace App\Http;
 
 use App\Http\Middleware\AdminMiddleware;
+use App\Http\Middleware\AvailableServiceMiddleware;
 use App\Http\Middleware\AwaitingFactorMiddleware;
 use App\Http\Middleware\SelectPlanMiddleware;
 use App\Http\Middleware\UserAuthMiddleware;
@@ -73,5 +74,6 @@ class Kernel extends HttpKernel
         'user.auth'=>UserAuthMiddleware::class,
         'select.plan'=>SelectPlanMiddleware::class,
         'awaiting_payment'=>AwaitingFactorMiddleware::class,
+        'available_service'=>AvailableServiceMiddleware::class,
     ];
 }

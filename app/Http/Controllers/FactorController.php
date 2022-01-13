@@ -16,7 +16,7 @@ class FactorController extends Controller
     public function index()
     {
         return view('factor.index',[
-            'factors'=>auth()->user()->factors,
+            'factors'=>auth()->user()->factors()->orderBy('id', 'DESC')->get(),
         ]);
     }
 
@@ -129,5 +129,15 @@ class FactorController extends Controller
             $response = $data;
             return  redirect()->back()->withErrors($response);
         }
+    }
+
+    public function cancel(Factor $factor){
+        if ($factor->user->id!= auth()->user()->id){
+            return redirect()->back()->withErrors('شما این دسترسی را ندارید');
+        }
+        $factor->update([
+           'status'=>'canceled',
+        ]);
+        return redirect(route('factor.index'))->with('successful', 'فاکتور با موفقیت لغو شد .');
     }
 }

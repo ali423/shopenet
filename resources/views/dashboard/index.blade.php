@@ -7,7 +7,7 @@
                 <div class="col-md-12">
                     <div class="filter-bar clearfix filter-bar2">
                         <br>
-                        @if(count($services) == 0)
+                        @if(!isset($service) || $service== null)
                         <div class="dashboard__title pull-right">
                             <h3>شما در حال حاضر سرویس ثبت شده ندارید</h3>
                             <br>
@@ -15,7 +15,6 @@
                         @else
                         <div class="dashboard__title pull-right">
                             <h3>سرویس شما</h3>
-                            @foreach($services as $service)
                             @if($service->status=='activating')
                             <p>(وضعیت: <span>درحال آماده سازی</span>)</p>
                             @elseif($service->status=='active')
@@ -103,7 +102,7 @@
                                 <div class="row" style="height: 150px">
                                     <div class="col-4">
                                         @if($service->login_page == null)
-                                            <a href="" class="dash-enter shadow"><span></span><span></span><span></span><span></span>ورود </a>
+                                            <a class="dash-enter shadow "><span></span><span></span><span></span><span></span>درحال ثبت</a>
                                         @else
                                             <a href="{{$service->login_page}}" class="dash-enter shadow"><span></span><span></span><span></span><span></span>ورود </a>
                                         @endif
@@ -112,7 +111,7 @@
                                         <div class="h-100 d-flex justify-content-center align-items-center">
                                             <div>
                                                 <h6 class="text-white mb-2">مدت زمان اعتبار: <span>{{\Carbon\Carbon::parse($service->expire_date)->diffInDays(\Carbon\Carbon::now())}} روز </span></h6>
-                                                <a href="{{ route('service.extension',$service) }}" class="text-white" ><u> &#x3e; سرویس خود را تمدید می کنید؟</u></a>    
+                                                <a href="{{ route('service.extension',$service) }}" class="text-white" ><u> &#x3e; سرویس خود را تمدید می کنید؟</u></a>
                                             </div>
                                         </div>
                                     </div>
@@ -124,7 +123,6 @@
                 </div>
                 <!-- end /.col-md-12 -->
             </div>
-            @endforeach
             @endif
             <!-- end /.product_archive2 -->
         </div>

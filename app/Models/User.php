@@ -51,7 +51,7 @@ class User extends Authenticatable
     public function factors(){
         return $this->hasMany(Factor::class);
     }
-    public function services(){
-        return $this->hasMany(Service::class);
+    public function service(){
+        return $this->hasOne(Service::class);
     }
 }

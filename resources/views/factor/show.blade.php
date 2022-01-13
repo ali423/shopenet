@@ -43,6 +43,11 @@
                                 <span>وضعیت پرداخت:</span>
                                 <span>درانتظارپرداخت</span>
                             </div>
+                            @elseif($factor->status=='canceled')
+                                <div class="item_price v_middle">
+                                    <span>وضعیت پرداخت:</span>
+                                    <span>انصراف</span>
+                                </div>
                             @endif
                         </div>
                       </p>
@@ -93,7 +98,7 @@
                         @csrf
                             <button type="submit" class="btn btn--round btn--default ">پرداخت</button>
                     </form>
-                    <form action="" class="setting_form d-inline" method="POST" >
+                    <form action="{{ route('factor.cancel',$factor) }}" class="setting_form d-inline" method="POST" >
                         @csrf
                             <button type="submit" class="btn btn--round btn-danger p-3 px-4">انصراف</button>
                     </form>
