@@ -4,7 +4,6 @@
     <!-- Main Content Area -->
 
 
-
     <!--================================
 START HERO AREA
 =================================-->
@@ -47,116 +46,88 @@ START HERO AREA
             <!-- end .contact_wrapper -->
         </div>
         <!-- end hero-content -->
-
-        <!--start search-area -->
-        <div class="search-area">
-            <!-- start .container -->
-            <div class="container">
-                <!-- start .container -->
-                <div class="row">
-                    <!-- start .col-sm-12 -->
-                    <div class="col-sm-12">
-                        <!-- start .search_box -->
-                        <div class="search_box">
-                            <form action="#">
-                                <input type="text" class="text_field" placeholder="جستجو در محصولات ...">
-                                <div class="search__select select-wrap">
-                                    <select name="category" class="select--field" id="blah">
-                                        <option value="">همه دسته بندی ها</option>
-                                        <option value="">PSD</option>
-                                        <option value="">HTML</option>
-                                        <option value="">ورد پرس</option>
-                                        <option value="">همه دسته بندی ها</option>
-                                    </select>
-                                    <span class="lnr lnr-chevron-down"></span>
-                                </div>
-                                <button type="submit" class="search-btn btn--lg">جستجو</button>
-                            </form>
-                        </div>
-                        <!-- end ./search_box -->
-                    </div>
-                    <!-- end /.col-sm-12 -->
-                </div>
-                <!-- end /.row -->
-            </div>
-            <!-- end /.container -->
-        </div>
-        <!--start /.search-area -->
     </section>
     <!--================================
     END HERO AREA
     =================================-->
-
-
     <!--================================
-    START FEATURE AREA
-    =================================-->
-    <section class="features section--padding dir-rtl">
+          START OVERVIEW AREA
+      =================================-->
+    <section class="overview-area section--padding dir-rtl">
         <!-- start container -->
         <div class="container">
             <!-- start row -->
             <div class="row">
-                <!-- start search-area -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature">
-                        <div class="feature__img">
-                            <img src="images/new/feature1.png" alt="feature">
-                        </div>
-                        <div class="feature__title">
-                            <h3>بهترین تحقیق UX</h3>
-                        </div>
-                        <div class="feature__desc">
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </div>
+                <!-- start col-md-12 -->
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>ساخت و آماده سازی وب سایت فروشگاهی شما
+                            <span class="highlighted">تنها در سه مرحله</span>
+                        </h1>
+                        <p>شاپی نت سریع ترین ، بصرفه ترین ، پر بازده ترین و مطمعن ترین روش ساخت وب سایت شماست  </p>
                     </div>
-                    <!-- end /.feature -->
                 </div>
-                <!-- end /.col-lg-4 col-md-6 -->
+                <!-- end /.col-md-12 -->
+            </div>
+            <!-- end /.row -->
 
-                <!-- start search-area -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature">
-                        <div class="feature__img">
-                            <img src="images/new/feature2.png" alt="feature">
-                        </div>
-                        <div class="feature__title">
-                            <h3>کاملا پاسخگو</h3>
-                        </div>
-                        <div class="feature__desc">
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </div>
-                    </div>
-                    <!-- end /.feature -->
-                </div>
-                <!-- end /.col-lg-4 col-md-6 -->
+            <div class="row">
 
-                <!-- start search-area -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature">
-                        <div class="feature__img">
-                            <img src="images/new/feature3.png" alt="feature">
-                        </div>
-                        <div class="feature__title">
-                            <h3>خرید و فروش به راحتی</h3>
-                        </div>
-                        <div class="feature__desc">
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </div>
+                <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
+                    <div class="overview-icon">
+                        <img src="images/new/fac1.png" alt="overview icon">
                     </div>
-                    <!-- end /.feature -->
                 </div>
-                <!-- end /.col-lg-4 col-md-6 -->
+                <!-- end /.col-md-4 -->
+
+                <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
+                    <div class="step_num">01</div>
+                    <h2 class="overview-title">انتخاب قالب</h2>
+                    <p>پس از بررسی قالب های شاپی نت و مشاهده پیش نمایش آنها یک قالب متناسب با زمینه فعالیت خود انتخاب کنید.</p>
+                </div>
+                <!-- end /.col-md-5 -->
+
+                <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
+                    <div class="step_num">02</div>
+                    <h2 class="overview-title">انتخاب طرح
+                         
+                    </h2>
+                    <p>پس از بررسی مشخصات و امکانات طرح های موجود ، طرح متناسب با نیاز خود را انتخاب کنید.</p>
+                </div>
+                <!-- end /.col-md-5 -->
+
+                <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
+                    <div class="overview-icon">
+                        <img src="images/new/fac2.png" alt="overview icon">
+                    </div>
+                </div>
+                <!-- end /.col-md-4 -->
+
+                <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
+                    <div class="overview-icon">
+                        <img src="images/new/fac3.png" alt="overview icon">
+                    </div>
+                </div>
+                <!-- end /.col-md-4 -->
+
+                <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
+                    <div class="step_num">03</div>
+                    <h2 class="overview-title">نهایی سازی سفارش
+                         
+                    </h2>
+                    <p>پس از تکمیل سفارش ، وب سایت فروشگاه شما وارد مرحله آماده سازی میشود، و در سریعترین زمان آماده راه اندازی خواهد بود.</p>
+                </div>
+                <!-- end /.col-md-5 -->
+
             </div>
             <!-- end /.row -->
         </div>
         <!-- end /.container -->
     </section>
     <!--================================
-    END FEATURE AREA
+        END OVERVIEW AREA
     =================================-->
+
 
     <!--================================
         START PRODUCTS AREA
@@ -230,165 +201,73 @@ START HERO AREA
     <!--================================
     END CALL TO ACTION AREA
     =================================-->
-    <!--================================
-        START COUNTER UP AREA
-    =================================-->
-    <section class="counter-up-area bgimage dir-rtl">
-        <div class="bg_image_holder">
-            <img src="images/new/countbg.jpg" alt="">
-        </div>
-        <!-- start .container -->
-        <div class="container content_above">
-            <!-- start .col-md-12 -->
-            <div class="col-md-12">
-                <div class="counter-up">
-                    <div class="counter mcolor2">
-                        <span class="lnr lnr-briefcase"></span>
-                        <span class="count">38,436</span>
-                        <p>آیتم برای فروش</p>
-                    </div>
-                    <div class="counter mcolor3">
-                        <span class="lnr lnr-cloud-download"></span>
-                        <span class="count">38,436</span>
-                        <p>مجموع فروش</p>
-                    </div>
-                    <div class="counter mcolor1">
-                        <span class="lnr lnr-smile"></span>
-                        <span class="count">38,436</span>
-                        <p>مشتریان راضی </p>
-                    </div>
-                    <div class="counter mcolor4">
-                        <span class="lnr lnr-users"></span>
-                        <span class="count">38,436</span>
-                        <p>کاربر</p>
-                    </div>
-                </div>
-            </div>
-            <!-- end /.col-md-12 -->
-        </div>
-        <!-- end /.container -->
-    </section>
-    <!--================================
-        END COUNTER UP AREA
-    =================================-->
-
 
     <!--================================
-        START PROMOTION AREA
-    =================================-->
-    <section class="promotion-area dir-rtl">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 v_middle">
-                    <div class="promotion-img">
-                        <img src="images/new/bubdle.jpg" alt="Promotion image">
-                    </div>
-                    <!-- end /.promotion-img -->
-                </div>
-                <!-- end /.col-md-6 -->
-
-                <div class="col-lg-5 offset-lg-1 col-md-6 v_middle">
-                    <div class="promotion-content">
-                        <h3 class="promotion__subtitle">بسته نرم افزاری بزرگ</h3>
-                        <h1 class="promotion__title">همه ی آنها با 50000 تومان !
-                            <span>35% تخفیف </span>
-                        </h1>
-                        <p>تمام محصولات ما را در یک بسته بندی دریافت کنید و 35٪ از قیمت های معمول را ذخیره کنید. بیش از
-                            50 پلاگین، 20 قالب و 30 مورد دیگر خواهد بود!</p>
-                        <a href="#" class="btn btn--lg btn--round">مشاهده جزئیات</a>
-                    </div>
-                    <!-- end /.promotion-content -->
-                </div>
-                <!-- end /.col-md-5 -->
-            </div>
-            <!-- end /.row -->
-        </div>
-        <!-- end /.container -->
-    </section>
-    <!--================================
-        END PROMOTION AREA
-    =================================-->
-
-
-    <!--================================
-        START OVERVIEW AREA
-    =================================-->
-    <section class="overview-area section--padding dir-rtl">
+     START FEATURE AREA
+     =================================-->
+    <section class="features section--padding dir-rtl">
         <!-- start container -->
         <div class="container">
             <!-- start row -->
             <div class="row">
-                <!-- start col-md-12 -->
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>صرفه جویی در زمان و ساختن پروژه های شما در یک
-                            <span class="highlighted">چشم به هم زدن </span>
-                        </h1>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است. </p>
+                <!-- start search-area -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature">
+                        <div class="feature__img">
+                            <img src="images/new/feature1.png" alt="feature">
+                        </div>
+                        <div class="feature__title">
+                            <h3>جستجوی آسان در گوگل</h3>
+                        </div>
+                        <div class="feature__desc">
+                            <p>بهینه شده برای تمام موتور های جستجو .</p>
+                        </div>
                     </div>
+                    <!-- end /.feature -->
                 </div>
-                <!-- end /.col-md-12 -->
-            </div>
-            <!-- end /.row -->
+                <!-- end /.col-lg-4 col-md-6 -->
 
-            <div class="row">
-
-                <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
-                    <div class="overview-icon">
-                        <img src="images/new/fac1.png" alt="overview icon">
+                <!-- start search-area -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature">
+                        <div class="feature__img">
+                            <img src="images/new/feature2.png" alt="feature">
+                        </div>
+                        <div class="feature__title">
+                            <h3>کاملا ریسپانسیو</h3>
+                        </div>
+                        <div class="feature__desc">
+                            <p>مناسب سازی شده برای تمام دستگاه ها <br>(موبایل ، تبلت ، لپ تاپ ) </p>
+                        </div>
                     </div>
+                    <!-- end /.feature -->
                 </div>
-                <!-- end /.col-md-4 -->
+                <!-- end /.col-lg-4 col-md-6 -->
 
-                <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-                    <div class="step_num">01</div>
-                    <h2 class="overview-title">بهترین محصولات با کیفیت</h2>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
-                </div>
-                <!-- end /.col-md-5 -->
-
-                <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-                    <div class="step_num">02</div>
-                    <h2 class="overview-title">آسان برای نصب و استفاده
-                         
-                    </h2>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
-                </div>
-                <!-- end /.col-md-5 -->
-
-                <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
-                    <div class="overview-icon">
-                        <img src="images/new/fac2.png" alt="overview icon">
+                <!-- start search-area -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature">
+                        <div class="feature__img">
+                            <img src="images/new/feature3.png" alt="feature">
+                        </div>
+                        <div class="feature__title">
+                            <h3>درگاه پرداخت </h3>
+                        </div>
+                        <div class="feature__desc">
+                            <p>متصل به درگاه های معتبر بانکی جهت پرداخت امن و اعتماد سازی برای خریدار.</p>
+                        </div>
                     </div>
+                    <!-- end /.feature -->
                 </div>
-                <!-- end /.col-md-4 -->
-
-                <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
-                    <div class="overview-icon">
-                        <img src="images/new/fac3.png" alt="overview icon">
-                    </div>
-                </div>
-                <!-- end /.col-md-4 -->
-
-                <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-                    <div class="step_num">03</div>
-                    <h2 class="overview-title">به طور کامل قابل ویرایش محتوا و عناصر
-                         
-                    </h2>
-                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
-                </div>
-                <!-- end /.col-md-5 -->
-
+                <!-- end /.col-lg-4 col-md-6 -->
             </div>
             <!-- end /.row -->
         </div>
         <!-- end /.container -->
     </section>
     <!--================================
-        END OVERVIEW AREA
+    END FEATURE AREA
     =================================-->
-
 
     <!--================================
         END OVERVIEW AREA
@@ -456,11 +335,10 @@ START HERO AREA
                 <div class="col-md-12">
                     <div class="section-title">
                         <h1>چرا
-                            <span class="highlighted">ما</span>
-                            را انتخاب کنید
+                            <span class="highlighted">شاپی نت</span>
+                            را انتخاب میکنید
                         </h1>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است. </p>
+                        <p>شاپی نت تمام ویژگی های یک فروشگاه اینترنتی فوق العاده را در اختیار شما قرار میدهد. </p>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -470,13 +348,29 @@ START HERO AREA
             <!-- start row -->
             <div class="row">
                 <!-- start .col-md-4 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <!-- start .reason -->
                     <div class="feature2">
                         <span class="feature2__count">01</span>
                         <div class="feature2__content">
                             <span class="lnr lnr-license pcolor"></span>
-                            <h3 class="feature2-title">یک بار پرداخت کنید</h3>
+                            <h3 class="feature2-title">پشتیبانی</h3>
+                            <p></p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .reason -->
+                    <div class="feature2">
+                        <span class="feature2__count">01</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-license pcolor"></span>
+                            <h3 class="feature2-title">هاست رایگان</h3>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
                                 است. </p>
                         </div>
@@ -486,14 +380,15 @@ START HERO AREA
                 </div>
                 <!-- end /.col-md-4 -->
 
+
                 <!-- start .col-md-4 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <!-- start .feature2 -->
                     <div class="feature2">
                         <span class="feature2__count">02</span>
                         <div class="feature2__content">
                             <span class="lnr lnr-magic-wand scolor"></span>
-                            <h3 class="feature2-title">کیفیت محصولات</h3>
+                            <h3 class="feature2-title">دامنه ملی ir</h3>
                             <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
                                 است. </p>
                         </div>
@@ -504,7 +399,7 @@ START HERO AREA
                 <!-- end /.col-md-4 -->
 
                 <!-- start .col-md-4 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <!-- start .feature2 -->
                     <div class="feature2">
                         <span class="feature2__count">03</span>
@@ -521,7 +416,7 @@ START HERO AREA
                 <!-- end /.col-md-4 -->
 
                 <!-- start .col-md-4 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <!-- start .feature2 -->
                     <div class="feature2">
                         <span class="feature2__count">04</span>
@@ -538,7 +433,7 @@ START HERO AREA
                 <!-- end /.col-md-4 -->
 
                 <!-- start .col-md-4 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
                     <!-- start .feature2 -->
                     <div class="feature2">
                         <span class="feature2__count">05</span>
@@ -555,7 +450,23 @@ START HERO AREA
                 <!-- end /.col-md-4 -->
 
                 <!-- start .col-md-4 -->
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .feature2 -->
+                    <div class="feature2">
+                        <span class="feature2__count">06</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-phone mcolor4"></span>
+                            <h3 class="feature2-title">پشتیبانی سریع </h3>
+                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.</p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
                     <!-- start .feature2 -->
                     <div class="feature2">
                         <span class="feature2__count">06</span>
