@@ -155,6 +155,19 @@
     border-radius: 5px;
     overflow: hidden;
 }
+.dash-enter-disabled{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: rgba(144,0,44,1);
+    border-radius: 5px;
+    overflow: hidden;
+    pointer-events: none;
+}
 .dash-enter:hover{
     /* background: rgb(218, 218, 218); */
     color: white;
