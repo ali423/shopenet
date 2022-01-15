@@ -16,13 +16,14 @@ START HERO AREA
             <!-- start .contact_wrapper -->
             <div class="content-wrapper">
                 <!-- start .container -->
-                <div class="container">
+                <div class="container-fluid">
                     <!-- start row -->
                     <div id="header-row" class="row" style="margin: auto">
                         <div class="col-lg-6">
                             <div class="hero__content__title">
                                 <h1>
-                                    <span class="light">خودت بساز </span>
+                                    <span class="light typed-out">خودت بساز </span>
+                                    <br>
                                     <span class="bold">بازار محصولات دیجیتال</span>
                                 </h1>
                                 <p class="tagline"> یک قالب قدرتمند و قابل تنظیم برای محصولات خود </p>
@@ -36,11 +37,12 @@ START HERO AREA
                             <!-- end .hero__btn-area-->
                         </div>
                         <div class="col-lg-6">
-                            <img src="images/svg/header.svg" class="d-none d-lg-inline">
+                            <img src="images/svg/header.svg" class="header-mockup" style="z-index: 1000;position: relative;">
                         </div>
                     </div>
                     <!-- end /.row -->
                 </div>
+                <svg id="header-wave" style="position: absolute; bottom:0; right:0; transform:translateY(1px)" viewBox="0 0 1440 270" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,0L1440,216L2880,0L4320,189L5760,27L7200,135L8640,108L10080,54L11520,189L12960,216L14400,54L15840,162L17280,54L18720,54L20160,216L21600,216L23040,27L24480,54L25920,135L27360,0L28800,135L30240,243L31680,243L33120,108L34560,81L34560,270L33120,270L31680,270L30240,270L28800,270L27360,270L25920,270L24480,270L23040,270L21600,270L20160,270L18720,270L17280,270L15840,270L14400,270L12960,270L11520,270L10080,270L8640,270L7200,270L5760,270L4320,270L2880,270L1440,270L0,270Z"></path></svg>
                 <!-- end /.container -->
             </div>
             <!-- end .contact_wrapper -->
