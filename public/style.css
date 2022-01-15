@@ -5895,11 +5895,25 @@ div#ui-datepicker-div tbody tr td a:hover {
 	-- THEME
 *****************************/
 .alert {
+  direction: rtl;
+  position: fixed;
+  top:100px;
+  right: 10%;
+  left: 10%;
   padding: 18px 30px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   font-size: 16px;
-  margin-bottom: 30px;
+  margin: auto;
+  z-index: 1001;
+  animation: myalert 4s 1 ease;
+  opacity: 0;
+}
+
+@keyframes myalert{
+  10%{opacity: 1; }
+  90%{opacity: 1; }
+  100%{opacity:0}
 }
 
 .alert .alert_icon {
@@ -5908,41 +5922,41 @@ div#ui-datepicker-div tbody tr td a:hover {
 }
 
 .alert.alert-default {
-  color: #0674ec;
-  background: rgba(6, 116, 236, 0.1);
+  color: #fff;
+  background: rgba(6, 116, 236, 1);
 }
 
 .alert.alert-default .close {
-  color: #0674ec;
+  color: #fff;
 }
 
 .alert.alert-success {
-  color: #77de51;
-  background: rgba(119, 222, 81, 0.1);
-  border-color: rgba(119, 222, 81, 0.1);
+  color: #fff;
+  background: rgba(119, 222, 81, 1);
+  border-color: rgba(119, 222, 81, 1);
 }
 
 .alert.alert-info {
-  color: #58c9e9;
-  background: rgba(88, 201, 233, 0.1);
-  border-color: rgba(88, 201, 233, 0.1);
+  color: #fff;
+  background: rgba(88, 201, 233, 1);
+  border-color: rgba(88, 201, 233, 1);
 }
 
 .alert.alert-warning {
-  color: #feb71d;
-  background: rgba(254, 183, 29, 0.1);
-  border-color: rgba(254, 183, 29, 0.1);
+  color: #fff;
+  background: rgba(254, 183, 29,1);
+  border-color: rgba(254, 183, 29, 1);
 }
 
 .alert.alert-danger {
-  color: #ff6a6d;
-  background: rgba(255, 106, 109, 0.1);
-  border-color: rgba(255, 106, 109, 0.1);
+  color: #fff;
+  background: rgba(255, 106, 109, 1);
+  border-color: rgba(255, 106, 109, 1);
 }
 
 .alert .close {
-  font-size: 16px;
-  opacity: .3;
+  color: #fff !important;
+  font-size: 24px;
 }
 
 .alert .close:hover {

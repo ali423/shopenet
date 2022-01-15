@@ -49,8 +49,8 @@
     <section class="breadcrumb-area dir-rtl">
 
         <div class="card">
-            <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
-                <i class="material-icons">X</i>
+            <div>
+                <i class="material-icons"><i class="fa fa-exclamation-triangle"></i></i>
             </div>
             <h1>پرداخت ناموفق</h1>
             <p>در صورت کسر وجه از حساب شما ، وجه کسر شده تا حدکثر 72 ساعت عودت خواهد شد <br> در غیر این صورت با پشتیبانی شاپی نت تماس بگیرید </p>
