@@ -103,7 +103,7 @@
                                 <div class="row" style="height: 150px">
                                     <div class="col-4">
                                         @if($service->login_page == null)
-                                            <a href="" class="dash-enter-disabled shadow">درحال ثبت</a>
+                                            <a href="" class="dash-enter-disabled">درحال ثبت</a>
                                         @else
                                             <a href="{{$service->login_page}}" class="dash-enter shadow"><span></span><span></span><span></span><span></span>ورود </a>
                                         @endif
