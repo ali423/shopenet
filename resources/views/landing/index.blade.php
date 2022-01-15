@@ -201,7 +201,66 @@ START HERO AREA
     <!--================================
     END CALL TO ACTION AREA
     =================================-->
-
+    <!--================================
+    START tools AREA
+    =================================-->
+    <section class="features section--padding dir-rtl tools">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">لورم ایپسوم</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================
+    End tools AREA
+    =================================-->
     <!--================================
      START FEATURE AREA
      =================================-->
