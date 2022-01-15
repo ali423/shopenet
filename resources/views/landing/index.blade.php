@@ -202,71 +202,192 @@ START HERO AREA
     END CALL TO ACTION AREA
     =================================-->
     <!--================================
-    START tools AREA
-    =================================-->
-    <section class="features section--padding dir-rtl tools">
+           START WHY CHOOSE US AREA
+       =================================-->
+    <section class="why_choose section--padding dir-rtl">
+        <!-- start container -->
         <div class="container">
+            <!-- start row -->
             <div class="row">
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
+                <!-- start col-md-12 -->
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>چرا
+                            <span class="highlighted">شاپی نت</span>
+                            را انتخاب می کنید
+                        </h1>
+                        <p>شاپی نت تمام ویژگی های یک فروشگاه اینترنتی فوق العاده را در اختیار شما قرار میدهد. </p>
+                    </div>
                 </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">لورم ایپسوم</p>
-                </div>
+                <!-- end /.col-md-12 -->
             </div>
+            <!-- end /.row -->
+
+            <!-- start row -->
+            <div class="row">
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .reason -->
+                    <div class="feature2">
+                        <span class="feature2__count">1</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-phone-handset pcolor"></span>
+                            <h3 class="feature2-title">پشتیبانی</h3>
+                            <p class="text-justify">سریع ترین راه برای حل مشکلات و پاسخ به سوالات شما ارتباط با پشتیبانی شاپی نت است،
+                                 کارشناسان پشتیبانی ما همیشه آماده پاسخ گویی به سوالات شما هستند .</p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .feature2 -->
+                    <div class="feature2">
+                        <span class="feature2__count">2</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-select mcolor4 "></span>
+                            <h3 class="feature2-title">سهولت استفاده</h3>
+                            <p class="text-justify">فروشگاه آنلاین شما به گونه ای طراحی شده، که شما به راحتی و بدون نیاز به هیچ دانش فنی میتوانید از آن استفاده کنید. </p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .reason -->
+                    <div class="feature2">
+                        <span class="feature2__count">3</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-rocket pcolor"></span>
+                            <h3 class="feature2-title">سئو خودکار</h3>
+                            <p class="text-justify">فروشگاه آنلاین شما  برای تمام موتور های جستجو از جمله گوگل بهینه شده است
+                            و تمام ابزار سئو قدرتمند نیز در اختیار شما قرار خواهند گرفت.  </p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+
+
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .feature2 -->
+                    <div class="feature2">
+                        <span class="feature2__count">4</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-laptop-phone scolor"></span>
+                            <h3 class="feature2-title">کاملا ریسپانسیو</h3>
+                            <p class="text-justify">فروشگاه آنلاین شما کاملا ریسپانسیو و واکنش گرا خواهد بود،
+                                یعنی  عملکرد بی نقص در تمام دستگاه ها و صفحات نمایش. </p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .feature2 -->
+                    <div class="feature2">
+                        <span class="feature2__count">5</span>
+                        <div class="feature2__content">
+                            <i class="fa fa-credit-card fa-5x"></i>
+                            <h3 class="feature2-title">درگاه پرداخت بانکی </h3>
+                            <p class="text-justify">فروشگاه آنلاین شما به درگاه های معتبر بانکی متصل خواهد بود، تا مشتریانتان با خیال آسوده سفارش خود ثبت کنند. </p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .feature2 -->
+                    <div class="feature2">
+                        <span class="feature2__count">6</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-graduation-hat mcolor2"></span>
+                            <h3 class="feature2-title">محتوای آموزشی</h3>
+                            <p class="text-justify">اگر هر لحظه برای استفاده از  بخشی از وب سایت به آموزش نیاز داشتید ، ویدیو و محتوای آموزشی مرتبط با آن در اختیار شما قرار خواهد گرفت.</p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+
+
+
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .feature2 -->
+                    <div class="feature2">
+                        <span class="feature2__count">7</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-spell-check mcolor3"></span>
+                            <h3 class="feature2-title">سفارشی سازی</h3>
+                            <p class="text-justify">شما می توانید با استفاده از ویدیو و محتوای آموزشی که در اختیار شما قرار می گیرد به سادگی قالب فروشگاه خود را
+                            متناسب با نیاز خود شخصی سازی کنید</p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+                <!-- start .col-md-4 -->
+                <div class="col-lg-3 col-md-6">
+                    <!-- start .feature2 -->
+                    <div class="feature2">
+                        <span class="feature2__count">100</span>
+                        <div class="feature2__content">
+                            <span class="lnr lnr-diamond mcolor4"></span>
+                            <h3 class="text-justify">امکانات سفارشی</h3>
+                            <p class="text-justify">صد ها امکانت دیگر بجز موارد ذکر شده ، بر روی فروشگاه های شاپی نت فعال است که شما با توجه به نیاز خود می توانید از آنها استفاده نمایید .</p>
+                        </div>
+                        <!-- end /.feature2__content -->
+                    </div>
+                    <!-- end /.feature2 -->
+                </div>
+                <!-- end /.col-md-4 -->
+            </div>
+            <!-- end /.row -->
         </div>
+        <!-- end /.container -->
     </section>
     <!--================================
-    End tools AREA
+        END WHY CHOOSE US AREA
     =================================-->
     <!--================================
      START FEATURE AREA
      =================================-->
-    <section class="features section--padding dir-rtl">
+    <section class="partner-area section--padding bgimage">
+        <div class="bg_image_holder">
+            <img src="images/new/ptbg.png" alt="">
+        </div>
         <!-- start container -->
         <div class="container">
+            <!-- start row -->
+            <div class="row">
+                <!-- start col-md-12 -->
+                <div class="col-md-12">
+                    <div class="section-title">
+                        <h1>چرا می توانید به ما
+                            <span class="highlighted">اعتماد</span>
+                            کنید
+                        </h1>
+                    </div>
+                </div>
+                <!-- end /.col-md-12 -->
+            </div>
+            <!-- end /.row -->
+
             <!-- start row -->
             <div class="row">
                 <!-- start search-area -->
@@ -276,10 +397,10 @@ START HERO AREA
                             <img src="images/new/feature1.png" alt="feature">
                         </div>
                         <div class="feature__title">
-                            <h3>جستجوی آسان در گوگل</h3>
+                            <h3>اعتبار ما</h3>
                         </div>
                         <div class="feature__desc">
-                            <p>بهینه شده برای تمام موتور های جستجو .</p>
+                            <p>شاپی نت یک شرکت رسمی ثبت شده با صدها کاربر راضی و پروژه فعال است.</p>
                         </div>
                     </div>
                     <!-- end /.feature -->
@@ -293,10 +414,10 @@ START HERO AREA
                             <img src="images/new/feature2.png" alt="feature">
                         </div>
                         <div class="feature__title">
-                            <h3>کاملا ریسپانسیو</h3>
+                            <h3>نماد اعتماد الکترونیکی</h3>
                         </div>
                         <div class="feature__desc">
-                            <p>مناسب سازی شده برای تمام دستگاه ها <br>(موبایل ، تبلت ، لپ تاپ ) </p>
+                            <p>فروشگاه ساز شاپی نت دارای نماد اعتماد الکترونیکی </p>
                         </div>
                     </div>
                     <!-- end /.feature -->
@@ -310,10 +431,10 @@ START HERO AREA
                             <img src="images/new/feature3.png" alt="feature">
                         </div>
                         <div class="feature__title">
-                            <h3>درگاه پرداخت </h3>
+                            <h3>مجوز دانش بنیان</h3>
                         </div>
                         <div class="feature__desc">
-                            <p>متصل به درگاه های معتبر بانکی جهت پرداخت امن و اعتماد سازی برای خریدار.</p>
+                            <p>فروشگاه ساز شاپی نت ، دارای نشان شرکت دانش بنیان از معاونت علمی ریاست جمهوری است.</p>
                         </div>
                     </div>
                     <!-- end /.feature -->
@@ -328,9 +449,84 @@ START HERO AREA
     END FEATURE AREA
     =================================-->
 
+
     <!--================================
-        END OVERVIEW AREA
+     START tools AREA امکانات فروشگاه
+     =================================-->
+    <section class="features section--padding dir-rtl tools">
+        <div class="container">
+            <!-- start row -->
+            <div class="row">
+                <!-- start col-md-12 -->
+                <div class="col-md-12  dir-rtl ">
+                    <div class="section-title">
+                        <h1> تعدادی از امکانات
+                            <span class="highlighted">وب سایت فروشگاهی</span> شاپی نت
+                        </h1>
+                    </div>
+                </div>
+                <!-- end /.col-md-12 -->
+            </div>
+            <!-- end /.row -->
+            <div class="row">
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">دامنه ملی ir</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">هاست رایگان</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">ssl رایگان</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">وبلاگ</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">کد تخفیف</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">درگاه بانکی</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">نماد اعتماد</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">جستجو و فیلتر</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">چت آنلاین</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">پیگیری سفارشات</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">روش و هزینه ارسال</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">محاسبه مالیات</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================================
+    End tools AREA
     =================================-->
+
+    <!--================================
+      END OVERVIEW AREA
+  =================================-->
     <section class="partner-area section--padding bgimage">
         <div class="bg_image_holder">
             <img src="images/new/ptbg.png" alt="">
@@ -382,172 +578,6 @@ START HERO AREA
         END OVERVIEW AREA
     =================================-->
 
-    <!--================================
-        START WHY CHOOSE US AREA
-    =================================-->
-    <section class="why_choose section--padding dir-rtl">
-        <!-- start container -->
-        <div class="container">
-            <!-- start row -->
-            <div class="row">
-                <!-- start col-md-12 -->
-                <div class="col-md-12">
-                    <div class="section-title">
-                        <h1>چرا
-                            <span class="highlighted">شاپی نت</span>
-                            را انتخاب میکنید
-                        </h1>
-                        <p>شاپی نت تمام ویژگی های یک فروشگاه اینترنتی فوق العاده را در اختیار شما قرار میدهد. </p>
-                    </div>
-                </div>
-                <!-- end /.col-md-12 -->
-            </div>
-            <!-- end /.row -->
-
-            <!-- start row -->
-            <div class="row">
-                <!-- start .col-md-4 -->
-                <div class="col-lg-3 col-md-6">
-                    <!-- start .reason -->
-                    <div class="feature2">
-                        <span class="feature2__count">01</span>
-                        <div class="feature2__content">
-                            <span class="lnr lnr-license pcolor"></span>
-                            <h3 class="feature2-title">پشتیبانی</h3>
-                            <p></p>
-                        </div>
-                        <!-- end /.feature2__content -->
-                    </div>
-                    <!-- end /.feature2 -->
-                </div>
-                <!-- end /.col-md-4 -->
-
-                <!-- start .col-md-4 -->
-                <div class="col-lg-3 col-md-6">
-                    <!-- start .reason -->
-                    <div class="feature2">
-                        <span class="feature2__count">01</span>
-                        <div class="feature2__content">
-                            <span class="lnr lnr-license pcolor"></span>
-                            <h3 class="feature2-title">هاست رایگان</h3>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </div>
-                        <!-- end /.feature2__content -->
-                    </div>
-                    <!-- end /.feature2 -->
-                </div>
-                <!-- end /.col-md-4 -->
-
-
-                <!-- start .col-md-4 -->
-                <div class="col-lg-3 col-md-6">
-                    <!-- start .feature2 -->
-                    <div class="feature2">
-                        <span class="feature2__count">02</span>
-                        <div class="feature2__content">
-                            <span class="lnr lnr-magic-wand scolor"></span>
-                            <h3 class="feature2-title">دامنه ملی ir</h3>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </div>
-                        <!-- end /.feature2__content -->
-                    </div>
-                    <!-- end /.feature2 -->
-                </div>
-                <!-- end /.col-md-4 -->
-
-                <!-- start .col-md-4 -->
-                <div class="col-lg-3 col-md-6">
-                    <!-- start .feature2 -->
-                    <div class="feature2">
-                        <span class="feature2__count">03</span>
-                        <div class="feature2__content">
-                            <span class="lnr lnr-lock mcolor1"></span>
-                            <h3 class="feature2-title">100% پرداخت امن </h3>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </div>
-                        <!-- end /.feature2__content -->
-                    </div>
-                    <!-- end /.feature2 -->
-                </div>
-                <!-- end /.col-md-4 -->
-
-                <!-- start .col-md-4 -->
-                <div class="col-lg-3 col-md-6">
-                    <!-- start .feature2 -->
-                    <div class="feature2">
-                        <span class="feature2__count">04</span>
-                        <div class="feature2__content">
-                            <span class="lnr lnr-chart-bars mcolor2"></span>
-                            <h3 class="feature2-title">کد های بهینه </h3>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است.</p>
-                        </div>
-                        <!-- end /.feature2__content -->
-                    </div>
-                    <!-- end /.feature2 -->
-                </div>
-                <!-- end /.col-md-4 -->
-
-                <!-- start .col-md-4 -->
-                <div class="col-lg-3 col-md-6">
-                    <!-- start .feature2 -->
-                    <div class="feature2">
-                        <span class="feature2__count">05</span>
-                        <div class="feature2__content">
-                            <span class="lnr lnr-leaf mcolor3"></span>
-                            <h3 class="feature2-title">رایگان آپدیت کنید </h3>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است. </p>
-                        </div>
-                        <!-- end /.feature2__content -->
-                    </div>
-                    <!-- end /.feature2 -->
-                </div>
-                <!-- end /.col-md-4 -->
-
-                <!-- start .col-md-4 -->
-                <div class="col-lg-3 col-md-6">
-                    <!-- start .feature2 -->
-                    <div class="feature2">
-                        <span class="feature2__count">06</span>
-                        <div class="feature2__content">
-                            <span class="lnr lnr-phone mcolor4"></span>
-                            <h3 class="feature2-title">پشتیبانی سریع </h3>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است.</p>
-                        </div>
-                        <!-- end /.feature2__content -->
-                    </div>
-                    <!-- end /.feature2 -->
-                </div>
-                <!-- end /.col-md-4 -->
-                <!-- start .col-md-4 -->
-                <div class="col-lg-3 col-md-6">
-                    <!-- start .feature2 -->
-                    <div class="feature2">
-                        <span class="feature2__count">06</span>
-                        <div class="feature2__content">
-                            <span class="lnr lnr-phone mcolor4"></span>
-                            <h3 class="feature2-title">پشتیبانی سریع </h3>
-                            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                                است.</p>
-                        </div>
-                        <!-- end /.feature2__content -->
-                    </div>
-                    <!-- end /.feature2 -->
-                </div>
-                <!-- end /.col-md-4 -->
-            </div>
-            <!-- end /.row -->
-        </div>
-        <!-- end /.container -->
-    </section>
-    <!--================================
-        END WHY CHOOSE US AREA
-    =================================-->
 
     <!--================================
         START SELL BUY
