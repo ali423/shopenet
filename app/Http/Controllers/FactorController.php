@@ -121,13 +121,13 @@ class FactorController extends Controller
                 ]);
                 return redirect($response['link']);
             }else{
-                return redirect()->back()->withErrors($response['error_message']);
+                return redirect()->back()->withErrors('ارتباط با درگاه پرداخت ممکن نیست ، لطفا مجددا تلاش کنید');
             }
         } catch (\Exception $e) {
             $data = (object)array();
             $data->withdrawError = ($e->getMessage());
             $response = $data;
-            return  redirect()->back()->withErrors($response);
+            return  redirect()->back()->withErrors('ارتباط با درگاه پرداخت ممکن نیست ، لطفا مجددا تلاش کنید');
         }
     }
 
