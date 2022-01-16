@@ -49,13 +49,14 @@
     =================================-->
     <section class="breadcrumb-area dir-rtl">
                 <div class="card">
-                    <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
-                        <i class="checkmark">✓</i>
+                    <div class="text-center">
+                        <i class="fa fa-5x fa-check-circle mb-3"></i>
                     </div>
                     <h1>سفارش شما ثبت شد</h1>
                     <p>وب سایت شما در حال آماده سازی است. <br/> همکاران ما برای تکمیل مراحل با شما تماس میگیرند. </p>
                     <br>
                     <h3>شماره سفارش : {{ $factor_number }}</h3>
+                    <a href="" class="btn btn-success p-3 px-5 shadow mt-2">لینک به داشبورد</a>
                 </div>
     </section>
     <!--================================

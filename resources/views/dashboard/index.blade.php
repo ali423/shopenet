@@ -1,6 +1,7 @@
 @extends("dashboard.main")
 
 @section('dashboard-content')
+<div class="col">
     <div class="dashboard_contents">
         <div class="container">
             <div class="row">
@@ -102,7 +103,7 @@
                                 <div class="row" style="height: 150px">
                                     <div class="col-4">
                                         @if($service->login_page == null)
-                                            <a class="dash-enter shadow "><span></span><span></span><span></span><span></span>درحال ثبت</a>
+                                            <a href="" class="dash-enter-disabled">درحال ثبت</a>
                                         @else
                                             <a href="{{$service->login_page}}" class="dash-enter shadow"><span></span><span></span><span></span><span></span>ورود </a>
                                         @endif
@@ -128,5 +129,6 @@
         </div>
         <!-- end /.container -->
     </div>
+</div>
 @endsection
 

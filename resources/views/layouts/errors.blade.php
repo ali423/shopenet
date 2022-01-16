@@ -1,6 +1,6 @@
 <ul id="error" class="list-unstyled">
     @foreach($errors->all() as $error)
-        <div class="alert alert-danger  fixed-top" id="error" role="alert">
+        <div class="alert alert-danger  " id="error" role="alert">
             <span class="alert_icon lnr lnr-warning"></span>
             <strong>خطا!</strong>{{$error}}
             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -11,7 +11,7 @@
 </ul>
 
 @if(Session::get('successful')!=null)
-    <div class="alert alert-success fixed-top" id="error" role="alert">
+    <div class="alert alert-success" id="error" role="alert">
         <span class="alert_icon lnr lnr-checkmark-circle"></span>
         <strong>انجام شد!</strong> {{Session::pull('successful')}}
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">

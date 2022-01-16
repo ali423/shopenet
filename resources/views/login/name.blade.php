@@ -21,7 +21,7 @@
                             <div class="login--form text-center">
                                 <label for="mobile">نام و نام خانوادگی</label>
                                 <div class="input-group">
-                                    <input type="text" id="name" name="name" class="form-control text-right m-auto" required>
+                                    <input type="text" id="name" name="name" class="form-control m-auto rtl" required>
                                     <div class="input-group-append">
                                         <span class="input-group-text"><i class="lnr lnr-user"></i></span>
                                     </div>
