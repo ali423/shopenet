@@ -22,9 +22,14 @@ START HERO AREA
                         <div class="col-lg-6">
                             <div class="hero__content__title">
                                 <h1>
-                                    <span class="light typed-out">خودت بساز </span>
+                                    <span class="bold">شاپی نت</span>
                                     <br>
-                                    <span class="bold">بازار محصولات دیجیتال</span>
+                                    <span class="light typed-out">بهترین</span>
+{{--                                    <span class="light typed-out">سریع ترین</span>--}}
+{{--                                    <span class="light typed-out">به صرفه ترین</span>--}}
+{{--                                    <span class="light typed-out">پربازده ترین</span>--}}
+                                    <br>
+                                    <span class="bold">روش ساخت فروشگاه اینترنتی</span>
                                 </h1>
                                 <p class="tagline"> یک قالب قدرتمند و قابل تنظیم برای محصولات خود </p>
                             </div>
