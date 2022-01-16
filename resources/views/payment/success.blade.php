@@ -56,7 +56,7 @@
                     <p>وب سایت شما در حال آماده سازی است. <br/> همکاران ما برای تکمیل مراحل با شما تماس میگیرند. </p>
                     <br>
                     <h3>شماره سفارش : {{ $factor_number }}</h3>
-                    <a href="" class="btn btn-success p-3 px-5 shadow mt-2">لینک به داشبورد</a>
+                    <a href="{{route('dashboard')}}" class="btn btn-success p-3 px-5 shadow mt-2">مشاهده سفارش</a>
                 </div>
     </section>
     <!--================================
