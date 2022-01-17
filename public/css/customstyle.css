@@ -259,15 +259,114 @@
     display: inline-block !important;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 2s steps(40, end) infinite forwards;
+    font-weight: 900;
     width: 0;
-  } 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    animation: typing 5s steps(40, end) infinite forwards;
+    -o-animation:  typing 5s steps(40, end) infinite forwards;
+    -moz-animation:  typing 5s steps(40, end) infinite forwards;
+    -ms-zoom-animation: typing 5s steps(40, end) infinite forwards ;
+    -webkit-animation: typing 5s steps(40, end) infinite forwards;
+} 
+.typed-out span::before{
+    content: "";
+    border-left: 4px solid orange;
+    animation: changeword 20s step-start infinite, blink .5s step-end infinite alternate;
+    -o-animation:  changeword 20s step-start infinite, blink .5s step-end infinite alternate;
+    -moz-animation:  changeword 20s step-start infinite, blink .5s step-end infinite alternate;
+    -ms-zoom-animation:  changeword 20s step-start infinite, blink .5s step-end infinite alternate;
+    -webkit-animation: changeword 20s step-start infinite, blink .5s step-end infinite alternate;
 }
 
+/*---===== start animation keyframes =====---*/
+
+/* header type character anime*/
+@keyframes typing {
+    0% { width: 0 }
+    50%{ width: 100% }
+    90%{ width: 0;}
+}
+@-o-keyframes typing {
+    0% { width: 0 }
+    50%{ width: 100% }
+    90%{ width: 0;}
+}
+@-moz-keyframes typing {
+    0% { width: 0 }
+    50%{ width: 100% }
+    90%{ width: 0;}
+}
+@-webkit-keyframes typing {
+    0% { width: 0 }
+    50%{ width: 100% }
+    90%{ width: 0;}
+}
+
+/* header span words anime */
+@keyframes changeword {
+    25%{content: "بهترین";color: springgreen }
+    50%{content: "سریع ترین";color: rgb(0, 255, 234)}
+    75%{content: "به صرفه ترین";color: rgb(255, 152, 255); }
+    100%{content: "پر بازده ترین";color: rgb(255, 247, 140); }
+}
+@-o-keyframes changeword {
+    25%{content: "بهترین";color: springgreen }
+    50%{content: "سریع ترین";color: rgb(0, 255, 234)}
+    75%{content: "به صرفه ترین";color: rgb(255, 152, 255); }
+    100%{content: "پر بازده ترین";color: rgb(255, 247, 140); }
+}
+@-moz-keyframes changeword {
+    25%{content: "بهترین";color: springgreen }
+    50%{content: "سریع ترین";color: rgb(0, 255, 234)}
+    75%{content: "به صرفه ترین";color: rgb(255, 152, 255); }
+    100%{content: "پر بازده ترین";color: rgb(255, 247, 140); }
+}
+@-webkit-keyframes changeword {
+    25%{content: "بهترین";color: springgreen }
+    50%{content: "سریع ترین";color: rgb(0, 255, 234)}
+    75%{content: "به صرفه ترین";color: rgb(255, 152, 255); }
+    100%{content: "پر بازده ترین";color: rgb(255, 247, 140); }
+}
+
+/* header typewriting cursur blinking anime */
+@keyframes blink {
+    50% {
+    border-color: transparent;
+    }
+}
+@-o-keyframes blink {
+    50% {
+    border-color: transparent;
+    }
+}
+@-moz-keyframes blink {
+    50% {
+    border-color: transparent;
+    }
+}
+@-webkit-keyframes blink {
+    50% {
+    border-color: tranparent;
+    }
+}
+
+/* glass type price table anime */
 @keyframes moves {
+    6% {
+        left: 100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@-o-keyframes moves {
+    6% {
+        left: 100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@-moz-keyframes moves {
     6% {
         left: 100%;
     }
@@ -283,6 +382,9 @@
         left: 100%;
     }
 }
+/*---===== end animation keyframes =====---*/
+
+/*---===== start media queries =====---*/
 @media only screen and (max-width: 500px) {
     #pricing-table th[scope="row"]{
         max-width: 130px;
@@ -310,3 +412,4 @@
         padding-bottom: 2.5rem !important;
     }
 }
+/*---===== end animation keyframes =====---*/
