@@ -18,20 +18,15 @@ START HERO AREA
                 <!-- start .container -->
                 <div class="container-fluid">
                     <!-- start row -->
-                    <div id="header-row" class="row" style="margin: auto">
+                    <div id="header-row" class="row">
                         <div class="col-lg-6">
                             <div class="hero__content__title">
                                 <h1>
-                                    <span class="bold">شاپی نت</span>
-                                    <br>
-                                    <span class="light typed-out">بهترین</span>
-{{--                                    <span class="light typed-out">سریع ترین</span>--}}
-{{--                                    <span class="light typed-out">به صرفه ترین</span>--}}
-{{--                                    <span class="light typed-out">پربازده ترین</span>--}}
-                                    <br>
-                                    <span class="bold">روش ساخت فروشگاه اینترنتی</span>
+                                    <span>شاپی نت</span>
+                                    <div><span class="typed-out"><span></span></span></div>
+                                    <span>روش ساخت فروشگاه اینترنتی</span>
                                 </h1>
-                                <p class="tagline"> یک قالب قدرتمند و قابل تنظیم برای محصولات خود </p>
+                                <p class="text-white p-2"> یک قالب قدرتمند و قابل تنظیم برای محصولات خود </p>
                             </div>
 
                             <!-- start .hero__btn-area-->
@@ -71,7 +66,7 @@ START HERO AREA
                         <h1>ساخت و آماده سازی وب سایت فروشگاهی شما
                             <span class="highlighted">تنها در سه مرحله</span>
                         </h1>
-                        <p>شاپی نت سریع ترین ، بصرفه ترین ، پر بازده ترین و مطمعن ترین روش ساخت وب سایت شماست  </p>
+                        <p>شاپی نت سریع ترین ، بصرفه ترین ، پر بازده ترین و مطمئن ترین روش ساخت وب سایت شماست  </p>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
