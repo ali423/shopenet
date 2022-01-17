@@ -396,57 +396,56 @@ START HERO AREA
             <!-- end /.row -->
 
             <!-- start row -->
-            <div class="row">
+            <div class="row rtl" >
                 <!-- start search-area -->
                 <div class="col-lg-4 col-md-6">
                     <div class="feature">
                         <div class="feature__img">
-                            <img src="images/new/feature1.png" alt="feature">
+                            <img src="images/new/icon/daneshbonyan2.png" height="150 px" alt="feature">
                         </div>
                         <div class="feature__title">
-                            <h3>اعتبار ما</h3>
+                            <h3>مجوز شرکت دانش بنیان</h3>
                         </div>
                         <div class="feature__desc">
-                            <p>شاپی نت یک شرکت رسمی ثبت شده با صدها کاربر راضی و پروژه فعال است.</p>
+                            <p> مجوز شرکت دانش بنیان از معاونت علمی و فناوری ریاست جمهوری</p>
                         </div>
                     </div>
                     <!-- end /.feature -->
                 </div>
                 <!-- end /.col-lg-4 col-md-6 -->
-
                 <!-- start search-area -->
                 <div class="col-lg-4 col-md-6">
                     <div class="feature">
                         <div class="feature__img">
-                            <img src="images/new/feature2.png" alt="feature">
+                            <img src="images/new/icon/eNamad.png" height="150 px" alt="feature">
                         </div>
                         <div class="feature__title">
                             <h3>نماد اعتماد الکترونیکی</h3>
                         </div>
                         <div class="feature__desc">
-                            <p>فروشگاه ساز شاپی نت دارای نماد اعتماد الکترونیکی </p>
+                            <p> نشان نماد اعتماد الکترونیکی</p>
+                        </div>
+                    </div>
+                    <!-- end /.feature -->
+                </div>
+                <!-- end /.col-lg-4 col-md-6 -->
+                <!-- start search-area -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature">
+                        <div class="feature__img">
+                            <img src="images/new/icon/validate.png" height="100 px" alt="feature">
+                        </div>
+                        <div class="feature__title">
+                            <h3>اعتبار ما</h3>
+                        </div>
+                        <div class="feature__desc">
+                            <p>شاپی نت یک شرکت رسمی ثبت شده با صدها کاربر و پروژه فعال است</p>
                         </div>
                     </div>
                     <!-- end /.feature -->
                 </div>
                 <!-- end /.col-lg-4 col-md-6 -->
 
-                <!-- start search-area -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="feature">
-                        <div class="feature__img">
-                            <img src="images/new/feature3.png" alt="feature">
-                        </div>
-                        <div class="feature__title">
-                            <h3>مجوز دانش بنیان</h3>
-                        </div>
-                        <div class="feature__desc">
-                            <p>فروشگاه ساز شاپی نت ، دارای نشان شرکت دانش بنیان از معاونت علمی ریاست جمهوری است.</p>
-                        </div>
-                    </div>
-                    <!-- end /.feature -->
-                </div>
-                <!-- end /.col-lg-4 col-md-6 -->
             </div>
             <!-- end /.row -->
         </div>
@@ -477,52 +476,54 @@ START HERO AREA
             <!-- end /.row -->
             <div class="row">
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">دامنه ملی ir</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">هاست رایگان</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">ssl رایگان</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">وبلاگ</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">کد تخفیف</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">درگاه بانکی</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">نماد اعتماد</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">جستجو و فیلتر</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
-                    <p class="mt-3">چت آنلاین</p>
-                </div>
-                <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <i class="fa fa-history text-danger shadow p-3"></i>
                     <p class="mt-3">پیگیری سفارشات</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <i class="fa fa-percent text-danger shadow p-3"></i>
+                    <p class="mt-3">کد تخفیف</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-truck text-danger shadow p-3"></i>
                     <p class="mt-3">روش و هزینه ارسال</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <i class="fa fa-bank text-danger shadow p-3"></i>
                     <p class="mt-3">محاسبه مالیات</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-search text-danger shadow p-3"></i>
+                    <p class="mt-3">جستجو و فیلتر</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-comments text-danger shadow p-3"></i>
+                    <p class="mt-3">چت آنلاین</p>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-picture-o text-danger shadow p-3"></i>
+                    <p class="mt-3">وبلاگ</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-credit-card text-danger shadow p-3"></i>
+                    <p class="mt-3">درگاه بانکی</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class=" text-danger shadow p-3"> <img src="images/new/icon/enamad2.png" width="70 px"></i>
+                    <p class="mt-3">نماد اعتماد</p>
+                </div>
+
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-line-chart text-danger shadow p-3"></i>
+                    <p class="mt-3">گزارش گیری</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <p class="mt-3">اتصال به اینستاگرام</p>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 text-center">
+                    <i class="fa fa-object-group text-danger shadow p-3"></i>
+                    <p class="mt-3">ویرایش قالب</p>
                 </div>
             </div>
         </div>
