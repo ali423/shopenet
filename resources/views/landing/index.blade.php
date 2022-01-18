@@ -92,7 +92,7 @@ START HERO AREA
                 <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
                     <div class="step_num">02</div>
                     <h2 class="overview-title">انتخاب طرح
-                         
+                         
                     </h2>
                     <p>پس از بررسی مشخصات و امکانات طرح های موجود ، طرح متناسب با نیاز خود را انتخاب کنید.</p>
                 </div>
@@ -115,7 +115,7 @@ START HERO AREA
                 <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
                     <div class="step_num">03</div>
                     <h2 class="overview-title">نهایی سازی سفارش
-                         
+                         
                     </h2>
                     <p>پس از تکمیل سفارش ، وب سایت فروشگاه شما وارد مرحله آماده سازی میشود، و در سریعترین زمان آماده راه اندازی خواهد بود.</p>
                 </div>
@@ -428,7 +428,7 @@ START HERO AREA
                 <div class="col-lg-4 col-md-6">
                     <div class="feature">
                         <div class="feature__img">
-                            <img src="images/new/icon/validate.png" height="100 px" alt="feature">
+                            <img src="images/new/icon/validate.png" height="150 px" alt="feature">
                         </div>
                         <div class="feature__title">
                             <h3>اعتبار ما</h3>
@@ -471,53 +471,54 @@ START HERO AREA
             <!-- end /.row -->
             <div class="row">
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-history text-danger shadow p-3"></i>
+                    <i class="fa fa-history shadow p-3" style="color: orange"></i>
                     <p class="mt-3">پیگیری سفارشات</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-percent text-danger shadow p-3"></i>
+                    <i class="fa fa-percent shadow p-3" style="color: rgb(44, 248, 204)"></i>
                     <p class="mt-3">کد تخفیف</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-truck text-danger shadow p-3"></i>
+                    <i class="fa fa-truck shadow p-3" style="color: rgb(248, 44, 44)"></i>
                     <p class="mt-3">روش و هزینه ارسال</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-bank text-danger shadow p-3"></i>
+                    <i class="fa fa-bank shadow p-3" style="color: rgb(195, 0, 255)"></i>
                     <p class="mt-3">محاسبه مالیات</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-search text-danger shadow p-3"></i>
+                    <i class="fa fa-search shadow p-3" style="color: rgb(0, 241, 149)"></i>
                     <p class="mt-3">جستجو و فیلتر</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-comments text-danger shadow p-3"></i>
+                    <i class="fa fa-comments shadow p-3" style="color: rgb(44, 217, 248)"></i>
                     <p class="mt-3">چت آنلاین</p>
                 </div>
 
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-picture-o text-danger shadow p-3"></i>
+                    <i class="fa fa-picture-o shadow p-3" style="color: rgb(83, 218, 188)"></i>
                     <p class="mt-3">وبلاگ</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-credit-card text-danger shadow p-3"></i>
+                    <i class="fa fa-credit-card shadow p-3" style="color: rgb(44, 248, 112)"></i>
                     <p class="mt-3">درگاه بانکی</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class=" text-danger shadow p-3"> <img src="images/new/icon/enamad2.png" width="70 px"></i>
+                    <i class="fa shadow p-3">
+                        <img src="images/new/icon/enamad2.png" width="41px">
+                    </i>
                     <p class="mt-3">نماد اعتماد</p>
                 </div>
-
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-line-chart text-danger shadow p-3"></i>
+                    <i class="fa fa-line-chart shadow p-3" style="color: rgb(189, 189, 189)"></i>
                     <p class="mt-3">گزارش گیری</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-instagram text-danger shadow p-3"></i>
+                    <i class="fa fa-instagram shadow p-3" style="color: rgb(250, 75, 148)"></i>
                     <p class="mt-3">اتصال به اینستاگرام</p>
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
-                    <i class="fa fa-object-group text-danger shadow p-3"></i>
+                    <i class="fa fa-object-group shadow p-3" style="color: rgb(248, 44, 44)"></i>
                     <p class="mt-3">ویرایش قالب</p>
                 </div>
             </div>
@@ -804,4 +805,3 @@ START HERO AREA
 
 
 @endsection
-
