@@ -8504,7 +8504,7 @@ span.counter {
 }
 
 .footer-big p, .footer-big ul li, .footer-big .footer-menu ul li a {
-  color: #ababab;
+  color: rgb(0, 86, 121);
 }
 
 .info-contact {
@@ -8522,7 +8522,7 @@ span.counter {
 }
 
 .info-contact li .info-icon {
-  color: #fff;
+  color: rgb(0, 86, 121);
 }
 
 .info-contact li .info {
@@ -8553,7 +8553,7 @@ span.counter {
 }
 
 .footer-menu ul li a:hover {
-  color: #fff;
+  color: #000;
 }
 
 .footer-widget-title {
