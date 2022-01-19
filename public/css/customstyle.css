@@ -390,6 +390,11 @@
         max-width: 130px;
     }
 }
+@media (min-width: 991px) and (max-width: 1200px) {
+    .feature2{
+        height: 470px;
+    }
+}
 @media only screen and (max-width: 990px) {
     [data-col="1"],[ data-col="3"]{
         display: none;
@@ -410,6 +415,11 @@
     .gold-head{
         padding-top: 2.5rem !important;
         padding-bottom: 2.5rem !important;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .feature2{
+        height: 415px;
     }
 }
 /*---===== end animation keyframes =====---*/

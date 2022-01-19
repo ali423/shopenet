@@ -55,46 +55,34 @@ START FOOTER AREA
                         </ul>
                     </div>
                     <!-- end /.footer-menu -->
-
-                    <div class="footer-menu">
-                        <h4 class="footer-widget-title text--white">سوالات متداول</h4>
-                        <ul>
-                            <li>
-                                <a href="#">چگونه با ما بپیوندید</a>
-                            </li>
-                            <li>
-                                <a href="#">چطور کار میکند</a>
-                            </li>
-                            <li>
-                                <a href="#">خرید و فروش</a>
-                            </li>
-                            <li>
-                                <a href="#">مشتریان</a>
-                            </li>
-
-                            <li>
-                                <a href="#">سیاست بازپرداخت</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <!-- end /.footer-menu -->
                 </div>
                 <!-- end /.col-md-5 -->
 
                 <div class="col-lg-4 col-md-12">
-                    <div class="newsletter">
-                        <h4 class="footer-widget-title text--white">خبر نامه</h4>
-                        <p>مشترک شدن برای دریافت آخرین اخبار، به روز رسانی و ارائه اطلاعات. نگران نباشید، ما هرزنامه ارسال نخواهیم کرد</p>
-                        <div class="newsletter__form">
-                            <form action="#">
-                                <div class="field-wrapper">
-                                    <input class="relative-field rounded" type="text" placeholder="ایمیل را وارد کنید ">
-                                    <button class="btn btn--round" type="submit">ارسال</button>
-                                </div>
-                            </form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="images/new/icon/enamad2.png" class="p-2" width="360px">
                         </div>
-
+                        <div class="col-md-6">
+                            <img src="images/new/icon/daneshbonyan2.png" class="p-2" width="360px">
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/new/icon/elmi-fanavari.png" class="p-2" width="360px">
+                        </div>
+                    </div>
+                </div>
+                <!-- end /.col-md-4 -->
+            </div>
+            <!-- end /.row -->
+        </div>
+        <!-- end /.container -->
+    </div>
+    <!-- end /.footer-big -->
+    <div class="mini-footer pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="newsletter m-auto">
                         <!-- start .social -->
                         <div class="social social--color--filled">
                             <ul>
@@ -132,24 +120,18 @@ START FOOTER AREA
                         </div>
                         <!-- end /.social -->
                     </div>
-                    <!-- end /.newsletter -->
                 </div>
-                <!-- end /.col-md-4 -->
             </div>
-            <!-- end /.row -->
         </div>
-        <!-- end /.container -->
     </div>
-    <!-- end /.footer-big -->
-
     <div class="mini-footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="copyright-text">
                         <p>
-                            <a href="#"></a>کپی رایت &copy; 2019. تمام حقوق برای طراح محفوظ است
-                            <a target="_blank" href="http://damandarya.ir">دامن دریا </a>
+                            <a href="#"></a>کپی رایت &copy; 2022 - تمام حقوق برای شاپی نت محفوظ است
+                            <a target="_blank" href="http://damandarya.ir">SHOPENET</a>
                         </p>
                     </div>
 
