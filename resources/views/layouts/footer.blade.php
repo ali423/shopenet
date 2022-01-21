@@ -2,7 +2,7 @@
 START FOOTER AREA
 =================================-->
 <footer class="footer-area dir-rtl">
-    <div class="footer-big section--padding">
+    <div class="footer-big">
         <!-- start .container -->
         <div class="container">
             <div class="row">
@@ -31,9 +31,9 @@ START FOOTER AREA
                 </div>
                 <!-- end /.col-md-3 -->
 
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-4 col-md-6">
                     <div class="footer-menu">
-                        <h4 class="footer-widget-title text--white">شرکت ما</h4>
+                        <h4 class="footer-widget-title">شرکت ما</h4>
                         <ul>
                             <li>
                                 <a href="#">چگونه با ما بپیوندید</a>
@@ -58,16 +58,16 @@ START FOOTER AREA
                 </div>
                 <!-- end /.col-md-5 -->
 
-                <div class="col-lg-4 col-md-12">
+                <div class="col-lg-5 col-md-12">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-4 text-center">
                             <img src="images/new/icon/enamad2.png" class="p-2" width="360px">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4 text-center">
                             <img src="images/new/icon/daneshbonyan2.png" class="p-2" width="360px">
                         </div>
-                        <div class="col-md-6">
-                            <img src="images/new/icon/elmi-fanavari.png" class="p-2" width="360px">
+                        <div class="col-md-4 text-center">
+                            <img src="images/new/icon/elmi-fanavari2.png" class="p-2" width="360px">
                         </div>
                     </div>
                 </div>
