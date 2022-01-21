@@ -37,6 +37,14 @@ Route::resource('template', TemplateController::class)->only('show');
 
 Route::get('factor/payment-callback', [PaymentController::class, 'paymentCallBack'])->name('payment.callback');
 
+Route::get('/template-custom', [TemplateController::class, 'customTemplate'])->name('template.custom');
+
+Route::post('/template-custom', [TemplateController::class, 'orderTemplate'])->name('order.template');
+
+Route::resource('plan', PlanController::class)->only('index');
+
+Route::get('/contactus', [LandingController::class, 'contactus'])->name('contactus');
+
 
 Route::middleware('user.auth')->group(function () {
 
@@ -64,7 +72,6 @@ Route::middleware('user.auth')->group(function () {
 
     Route::post('factor/cancel/{factor:id}', [FactorController::class, 'cancel'])->name('factor.cancel');
 
-    Route::resource('plan', PlanController::class)->only('index');
 
     Route::resource('factor', FactorController::class);
 
@@ -77,6 +84,7 @@ Route::middleware('user.auth')->group(function () {
     Route::get('payment/success/{factor:id}',[PaymentController::class,'success'])->name('payment.success');
 
     Route::get('payment/reject/{factor:id}',[PaymentController::class,'reject'])->name('payment.reject');
+
 });
 
 Route::middleware('user_guest')->group(function () {

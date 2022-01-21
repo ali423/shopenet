@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\EditTemplateRequest;
+use App\Http\Requests\OrderTemplateRequest;
 use App\Http\Requests\TemplateRequest;
 use App\Models\KeyWord;
+use App\Models\OrderTemplate;
 use App\Models\Template;
 use App\Models\TemplateOption;
 use Illuminate\Http\Request;
@@ -96,7 +98,7 @@ class TemplateController extends Controller
     {
         return view('templates.single', [
             'template' => $template,
-            'templates'=>Template::query()->where('status','active')->get(),
+            'templates' => Template::query()->where('status', 'active')->get(),
         ]);
     }
 
@@ -216,8 +218,27 @@ class TemplateController extends Controller
     public function list()
     {
         $templates = Template::query()->where('status', 'active')->orderBy('sort', 'DESC')->get();
-        return view('templates.list',[
-           'templates'=>$templates,
+        return view('templates.list', [
+            'templates' => $templates,
         ]);
+    }
+
+    public function customTemplate()
+    {
+        return view('templates.custom');
+    }
+
+    public function orderTemplate(OrderTemplateRequest $request)
+    {
+        OrderTemplate::query()->create([
+            'name' => $request->get('name'),
+            'mobile' => $request->get('mobile'),
+            'email' => $request->get('email'),
+            'market' => $request->get('market'),
+            'sample' => $request->get('sample'),
+            'title' => $request->get('title'),
+            'description' => $request->get('description'),
+        ]);
+        return redirect(route('home'))->with('successful', 'درخواست شما ثبت و در اسرع وقت انجام خواهد شد .');
     }
 }
