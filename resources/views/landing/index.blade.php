@@ -26,13 +26,13 @@ START HERO AREA
                                     <div><span class="typed-out"><span></span></span></div>
                                     <span>روش ساخت فروشگاه اینترنتی</span>
                                 </h1>
-                                <p class="text-white p-2"> یک قالب قدرتمند و قابل تنظیم برای محصولات خود </p>
+                                <p class="text-white p-2">لذت یک تجربه عالی از فروش دیجیتال</p>
                             </div>
 
                             <!-- start .hero__btn-area-->
                             <div class="hero__btn-area">
-                                <a href="all-products.html" class="btn btn--round btn--lg">مشاهده تمام محصولات</a>
-                                <a href="all-products.html" class="btn btn--round btn--lg">محصولات محبوب</a>
+                                <a href="/templates/list" class="btn btn--round btn--lg">ساخت فروشگاه اینترنتی</a>
+                                <a href="all-products.html" class="btn btn--round btn--lg">14 روز تست رایگان</a>
                             </div>
                             <!-- end .hero__btn-area-->
                         </div>
@@ -64,9 +64,9 @@ START HERO AREA
                 <div class="col-md-12">
                     <div class="section-title">
                         <h1>ساخت و آماده سازی وب سایت فروشگاهی شما
-                            <span class="highlighted">تنها در سه مرحله</span>
+                            <span class="highlighted"> در سه مرحله</span>
                         </h1>
-                        <p>شاپی نت سریع ترین ، بصرفه ترین ، پر بازده ترین و مطمئن ترین روش ساخت وب سایت شماست  </p>
+                        <p>شاپی نت سریع ترین ، بصرفه ترین ، پر بازده ترین و مطمئن ترین روش ساخت وب سایت فروشگاهی</p>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -91,10 +91,10 @@ START HERO AREA
 
                 <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
                     <div class="step_num">02</div>
-                    <h2 class="overview-title">انتخاب طرح
-                         
+                    <h2 class="overview-title">انتخاب پلن
+
                     </h2>
-                    <p>پس از بررسی مشخصات و امکانات طرح های موجود ، طرح متناسب با نیاز خود را انتخاب کنید.</p>
+                    <p>پس از بررسی مشخصات و امکانات طرح های موجود ، پلن متناسب با نیاز خود را انتخاب کنید.</p>
                 </div>
                 <!-- end /.col-md-5 -->
 
@@ -115,9 +115,9 @@ START HERO AREA
                 <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
                     <div class="step_num">03</div>
                     <h2 class="overview-title">نهایی سازی سفارش
-                         
+
                     </h2>
-                    <p>پس از تکمیل سفارش ، وب سایت فروشگاه شما وارد مرحله آماده سازی میشود، و در سریعترین زمان آماده راه اندازی خواهد بود.</p>
+                    <p>پس از تکمیل سفارش ، وب سایت فروشگاه شما وارد مرحله آماده سازی میشود، و در سریعترین زمان در اختیار شما قرار خواهد گرفت.</p>
                 </div>
                 <!-- end /.col-md-5 -->
 
@@ -190,11 +190,11 @@ START HERO AREA
             <div class="row">
                 <div class="col-md-12">
                     <div class="call-to-wrap">
-                        <h1 class="text--white">قالب اختصاصی خود را ایجاد کنید</h1>
+                        <h1 class="text--white">درخواست قالب جدید</h1>
                         <h4 class="text--white">اگر از میان قالب های موجود ، قالب مناسب کسب و کار خود را پیدا نکردید ،
                             نگران نباشید .
-                            ما قالب اختصاصی برای استفاده شما ایجلد میکنیم </h4>
-                        <a href="#" class="btn btn--lg btn--round btn--white callto-action-btn">سفارش قالب اختصاصی</a>
+                            ما در سریع ترین زمان قالب مناسب کسب و کار شما را اضافه میکنیم.</h4>
+                        <a href="{{route('template.custom')}}" class="btn btn--lg btn--round btn--white callto-action-btn">درخواست قالب جدید</a>
                     </div>
                 </div>
             </div>

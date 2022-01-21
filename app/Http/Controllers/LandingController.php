@@ -19,6 +19,10 @@ class LandingController extends Controller
         ]);
     }
 
+    public function contactus(){
+        return view('landing.contactus');
+    }
+
     /**
      * Show the form for creating a new resource.
      *
