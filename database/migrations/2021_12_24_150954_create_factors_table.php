@@ -19,6 +19,7 @@ class CreateFactorsTable extends Migration
             $table->foreignId('user_id')->constrained();
             $table->foreignId('template_id')->constrained();
             $table->foreignId('service_id')->nullable()->constrained();
+            $table->foreignId('discount_id')->nullable()->constrained();
             $table->bigInteger('extension_service_id')->nullable();
             $table->string('plan')->nullable();
             $table->string('about')->nullable();

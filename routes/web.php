@@ -29,6 +29,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', [LandingController::class, 'index'])->name('home');
 
 Route::get('/templates/list', [TemplateController::class, 'list'])->name('template.list');
@@ -85,6 +86,8 @@ Route::middleware('user.auth')->group(function () {
 
     Route::get('payment/reject/{factor:id}',[PaymentController::class,'reject'])->name('payment.reject');
 
+    Route::post('/check-discount',[\App\Http\Controllers\DiscountController::class,'checkDiscount'])->name('payment.reject');
+
 });
 
 Route::middleware('user_guest')->group(function () {
@@ -109,6 +112,7 @@ Route::prefix('admin')->group(function () {
             Route::get('/', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
             Route::resource('template', TemplateController::class);
             Route::resource('template-category', TemplateCategoryController::class);
+            Route::resource('discount', DiscountController::class);
         });
     });
 

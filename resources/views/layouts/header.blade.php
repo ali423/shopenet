@@ -34,7 +34,9 @@ START MENU AREA
                 <div class="col-md-12">
                     <div class="navbar-header">
                         <!-- start mainmenu__search -->
-
+                        <div class="mainmenu__search">
+                                        <img src="{{asset('images/logo/combine.png')}}" height="50 px" alt="footer logo">
+                        </div>
                         @if(!auth()->check())
                             <div class="mainmenu__search">
                                 <div class="searc-wrap">
