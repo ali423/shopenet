@@ -32,6 +32,7 @@
                                         <th>id</th>
                                         <th>عنوان</th>
                                         <th>کد</th>
+                                        <th>درصد</th>
                                         <th>تعداد باقی مانده</th>
                                         <th>تاریخ انقضا</th>
                                         <th>پلن های قابل انتخاب</th>
@@ -43,6 +44,7 @@
                                             <td>{{$discount->id}}</td>
                                             <td>{{$discount->title}}</td>
                                             <td>{{$discount->code}}</td>
+                                            <td>{{$discount->percent}}</td>
                                             <td>{{$discount->number}}</td>
                                             <td>{{$discount->expired_at}}</td>
                                             <td>
@@ -82,17 +84,22 @@
                             <form method="post" action="{{route('discount.store')}}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-row">
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label for="title" class="col-form-label">عنوان کد</label>
                                         <input type="text" name="title" class="form-control" id="title"
                                                placeholder="عنوان " required>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
+                                        <label for="percent" class="col-form-label">درصد</label>
+                                        <input type="number" name="percent" class="form-control" id="percent"
+                                               placeholder="درصد " min="1" max="100"  required>
+                                    </div>
+                                    <div class="form-group col-md-3">
                                         <label for="code" class="col-form-label">کد</label>
                                         <input type="text" name="code" class="form-control" id="code" placeholder="کد"
                                                required>
                                     </div>
-                                    <div class="form-group col-md-4">
+                                    <div class="form-group col-md-3">
                                         <label for="number" class="col-form-label">تعداد</label>
                                         <input type="number" name="number" class="form-control" id="number"
                                                placeholder="تعداد">
@@ -112,8 +119,8 @@
                                     </div>
                                     <div class="form-group col-md-6">
                                     <div class="form-group mb-3">
-                                        <label>تقویم</label>
-                                        <input type="text" name="expired_at"  class="form-control usage" >
+                                        <label>تاریخ انتقضا</label>
+                                        <input type="text" name="expired_at"  class="form-control usage" autocomplete="off" >
                                     </div>
                                     </div>
                                 </div>

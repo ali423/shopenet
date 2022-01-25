@@ -4,6 +4,7 @@
 use App\Http\Controllers\admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\admin\RegisterController as AdminRegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\FactorController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;

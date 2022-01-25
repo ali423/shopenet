@@ -93,11 +93,11 @@
 
                     <div class="pricing_info">
 {{--                        <p>تخفیف : 0 تومان </p>--}}
-{{--                        <p class="bold">مجموع : 30 تومان</p>--}}
-                        <p class="bold">مجموع : {{$factor->amount}} تومان </p>
-                        @if($factor->status=='awaiting_payment')
-                            <form action="{{ route('factor.pay',$factor) }}" class="setting_form d-inline" method="POST">
-                                @csrf
+{{--                        <del><p class="bold" id="old_amount">مجموع : {{$factor->amount}} تومان </p></del>--}}
+                        <p class="bold" id="amount">مجموع : {{$factor->amount}} تومان </p>
+                        <del><p class="bold" id="old_amount"></p></del>
+                        <p class="bold" id="new_amount"></p>
+                    @if($factor->status=='awaiting_payment')
                             <div class="col-lg-8">
                                 <div class="cardify faq_module">
                             <div class="faqs">
@@ -132,6 +132,9 @@
                             </div>
 
                     </div>
+                    <form action="{{ route('factor.pay',$factor) }}" class="setting_form d-inline" method="POST">
+                        @csrf
+                        <input name="discount_code" id="discount_code" type="text" value="" class="d-none">
                         <button type="submit" class="btn btn--round btn--default ">پرداخت</button>
                     </form>
                     <form action="{{ route('factor.cancel',$factor) }}" class="setting_form d-inline" method="POST">
@@ -159,6 +162,7 @@
         $('#discount_btn').on('click', function () {
             var token = $("input[name='_token']").val();
             var discount =  $('#discount').val();
+            var factor = {{$factor->id}};
             $.ajax({
                 url: "/check-discount",
                 type: "POST",
@@ -166,11 +170,20 @@
                 data: {
                     "_token": token,
                     "discount": discount,
+                    'factor': factor,
                 },
                 success: function (result) {
                     if (result['success'] == false){
+                        $('#discount_code').attr('value','');
+                        $('#amount').removeClass('d-none');
+                        $('#old_amount').text('');
+                        $('#new_amount').text('');
                         $('#discount_res').html(result['message']).removeClass('text-success').addClass('text-danger')
                     }else {
+                        $('#discount_code').attr('value',discount);
+                        $('#amount').addClass('d-none');
+                        $('#old_amount').text('مجموع: '+result['old_amount']+' تومان ');
+                        $('#new_amount').text('قابل پرداخت: '+result['new_amount']+' تومان ');
                         $('#discount_res').html(result['message']).removeClass('text-danger').addClass('text-success')
                     }
                 },

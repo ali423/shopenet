@@ -22,17 +22,22 @@
                             @csrf
                             @method('PATCH')
                             <div class="form-row">
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-3">
                                     <label for="title" class="col-form-label">عنوان کد</label>
                                     <input type="text" name="title" class="form-control" id="title"
                                            placeholder="عنوان " value="{{$discount->title}}" required>
                                 </div>
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-3">
+                                    <label for="percent" class="col-form-label">درصد</label>
+                                    <input type="number" name="percent" class="form-control" id="percent"
+                                           placeholder="درصد " min="1" max="100" required>
+                                </div>
+                                <div class="form-group col-md-3">
                                     <label for="code" class="col-form-label">کد</label>
                                     <input type="text" name="code" class="form-control" value="{{$discount->code}}" id="code" placeholder="کد"
                                            required>
                                 </div>
-                                <div class="form-group col-md-4">
+                                <div class="form-group col-md-3">
                                     <label for="number" class="col-form-label">تعداد</label>
                                     <input type="number" name="number" value="{{$discount->number}}" class="form-control" id="number"
                                            placeholder="تعداد">
@@ -52,8 +57,8 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <div class="form-group mb-3">
-                                        <label>تقویم</label>
-                                        <input type="text" name="expired_at" value="{{$discount->expired_at}}"  class="form-control usage" >
+                                        <label>تاریخ انتقضا</label>
+                                        <input type="text" name="expired_at" value="{{$discount->expired_at}}" autocomplete="off"  class="form-control usage" >
                                     </div>
                                 </div>
                             </div>

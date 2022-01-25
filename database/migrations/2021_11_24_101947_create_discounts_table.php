@@ -17,9 +17,10 @@ class CreateDiscountsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('code')->unique();
-            $table->string('number')->nullable();
+            $table->double('percent');
+            $table->integer('number')->default('999999');
             $table->date('expired_at');
-            $table->string('plan')->nullable();
+            $table->string('plan')->default('a,b,c');
             $table->timestamps();
         });
     }
