@@ -68,7 +68,6 @@
                     <div class="row">
                         <div class="col-md-12 text-center">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12562.493597344903!2d46.2481075!3d38.0791508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe81ab80a63dc486f!2z2LTYsdqp2Kog2K_aqdin2KraqQ!5e0!3m2!1sfa!2s!4v1642775072899!5m2!1sfa!2s" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-{{--                            <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%D9%BE%D8%B1%D8%AF%DB%8C%D8%B3%20%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87%20%D8%B4%D9%87%DB%8C%D8%AF%20%D9%85%D8%AF%D9%86%DB%8C%20&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org">123movies</a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}</style><a href="https://www.embedgooglemap.net">google map html</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}</style></div></div>                <!-- end .col-md-6 -->--}}
                         </div>
                     </div>
                     <!-- end .row -->

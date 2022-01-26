@@ -103,11 +103,14 @@ class PaymentController extends Controller
         if (!$factor_callback->exists()) {
             return redirect(route('home'))->withErrors('پرداخت موفقیت آمیز نبود ، در صورت کسر وجه ، حداکثر پس از 72 ساعت به حساب شما عودت خواهد شد ');
         }
+
         $factor_callback = $factor_callback->first();
         if ($request->get('status') != 10) {
             $factor_callback->update([
                 'payment_status' => $request->get('status'),
                 'idpay_track_id' => $request->get('track_id'),
+                'discount_id'=>null,
+
             ]);
             return redirect(route('payment.reject', $factor_callback));
         }
@@ -123,13 +126,14 @@ class PaymentController extends Controller
             ]);
             $status = $response_json->status();
             $response = json_decode($response_json, true);
+
             if ($status != '200') {
                 return redirect(route('payment.reject', $factor_callback));
             }
 
             DB::transaction(function () use ($request, $response, $factor_callback
             ) {
-                $factor = Factor::query()->where('payment_id', $response['id'])->where('number', $response['order_id'])->where('amount', $response['amount'] / 10)->first();
+                $factor = Factor::query()->where('payment_id', $response['id'])->where('number', $response['order_id'])->first();
                 if ($factor_callback->id != $factor->id) {
                     return redirect(route('home'))->withErrors('پرداخت موفقیت آمیز نبود ، در صورت کسر وجه ، حداکثر پس از 72 ساعت به حساب شما عودت خواهد شد ');
                 }
@@ -149,6 +153,7 @@ class PaymentController extends Controller
                     'error_message' => $response['error_message'] ?? null,
                     'error_code' => $response['error_code'] ?? null,
                 ]);
+
                 if ($response['status'] == 100) {
                     $plan = $this->getPlanData($factor->plan);
                     if (isset($factor->extension_service_id)){
@@ -173,16 +178,25 @@ class PaymentController extends Controller
                         'payment_status' => $response['status'] ?? null,
                         'idpay_track_id' => $response['track_id'] ?? null,
                         'service_id' => $service->id,
+                        'amount'=>$response['payment']['amount'],
                     ]);
 
+                }else{
+                    $factor->update([
+                        'discount_id'=>null,
+                    ]);
                 }
 
             });
             if ($response['status'] == 100) {
+
                 return redirect(route('payment.success', $factor_callback));
             }
             return redirect(route('payment.reject', $factor_callback));
         } catch (\Exception $e) {
+            $factor_callback->update([
+                'discount_id'=>null,
+            ]);
             $data = (object)array();
             $data->withdrawError = ($e->getMessage());
             return redirect(route('payment.reject', $factor_callback));

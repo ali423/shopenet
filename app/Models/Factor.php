@@ -22,6 +22,10 @@ class Factor extends Model
     {
         return $this->belongsTo(Service::class,'service_id');
     }
+    public function discount()
+    {
+        return $this->belongsTo(Discount::class,'discount_id');
+    }
     public function payment()
     {
         return $this->hasOne(Payment::class);

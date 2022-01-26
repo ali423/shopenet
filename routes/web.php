@@ -4,6 +4,7 @@
 use App\Http\Controllers\admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\admin\RegisterController as AdminRegisterController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\FactorController;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LoginController;
@@ -28,6 +29,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 
 Route::get('/', [LandingController::class, 'index'])->name('home');
 
@@ -85,6 +87,8 @@ Route::middleware('user.auth')->group(function () {
 
     Route::get('payment/reject/{factor:id}',[PaymentController::class,'reject'])->name('payment.reject');
 
+    Route::post('/check-discount',[\App\Http\Controllers\DiscountController::class,'checkDiscount']);
+
 });
 
 Route::middleware('user_guest')->group(function () {
@@ -109,6 +113,7 @@ Route::prefix('admin')->group(function () {
             Route::get('/', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
             Route::resource('template', TemplateController::class);
             Route::resource('template-category', TemplateCategoryController::class);
+            Route::resource('discount', DiscountController::class);
         });
     });
 

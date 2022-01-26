@@ -301,6 +301,17 @@
                     <li>
                         <a href="javascript: void(0);">
                             <i class="mdi mdi-pac-man"></i>
+                            <span> کد تخفیف </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="{{ route('discount.index') }}">لیست کد ها</a></li>
+                            <li><a href="{{ route('discount.index') }}?q=add">افزودن کد جدید</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="mdi mdi-pac-man"></i>
                             <span> پلن ها </span>
                             <span class="menu-arrow"></span>
                         </a>

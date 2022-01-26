@@ -22,7 +22,7 @@ START HERO AREA
                         <div class="col-lg-6">
                             <div class="hero__content__title">
                                 <h1>
-                                    <span>شاپی نت</span>
+                                    <img src="images/logo/blacklogo.png" height="50 px" alt="footer logo"><span>شاپی نت</span>
                                     <div><span class="typed-out"><span></span></span></div>
                                     <span>روش ساخت فروشگاه اینترنتی</span>
                                 </h1>
@@ -31,7 +31,7 @@ START HERO AREA
 
                             <!-- start .hero__btn-area-->
                             <div class="hero__btn-area">
-                                <a href="/templates/list" class="btn btn--round btn--lg">ساخت فروشگاه اینترنتی</a>
+                                <a href="/templates/list" class="btn btn--round btn--lg">ساخت فروشگاه</a>
                                 <a href="all-products.html" class="btn btn--round btn--lg">14 روز تست رایگان</a>
                             </div>
                             <!-- end .hero__btn-area-->
@@ -584,61 +584,6 @@ START HERO AREA
 
 
     <!--================================
-        START SELL BUY
-    =================================-->
-    <section class="proposal-area dir-rtl">
-
-        <!-- start container-fluid -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6 no-padding">
-                    <div class="proposal proposal--left bgimage">
-                        <div class="bg_image_holder">
-                            <img src="images/new/bbg.png" alt="prop image">
-                        </div>
-                        <div class="content_above">
-                            <div class="proposal__icon ">
-                                <img src="images/new/buy.png" alt="Buy icon">
-                            </div>
-                            <div class="proposal__content ">
-                                <h1 class="text--white">فروش محصولات شما</h1>
-                                <p class="text--white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                    استفاده از طراحان گرافیک است. </p>
-                            </div>
-                            <a href="#" class="btn--round btn btn--lg btn--white">تبدیل شدن به فروشنده </a>
-                        </div>
-                    </div>
-                    <!-- end /.proposal -->
-                </div>
-
-                <div class="col-md-6 no-padding">
-                    <div class="proposal proposal--right">
-                        <div class="bg_image_holder">
-                            <img src="images/new/sbg.png" alt="this is magic">
-                        </div>
-                        <div class="content_above">
-                            <div class="proposal__icon">
-                                <img src="images/new/sell.png" alt="Sell icon">
-                            </div>
-                            <div class="proposal__content ">
-                                <h1 class="text--white">شروع به خرید امروز</h1>
-                                <p class="text--white">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                                    استفاده از طراحان گرافیک است. </p>
-                            </div>
-                            <a href="#" class="btn--round btn btn--lg btn--white">شروع خرید </a>
-                        </div>
-                    </div>
-                    <!-- end /.proposal -->
-                </div>
-            </div>
-        </div>
-        <!-- start container-fluid -->
-    </section>
-    <!--================================
-        END SELL BUY
-    =================================-->
-
-    <!--================================
         START TESTIMONIAL
     =================================-->
     <section class="testimonial-area section--padding ">
@@ -767,40 +712,6 @@ START HERO AREA
         END TESTIMONIAL
     =================================-->
 
-    <!--================================
-    START SPECIAL FEATURES AREA
-    =================================-->
-    <section class="special-feature-area dir-rtl">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="special-feature feature--1">
-                        <img src="images/new/spf1.png" alt="Special Feature image">
-                        <h3 class="special__feature-title">30 روز
-                            <span class="highlight">گارانتی</span>
-                            برگشت پول
-                        </h3>
-                    </div>
-                </div>
-                <!-- end /.col-md-6 -->
-                <div class="col-md-6">
-                    <div class="special-feature feature--2">
-                        <img src="images/new/spf2.png" alt="Special Feature image">
-                        <h3 class="special__feature-title">
-                            <span class="highlight">پشتیبانی</span>
-                            سریع
-                        </h3>
-                    </div>
-                </div>
-                <!-- end /.col-md-6 -->
-            </div>
-            <!-- end /.row -->
-        </div>
-        <!-- end /.container -->
-    </section>
-    <!--================================
-    END SPECIAL FEATURES AREA
-    =================================-->
 
 
 

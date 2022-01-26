@@ -9,21 +9,21 @@ START FOOTER AREA
                 <div class="col-lg-3 col-md-6">
                     <div class="info-footer">
                         <div class="info__logo">
-                            <img src="images/new/flogo.png" alt="footer logo">
+                            <img src="images/logo/combine.png" height="70 px" alt="footer logo">
                         </div>
                         <p class="info--text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
                         <ul class="info-contact">
                             <li>
                                 <span class="lnr lnr-phone info-icon"></span>
-                                <span class="info">تلفن :324-34-32-98901+</span>
+                                <span class="info">تلفن :34406859 041</span>
                             </li>
                             <li>
                                 <span class="lnr lnr-envelope info-icon"></span>
-                                <span class="info dir-rtl">amir.d79@yahoo.com</span>
+                                <span class="info dir-rtl">info@shopenet.ir</span>
                             </li>
                             <li>
                                 <span class="lnr lnr-map-marker info-icon"></span>
-                                <span class="info">ایران ،یزد ،اکرم آباد </span>
+                                <span class="info">تبریز ، خیابان ورزش </span>
                             </li>
                         </ul>
                     </div>
@@ -33,23 +33,21 @@ START FOOTER AREA
 
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-menu">
-                        <h4 class="footer-widget-title">شرکت ما</h4>
                         <ul>
-                            <li>
-                                <a href="#">چگونه با ما بپیوندید</a>
+                            <li class="has_dropdown">
+                                <a href="{{route('home')}}">خانه </a>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="/templates/list">قالب ها</a>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="{{route('plan.index')}}">قیمت گذاری</a>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="{{route('template.custom')}}">درخواست قالب جدید</a>
                             </li>
                             <li>
-                                <a href="#">چطور کار میکند</a>
-                            </li>
-                            <li>
-                                <a href="#">خرید و فروش</a>
-                            </li>
-                            <li>
-                                <a href="#">مشتریان</a>
-                            </li>
-
-                            <li>
-                                <a href="#">سیاست بازپرداخت</a>
+                                <a href="{{route('contactus')}}">تماس با ما</a>
                             </li>
 
                         </ul>
@@ -61,13 +59,17 @@ START FOOTER AREA
                 <div class="col-lg-5 col-md-12">
                     <div class="row">
                         <div class="col-md-4 text-center">
-                            <img src="images/new/icon/enamad2.png" class="p-2" width="360px">
+                            <img src="{{asset('images/new/icon/enamad2.png')}}" class="p-2" width="360px">
                         </div>
+                            <div class="col-md-4 text-center">
+                                <a href="https://daneshbonyan.isti.ir/">
+                                <img src="{{asset('images/new/icon/daneshbonyan2.png')}}" class="p-2" width="360px">
+                                </a>
+                            </div>
                         <div class="col-md-4 text-center">
-                            <img src="images/new/icon/daneshbonyan2.png" class="p-2" width="360px">
-                        </div>
-                        <div class="col-md-4 text-center">
-                            <img src="images/new/icon/elmi-fanavari2.png" class="p-2" width="360px">
+                            <a href="https://www.eastp.ir/">
+                            <img src="{{ asset('images/new/icon/park.png') }}" class="p-2" width="360px">
+                            </a>
                         </div>
                     </div>
                 </div>
