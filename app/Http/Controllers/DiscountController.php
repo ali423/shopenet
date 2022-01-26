@@ -135,6 +135,7 @@ class DiscountController extends Controller
 
     public function checkDiscount(Request $request)
     {
+
         $discount = Discount::query()->where('code', $request->get('discount'));
         $factor = Factor::query()->where('id', $request->get('factor'));
         if (!$discount->exists() || !$factor->exists()) {
@@ -180,12 +181,12 @@ class DiscountController extends Controller
                 'message' => 'کد تخفیف منقضی شده است'
             ];
         }
-        if (auth()->user()->factors()->where('discount_id',$discount->id)->exists()){
-            return [
-                'success' => false,
-                'message' => 'شما قبلا از این کد استفاده کرده اید.'
-            ];
-        }
+//        if (auth()->user()->factors()->where('discount_id',$discount->id)->exists()){
+//            return [
+//                'success' => false,
+//                'message' => 'شما قبلا از این کد استفاده کرده اید.'
+//            ];
+//        }
         $new_amount =round($factor->amount - (($factor->amount * $discount->percent)/100),2);
         return [
             'success' => true,

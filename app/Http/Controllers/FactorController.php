@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Discount;
 use App\Models\Factor;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -91,13 +92,32 @@ class FactorController extends Controller
         //
     }
 
-    public function pay(Factor $factor)
+    public function pay(Factor $factor,Request $request)
     {
+        $discount_code=$request->get('discount_code');
+        if (isset($discount_code) && $discount_code != null){
+            $discount = Discount::query()->where('code', $discount_code);
+            if (!$discount->exists()) {
+                return redirect()->back()->withErrors('کد تخفیف موجود نیست');
+            }
+
+            $discount_controller=new DiscountController();
+            $res=$discount_controller->DiscountApply($discount->first(),$factor);
+            if (!$res['success'] == true){
+                return redirect()->back()->withErrors($res['message']);
+            }
+            $discount_check=true;
+            $amount=$res['new_amount']*10;
+
+        }else{
+            $discount_check=false;
+            $amount=$factor->amount*10;
+        }
         if ($factor->user_id != auth()->user()->id) {
-            return $this->sendError('شما این دسترسی را ندارید');
+            return redirect()->back()->withErrors('شما این دسترسی را ندارید');
         }
         if ($factor->status != 'awaiting_payment') {
-            return $this->sendError('فاکتور قابل پرداخت نیست');
+            return redirect()->back()->withErrors('این الکتور قابل پرداخت نیست ');
         }
 
         try {
@@ -106,7 +126,7 @@ class FactorController extends Controller
                 'X-API-KEY' => env('ID_PAY_KEY'),
                 'X-SANDBOX' => '1',
             ])->post('https://api.idpay.ir/v1.1/payment', [
-                'amount' => $factor->amount*10,
+                'amount' => $amount,
                 'order_id' => $factor->number,
                 'desc' => $factor->description,
                 'name'=>$factor->user->name,
@@ -116,9 +136,16 @@ class FactorController extends Controller
            $status= $response->status();
             $response = json_decode($response, true);
             if ($status == '201'){
-                $factor->update([
-                    'payment_id' => $response['id'],
-                ]);
+                if ($discount_check){
+                    $factor->update([
+                        'payment_id' => $response['id'],
+                    'discount_id'=>$discount->first()->id ?? null,
+                    ]);
+                }else{
+                    $factor->update([
+                        'payment_id' => $response['id'],
+                    ]);
+                }
                 return redirect($response['link']);
             }else{
                 return redirect()->back()->withErrors('ارتباط با درگاه پرداخت ممکن نیست ، لطفا مجددا تلاش کنید');

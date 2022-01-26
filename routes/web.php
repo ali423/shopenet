@@ -87,7 +87,7 @@ Route::middleware('user.auth')->group(function () {
 
     Route::get('payment/reject/{factor:id}',[PaymentController::class,'reject'])->name('payment.reject');
 
-    Route::post('/check-discount',[\App\Http\Controllers\DiscountController::class,'checkDiscount'])->name('payment.reject');
+    Route::post('/check-discount',[\App\Http\Controllers\DiscountController::class,'checkDiscount']);
 
 });
 
