@@ -542,11 +542,9 @@ START HERO AREA
                 <!-- start col-md-12 -->
                 <div class="col-md-12  dir-rtl ">
                     <div class="section-title">
-                        <h1> وب سایت هایی که از
-                            <span class="highlighted">ما</span> استفاده می کنند
+                        <h1> تعدادی از برند هایی که از خدمات
+                            <span class="highlighted">شاپی نت</span> استفاده می کنند
                         </h1>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است. </p>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -557,19 +555,19 @@ START HERO AREA
                 <div class="col-md-12">
                     <div class="partners">
                         <div class="partner">
-                            <img src="images/new/cl1.png" alt="partner image">
+                            <img src="images/customers/shafa.png" height="120 px" alt="partner image">
                         </div>
                         <div class="partner">
-                            <img src="images/new/cl2.png" alt="partner image">
+                            <img src="images/customers/resa.png" height="120 px"  alt="partner image">
                         </div>
                         <div class="partner">
-                            <img src="images/new/cl3.png" alt="partner image">
+                            <img src="images/customers/exonyx.png" height="120 px"  alt="partner image">
                         </div>
                         <div class="partner">
-                            <img src="images/new/cl4.png" alt="partner image">
+                            <img src="images/customers/villaipi.png"  height="120 px" alt="partner image">
                         </div>
                         <div class="partner">
-                            <img src="images/new/cl2.png" alt="partner image">
+                            <img src="images/customers/deka.png" height="120 px"  alt="partner image">
                         </div>
                     </div>
                 </div>
@@ -598,8 +596,6 @@ START HERO AREA
                             <span class="highlighted">نظرات</span>
                             مشتریان
                         </h1>
-                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
-                            است. </p>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -614,20 +610,18 @@ START HERO AREA
                         <div class="testimonial">
                             <div class="testimonial__about">
                                 <div class="avatar v_middle">
-                                    <img src="images/new/test1.jpg" alt="Testimonial Avatar">
+                                    <img src="images/customers/rasa_admin.jpg" alt="Testimonial Avatar">
                                 </div>
                                 <div class="name-designation v_middle">
-                                    <h4 class="name">کاربر تست </h4>
-                                    <span class="desig">طراح محصویل </span>
+                                    <h4 class="name">خانم عباسی </h4>
+                                    <span class="desig">مدیر مجموعه آموزشی راسا </span>
                                 </div>
                                 <span class="lnr lnr-bubble quote-icon"></span>
                             </div>
                             <div class="testimonial__text">
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                    باشد. </p>
+                                <p>سپاس از شما و همکاران خوبتون
+                                    طراحی سایت آموزشگاه علمی ما رو به بهترین شکل انجام دادین با یک قالب بسیار زیبا و کاربردی و در کمترین زمان ممکن و پیگیری و پشتیبانی عالی بعد از تحویل سایت به بنده که سوالات و ایرادات رو برطرف میکردین
+                                    بی نهایت ممنونم تز کار حرفه ای و عالی شما. </p>
                             </div>
                         </div>
                         <!-- end /.testimonial -->
@@ -635,72 +629,40 @@ START HERO AREA
                         <div class="testimonial">
                             <div class="testimonial__about">
                                 <div class="avatar v_middle">
-                                    <img src="images/new/test2.jpg" alt="Testimonial Avatar">
+                                    <img src="images/customers/shfa_admin.jpeg" alt="Testimonial Avatar">
                                 </div>
                                 <div class="name-designation v_middle">
-                                    <h4 class="name">کاربر تست </h4>
-                                    <span class="desig">طراح محصویل </span>
+                                    <h4 class="name">کامیز حسین زاده </h4>
+                                    <span class="desig">مدیر مجموعه شفا البرز کاسپین </span>
                                 </div>
                                 <span class="lnr lnr-bubble quote-icon"></span>
                             </div>
                             <div class="testimonial__text">
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                    باشد. </p>
+                                <p>واقعلا هم راه اندازی سریع و با کیفیت بالای وب سایت ، هم پشتیبانی مداوم و البته فیلم های آموزشی که در اخیار ما قرار گرفتند ، همگی عالی بودند .
+                                شاپی نت هر امکاناتی که ما برای داشتن یه فروشگاه عالی نیاز داشتیم برامون فرهم کرد .
+                                با تشکر از شما</p>
                             </div>
                         </div>
                         <!-- end /.testimonial -->
                         <div class="testimonial">
                             <div class="testimonial__about">
                                 <div class="avatar v_middle">
-                                    <img src="images/new/test1.jpg" alt="Testimonial Avatar">
+                                    <img src="images/customers/villaipi_admin.jpeg" alt="Testimonial Avatar">
                                 </div>
                                 <div class="name-designation v_middle">
-                                    <h4 class="name">کاربر تست </h4>
-                                    <span class="desig">طراح محصویل </span>
+                                    <h4 class="name">کیوان عباسی </h4>
+                                    <span class="desig">مدیر مجموعه ویلایپی </span>
                                 </div>
                                 <span class="lnr lnr-bubble quote-icon"></span>
                             </div>
                             <div class="testimonial__text">
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                    باشد. </p>
+                                <p>سلام، واقعا در کارشون حرفه ای ، وقت شناس وتجربه زیادی  دارند.کاملا رضایت دارم از کارشون  </p>
                             </div>
                         </div>
                         <!-- end /.testimonial -->
-
-                        <div class="testimonial">
-                            <div class="testimonial__about">
-                                <div class="avatar v_middle">
-                                    <img src="images/new/test2.jpg" alt="Testimonial Avatar">
-                                </div>
-                                <div class="name-designation v_middle">
-                                    <h4 class="name">کاربر تست </h4>
-                                    <span class="desig">طراح محصویل </span>
-                                </div>
-                                <span class="lnr lnr-bubble quote-icon"></span>
-                            </div>
-                            <div class="testimonial__text">
-                                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                                    گرافیک
-                                    است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
-                                    فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می
-                                    باشد. </p>
-                            </div>
-                        </div>
-                        <!-- end /.testimonial -->
-
 
                     </div>
                     <!-- end /.testimonial_slider -->
-
-                    <div class="all-testimonial">
-                        <a href="testimonial.html" class="btn btn--lg btn--round">مشاهده تمام نظرات</a>
-                    </div>
                 </div>
                 <!-- end /.col-md-12 -->
             </div>

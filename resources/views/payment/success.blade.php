@@ -55,7 +55,9 @@
                     <h1>سفارش شما ثبت شد</h1>
                     <p>وب سایت شما در حال آماده سازی است. <br/> همکاران ما برای تکمیل مراحل با شما تماس میگیرند. </p>
                     <br>
+                    @if(isset($factor_number))
                     <h3>شماره سفارش : {{ $factor_number }}</h3>
+                    @endif
                     <a href="{{route('dashboard')}}" class="btn btn-success p-3 px-5 shadow mt-2">مشاهده سفارش</a>
                 </div>
     </section>

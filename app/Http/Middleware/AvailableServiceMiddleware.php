@@ -20,7 +20,9 @@ class AvailableServiceMiddleware
         if (isset($service)){
             if ($service->status == 'activating' || $service->status == 'expired'){
                 if ($service->plan !='d'){
-                    return redirect(route('dashboard'))->withErrors('شما درحال حاظر یک سرویس فعال دارید');
+                    if (!$request->session()->has('old_service')){
+                        return redirect(route('dashboard'))->withErrors('شما درحال حاظر یک سرویس فعال دارید');
+                    }
                 }
             }
         }

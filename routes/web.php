@@ -85,6 +85,9 @@ Route::middleware('user.auth')->group(function () {
 
     Route::get('payment/success/{factor:id}',[PaymentController::class,'success'])->name('payment.success');
 
+    Route::get('payment/free_success/',[PaymentController::class,'freePlanSuccess'])->name('free.success');
+
+
     Route::get('payment/reject/{factor:id}',[PaymentController::class,'reject'])->name('payment.reject');
 
     Route::post('/check-discount',[\App\Http\Controllers\DiscountController::class,'checkDiscount']);

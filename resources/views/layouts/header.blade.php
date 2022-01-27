@@ -7,11 +7,11 @@
     <!-- viewport meta -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="MartPlace - Complete Online Multipurpose Marketplace HTML Template">
-    <meta name="keywords" content="app, app landing, product landing, digital, material, html5">
-
-
-    <title>دریا</title>
+    <meta name="description" content="با استفاده از شاپی نت در کمترین زمان و بدون نیاز به دانش فنی ، فروشگاه اینترنتی خودتون رو طراحی و راه اندازی کنید|شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیایی فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.">
+    <meta name="keywords" content="شاپی نت،شاپی،نت،اینستاگرام،فروشگاه،نماد,اعتماد،تضمین،امنیت،فروشگاه اینستاگرامی،فروشگاه ساز،ساخت فروشگاه،درگاه،درگاه بانکی اینستاگرام, فروشگاه ساز, فروشگاه اینترنتی">
+    <meta http-equiv="Content-Language" content="fa">
+    <title>شاپی نت|فروشگاه ساز</title>
+    <link href="{{asset('/images/logo/blacklogo.png')}}" rel="icon">
 
     @include('layouts.styles')
 
@@ -34,9 +34,6 @@ START MENU AREA
                 <div class="col-md-12">
                     <div class="navbar-header">
                         <!-- start mainmenu__search -->
-                        <div class="mainmenu__search">
-                                        <img src="{{asset('images/logo/combine.png')}}" height="50 px" alt="footer logo">
-                        </div>
                         @if(!auth()->check())
                             <div class="mainmenu__search">
                                 <div class="searc-wrap">
@@ -94,6 +91,9 @@ START MENU AREA
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
+                                <li class="has_dropdown">
+                                    <a href="{{route('home')}}"><img src="{{asset('images/logo/combine.png')}}" height="45 px" alt="footer logo"></a>
+                                </li>
                                 <li class="has_dropdown">
                                     <a href="{{route('home')}}">خانه </a>
                                 </li>

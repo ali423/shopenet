@@ -11,7 +11,7 @@ START FOOTER AREA
                         <div class="info__logo">
                             <img src="images/logo/combine.png" height="70 px" alt="footer logo">
                         </div>
-                        <p class="info--text">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. </p>
+                        <p class="info--text text-justify">شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیایی فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.</p>
                         <ul class="info-contact">
                             <li>
                                 <span class="lnr lnr-phone info-icon"></span>
@@ -89,33 +89,18 @@ START FOOTER AREA
                         <div class="social social--color--filled">
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <span class="fa fa-facebook"></span>
+                                    <a href="https://www.instagram.com/shopenet_ir/">
+                                        <i class="fa fa-instagram fa-3x"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span class="fa fa-twitter"></span>
+                                    <a href="https://t.me/shopenet">
+                                        <i class="fa fa-telegram fa-3x"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <span class="fa fa-google-plus"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fa fa-pinterest"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fa fa-linkedin"></span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fa fa-dribbble"></span>
+                                    <a href="https://wa.me/989146955784">
+                                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
                                     </a>
                                 </li>
                             </ul>
