@@ -17,7 +17,7 @@ class UserAuthMiddleware
     public function handle(Request $request, Closure $next)
     {
         if (!auth()->check()){
-            $request->session()->put('link', url()->previous());
+            $request->session()->put('link',  url()->current());
             return redirect(route('user.login'))->withErrors('ابتدا وارد حساب کاربری خود شوید ');
         }
         return $next($request);

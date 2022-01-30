@@ -20,6 +20,7 @@ class OrderController extends Controller
         if (!$request->session()->has('plan')) {
             return redirect(route('plan.index'))->with('successful', 'قالب با موفقیت انتخاب شد ، لطفا یک پلن انتخاب کنید .');
         }
+
         return redirect(route('order.confirm'));
     }
 
@@ -31,11 +32,17 @@ class OrderController extends Controller
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator->errors());
         }
+
         $request->session()->put('plan', $request->get('plan'));
         if (!$request->session()->has('template') && !$request->session()->has('old_service')) {
             return redirect(url('/templates/list'))->with('successful', 'پلن با موفقیت انتخاب شد ، لطفا یک قالب انتخاب کنید .');
         }
         return redirect(route('order.confirm'));
+    }
+
+    public function selectFreePlan(Request $request){
+        $request->session()->put('plan', 'd');
+            return redirect(url('/templates/list'))->with('successful', 'لطفا یک قالب انتخاب کنید .');
     }
 
     public function orderConfirm(Request $request)
@@ -151,5 +158,6 @@ class OrderController extends Controller
         $request->session()->put('old_service', $service->id);
         return redirect(route('plan.index'))->with('successful', 'یک پلن برای تمدید سرویس انتخاب کنید ');
     }
+
 
 }

@@ -116,7 +116,7 @@
                                                 <h6 class="text-white mb-2">کلمه عبور: <span>{{$service->admin_password}}</span></h6>
                                                 @endif
                                                 <h6 class="text-white mb-2">مدت زمان اعتبار: <span>{{$days=\Carbon\Carbon::parse($service->expire_date)->diffInDays(\Carbon\Carbon::now())}} روز </span></h6>
-                                                @if($days >= 14)
+                                                @if($days <= 14)
                                                 <a href="{{ route('service.extension',$service) }}" class="text-white" ><u> &#x3e; تمدید سرویس</u></a>
                                                 @endif
                                             </div>

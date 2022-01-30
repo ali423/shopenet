@@ -47,17 +47,17 @@ Route::resource('plan', PlanController::class)->only('index');
 
 Route::get('/contactus', [LandingController::class, 'contactus'])->name('contactus');
 
+Route::get('/select-template/{template:id}', [OrderController::class, 'selectTemplate'])->name('select.template');
+
+Route::get('/select-plan', [OrderController::class, 'selectPlan'])->middleware('select.plan')->name('select.plan');
+
+Route::get('/select-free-plan', [OrderController::class, 'selectFreePlan'])->name('select.free_plan');
 
 Route::middleware('user.auth')->group(function () {
-
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('user.logout');
 
     Route::middleware(['awaiting_payment','available_service'])->group(function () {
-
-        Route::get('/select-template/{template:id}', [OrderController::class, 'selectTemplate'])->name('select.template');
-
-        Route::get('/select-plan', [OrderController::class, 'selectPlan'])->middleware('select.plan')->name('select.plan');
 
         Route::get('/order/confirm', [OrderController::class, 'orderConfirm'])->name('order.confirm');
 
@@ -93,9 +93,9 @@ Route::middleware('user.auth')->group(function () {
     Route::post('/check-discount',[\App\Http\Controllers\DiscountController::class,'checkDiscount']);
 
 });
+Route::get('/login', [LoginController::class, 'create'])->name('user.login');
 
 Route::middleware('user_guest')->group(function () {
-    Route::get('/login', [LoginController::class, 'create'])->name('user.login');
     Route::post('/login', [LoginController::class, 'login'])->name('user.login.store');
     Route::get('/verification', [LoginController::class, 'verification'])->name('user.verification');
     Route::post('/verification', [LoginController::class, 'verificationStore'])->name('user.verification.store');

@@ -32,7 +32,7 @@ START HERO AREA
                             <!-- start .hero__btn-area-->
                             <div class="hero__btn-area">
                                 <a href="/templates/list" class="btn btn--round btn--lg">ساخت فروشگاه</a>
-                                <a href="all-products.html" class="btn btn--round btn--lg">14 روز تست رایگان</a>
+                                <a href="{{route('select.free_plan')}}" class="btn btn--round btn--lg">14 روز تست رایگان</a>
                             </div>
                             <!-- end .hero__btn-area-->
                         </div>
