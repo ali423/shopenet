@@ -203,11 +203,15 @@ class PaymentController extends Controller
         }
     }
 
-    public function success(Factor $factor)
+    public function success(Factor $factor=null)
     {
         return view('payment.success', [
             'factor_number' => $factor->number,
         ]);
+    }
+
+    public function freePlanSuccess(){
+        return view('payment.success');
     }
 
     public function reject(Factor $factor)

@@ -21,6 +21,8 @@ class CreateServicesTable extends Migration
             $table->enum('status',['activating','active','inactive','expired'])->default('activating');
             $table->date('expire_date');
             $table->string('domain')->nullable();
+            $table->string('admin_username')->nullable();
+            $table->string('admin_password')->nullable();
             $table->string('login_page')->nullable();
             $table->timestamps();
         });

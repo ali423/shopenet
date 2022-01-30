@@ -111,8 +111,14 @@
                                     <div class="col-6">
                                         <div class="h-100 d-flex justify-content-center align-items-center">
                                             <div>
-                                                <h6 class="text-white mb-2">مدت زمان اعتبار: <span>{{\Carbon\Carbon::parse($service->expire_date)->diffInDays(\Carbon\Carbon::now())}} روز </span></h6>
-                                                <a href="{{ route('service.extension',$service) }}" class="text-white" ><u> &#x3e; سرویس خود را تمدید می کنید؟</u></a>
+                                                @if(isset($service->admin_username) && isset($service->admin_password))
+                                                <h6 class="text-white mb-2">نام کاربری: <span>{{$service->admin_username}}</span></h6>
+                                                <h6 class="text-white mb-2">کلمه عبور: <span>{{$service->admin_password}}</span></h6>
+                                                @endif
+                                                <h6 class="text-white mb-2">مدت زمان اعتبار: <span>{{$days=\Carbon\Carbon::parse($service->expire_date)->diffInDays(\Carbon\Carbon::now())}} روز </span></h6>
+                                                @if($days <= 14)
+                                                <a href="{{ route('service.extension',$service) }}" class="text-white" ><u> &#x3e; تمدید سرویس</u></a>
+                                                @endif
                                             </div>
                                         </div>
                                     </div>

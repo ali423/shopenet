@@ -7,6 +7,7 @@
     =================================-->
     <section class="breadcrumb-area dir-rtl">
         <div class="container">
+
             <div class="row">
                 <div class="col-md-12">
                     <h1 class="page-title">طرح قیمت گذاری </h1>
@@ -140,7 +141,6 @@
     <!--================================
         END PRICING AREA
     =================================-->
-
 
 @endsection
 
