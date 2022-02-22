@@ -49,7 +49,7 @@ Route::get('/contactus', [LandingController::class, 'contactus'])->name('contact
 
 Route::get('/select-template/{template:id}', [OrderController::class, 'selectTemplate'])->name('select.template');
 
-Route::get('/select-plan', [OrderController::class, 'selectPlan'])->middleware('select.plan')->name('select.plan');
+Route::get('/select-plan', [OrderController::class, 'selectPlan'])->name('select.plan');
 
 Route::get('/select-free-plan', [OrderController::class, 'selectFreePlan'])->name('select.free_plan');
 

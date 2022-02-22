@@ -85,7 +85,7 @@
                                         @endif
                                     </a>
                                 </td>
-                                <td> {{$factor->amount}} تومان</td>
+                                <td> {{number_format($factor->amount)}} تومان</td>
                             </tr>
                             </tbody>
                         </table>
@@ -94,7 +94,7 @@
                     <div class="pricing_info">
 {{--                        <p>تخفیف : 0 تومان </p>--}}
 {{--                        <del><p class="bold" id="old_amount">مجموع : {{$factor->amount}} تومان </p></del>--}}
-                        <p class="bold" id="amount">مجموع : {{$factor->amount}} تومان </p>
+                        <p class="bold" id="amount">مجموع : {{number_format($factor->amount)}} تومان </p>
                         <del><p class="bold" id="old_amount"></p></del>
                         <p class="bold" id="new_amount"></p>
                     @if($factor->status=='awaiting_payment')
