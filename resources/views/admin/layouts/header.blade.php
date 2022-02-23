@@ -283,8 +283,18 @@
                             <span class="menu-arrow"></span>
                         </a>
                         <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="{{ route('template.index') }}">لیست قالب ها</a></li>
-                            <li><a href="{{ route('template.index') }}?q=add">افزودن قالب جدید</a></li>
+                            <li><a href="{{ route('admin.template.index') }}">لیست قالب ها</a></li>
+                            <li><a href="{{ route('admin.template.index') }}?q=add">افزودن قالب جدید</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);">
+                            <i class="mdi mdi-pac-man"></i>
+                            <span> سفارشات </span>
+                            <span class="menu-arrow"></span>
+                        </a>
+                        <ul class="nav-second-level" aria-expanded="false">
+                            <li><a href="{{ route('admin.service.index') }}">لیست سفارشات</a></li>
                         </ul>
                     </li>
                     <li>
@@ -294,8 +304,8 @@
                             <span class="menu-arrow"></span>
                         </a>
                         <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="{{ route('template-category.index') }}">لیست دسته بندی ها</a></li>
-                            <li><a href="{{ route('template-category.index') }}?q=add">افزودندسته بندی جدید</a></li>
+                            <li><a href="{{ route('admin.template-category.index') }}">لیست دسته بندی ها</a></li>
+                            <li><a href="{{ route('admin.template-category.index') }}?q=add">افزودندسته بندی جدید</a></li>
                         </ul>
                     </li>
                     <li>
@@ -305,8 +315,8 @@
                             <span class="menu-arrow"></span>
                         </a>
                         <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="{{ route('discount.index') }}">لیست کد ها</a></li>
-                            <li><a href="{{ route('discount.index') }}?q=add">افزودن کد جدید</a></li>
+                            <li><a href="{{ route('admin.discount.index') }}">لیست کد ها</a></li>
+                            <li><a href="{{ route('admin.discount.index') }}?q=add">افزودن کد جدید</a></li>
                         </ul>
                     </li>
                     <li>
@@ -316,8 +326,8 @@
                             <span class="menu-arrow"></span>
                         </a>
                         <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="{{ route('plan.index') }}">لیست پلن ها</a></li>
-                            <li><a href="{{ route('plan.index') }}?q=add">افزودن پلن جدید</a></li>
+                            <li><a href="{{ route('admin.plan.index') }}">لیست پلن ها</a></li>
+                            <li><a href="{{ route('admin.plan.index') }}?q=add">افزودن پلن جدید</a></li>
                         </ul>
                     </li>
 

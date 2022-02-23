@@ -16,7 +16,7 @@
                 <h4 class="card-title">وییرایش کاربر</h4>
                 <div class="row">
                     <div class="col-sm-12 col-xs-12">
-                        <form method="post" action="{{route('template.update',$template)}}"
+                        <form method="post" action="{{route('admin.template.update',$template)}}"
                               enctype="multipart/form-data">
                             @csrf
                             @method('PATCH')

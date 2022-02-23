@@ -49,11 +49,11 @@
                                             <td>{{$discount->expired_at}}</td>
                                             <td>
                                                 <div class="row">
-                                                    <a href="{{route('discount.edit',$discount)}}" class="mr-2"><i
+                                                    <a href="{{route('admin.discount.edit',$discount)}}" class="mr-2"><i
                                                             class="fa fa-edit text-info font-30"></i></a>
                                                     {{--                                            <a href="#"><i class="fa fa-trash text-danger font-18"></i></a>--}}
                                                     <form method="post"
-                                                          action="{{route('discount.destroy',$discount)}}">
+                                                          action="{{route('admin.discount.destroy',$discount)}}">
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit"
@@ -81,7 +81,7 @@
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         </div>
                         <div class="modal-body">
-                            <form method="post" action="{{route('discount.store')}}" enctype="multipart/form-data">
+                            <form method="post" action="{{route('admin.discount.store')}}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-row">
                                     <div class="form-group col-md-3">

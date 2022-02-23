@@ -42,9 +42,9 @@
                                             <td><img src="{{ asset(str_replace('public','storage',$template->icon))}}" height="60 px"></td>
                                             <td>
                                                 <div class="row">
-                                                    <a href="{{route('template.edit',$template)}}" class="mr-2"><i class="fa fa-edit text-info font-30"></i></a>
+                                                    <a href="{{route('admin.template.edit',$template)}}" class="mr-2"><i class="fa fa-edit text-info font-30"></i></a>
                                                     {{--                                            <a href="#"><i class="fa fa-trash text-danger font-18"></i></a>--}}
-                                                    <form method="post" action="{{route('template.destroy',$template)}}" >
+                                                    <form method="post" action="{{route('admin.template.destroy',$template)}}" >
                                                         @csrf
                                                         @method('DELETE')
                                                         <button type="submit"  class="fa fa-trash btn-without-outline font-30"></button>
@@ -69,7 +69,7 @@
                             <h5 class="modal-title mt-0 font-16" id="myLargeModalLabel">افزودن قالب جدید </h5><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         </div>
                         <div class="modal-body">
-                            <form method="post" action="{{route('template.store')}}" enctype="multipart/form-data">
+                            <form method="post" action="{{route('admin.template.store')}}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="form-row">
                                     <div class="form-group col-md-4">
