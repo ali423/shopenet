@@ -115,12 +115,12 @@
                                 </div>
                                 <div id="collapse1" class="panel-collapse collapse" aria-labelledby="panel-one" data-parent="#accordion">
                                     <br>
-                                    <div class="row col-md-12 ltr">
+                                    <div class="row ltr px-1">
                                         <div class="col-md-6">
                                             <input class="relative-field" id="discount" name="discount" type="text" placeholder="کد تخفیف ">
                                         </div>
-                                        <div class="col-md-6">
-                                       <a href="#" id="discount_btn" onclick="return false;" class="btn btn--icon btn-sm btn--round btn-info ">
+                                        <div class="col-md-6 text-center">
+                                            <a href="#" id="discount_btn" onclick="return false;" class="btn btn--icon btn-sm btn--round btn-info ">
                                                 ثبت کد
                                             </a>
                                         </div>
@@ -139,7 +139,7 @@
                     </form>
                     <form action="{{ route('factor.cancel',$factor) }}" class="setting_form d-inline" method="POST">
                         @csrf
-                        <button type="submit" class="btn btn--round btn-danger p-3 px-4">انصراف</button>
+                        <button type="submit" class="btn btn--round btn-danger p-3 px-4 mt-mobile-5">انصراف</button>
                     </form>
                     @else
                 </div>
