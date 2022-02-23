@@ -32,4 +32,5 @@
         $(".myAlert-top").hide();
     }, 2000);
 </script>
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="55958c2f-3e17-4784-865d-62fd493f79b8";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 @yield('page_scripts')

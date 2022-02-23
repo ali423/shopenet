@@ -17,7 +17,7 @@
                     <div class="card mb-30">
                         <div class="card-body pb-0">
                             <div class="d-flex justify-content-between align-items-center mb-20">
-                                <h6 class="card-title mb-0">دسته بندی ها </h6>
+                                <h6 class="card-title mb-0">سفارشات</h6>
                                 <button type="button" id="add" class="btn btn-primary waves-effect waves-light float-right mb-3" data-toggle="modal" data-animation="bounce" data-target=".bs-example-modal-lg">+ افزودن قالب جدید</button>
                             </div>
                             <div class="table-responsive">
@@ -25,22 +25,27 @@
                                     <thead>
                                     <tr>
                                         <th>id</th>
-                                        <th>عنوان</th>
-                                        <th>حذف</th>
+                                        <th>نام کاربر</th>
+                                        <th>موبایل</th>
+                                        <th>قالب انتخابی </th>
+                                        <th>پلن انتخابی</th>
+                                        <th>تاریخ ثبت</th>
+                                        <th>عملیات</th>
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($categories as $category)
+                                    @foreach($services as $service)
                                         <tr>
-                                            <td>{{$category->id}}</td>
-                                            <td>{{$category->title}}</td>
+                                            <td>{{$service->id}}</td>
+                                            <td>{{$service->user->name}}</td>
+                                            <td>{{$service->user->mobile}}</td>
+                                            <td>{{$service->template->title}}</td>
+                                            <td>{{$service->plan}}</td>
+                                            <td>{{\Morilog\Jalali\CalendarUtils::strftime('Y/m/d', strtotime($service->created_at))}}</td>
                                             <td>
                                                 <div class="row">
-                                                    <form method="post" action="{{route('admin.template-category.destroy',$category)}}" >
-                                                        @csrf
-                                                        @method('DELETE')
-                                                        <button type="submit"  class="fa fa-trash btn-without-outline font-30"></button>
-                                                    </form>
+                                                    <a href="{{route('admin.service.edit',$service)}}" class="mr-2"><i class="fa fa-edit text-info font-30"></i></a>
+                                                    {{--                                            <a href="#"><i class="fa fa-trash text-danger font-18"></i></a>--}}
                                                 </div>
 
                                             </td>
@@ -53,28 +58,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-modal="false">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title mt-0 font-16" id="myLargeModalLabel">افزودن </h5><button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                        </div>
-                        <div class="modal-body">
-                            <form method="post" action="{{route('admin.template-category.store')}}" enctype="multipart/form-data">
-                                @csrf
-                                <div class="form-row">
-                                    <div class="form-group col-md-12">
-                                        <label for="title" class="col-form-label">عنوان </label>
-                                        <input type="text" name="title" class="form-control" id="title" placeholder="عنوان قالب" required>
-                                    </div>
-
-                                </div>
-                                <button type="submit" class="btn btn-sm btn-primary">ایجاد</button>
-                            </form>
-                        </div>
-                    </div><!-- /.modal-content -->
-                </div><!-- /.modal-dialog -->
             </div>
         </div>
 

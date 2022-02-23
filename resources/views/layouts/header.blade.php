@@ -38,6 +38,13 @@ START MENU AREA
                             <div class="mainmenu__search">
                                 <div class="searc-wrap">
                                     <div class="text-center">
+                                        <a href="{{route('user.login')}}" class="author-area__seller-btn inline">حساب کاربری</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mainmenu__search">
+                                <div class="searc-wrap">
+                                    <div class="text-center">
                                         <a href="/templates/list" class="author-area__seller-btn inline">ساخت فروشگاه</a>
                                     </div>
                                 </div>

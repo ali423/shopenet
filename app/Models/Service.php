@@ -19,5 +19,8 @@ class Service extends Model
     {
         return $this->belongsTo(Template::class,'template_id');
     }
+    public function factor(){
+        return $this->hasOne(Factor::class);
+    }
 
 }

@@ -85,7 +85,7 @@ class TemplateController extends Controller
                 ]);
             }
         });
-        return redirect(route('template.index'))->with('successful', 'قالب با موفقیط ثبت شد .');
+        return redirect(route('admin.template.index'))->with('successful', 'قالب با موفقیط ثبت شد .');
     }
 
     /**
@@ -184,7 +184,7 @@ class TemplateController extends Controller
                 ]);
             }
         });
-        return redirect(route('template.index'))->with('successful', 'قالب با موفقیط ویرایش شد .');
+        return redirect(route('admin.template.index'))->with('successful', 'قالب با موفقیط ویرایش شد .');
     }
 
     /**
@@ -203,7 +203,7 @@ class TemplateController extends Controller
             Storage::delete($template->img);
             $template->delete();
         });
-        return redirect(route('template.index'))->with('successful', 'حذف قالب با موفقیت انجام شد .');
+        return redirect(route('admin.template.index'))->with('successful', 'حذف قالب با موفقیت انجام شد .');
     }
 
     public function checkObjectUnique($obj, $value, $id)

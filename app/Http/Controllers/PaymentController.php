@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\OrderCreated;
 use App\Models\Factor;
 use App\Models\Payment;
 use App\Models\Service;
@@ -189,7 +190,7 @@ class PaymentController extends Controller
 
             });
             if ($response['status'] == 100) {
-
+            event(new OrderCreated($factor_callback));
                 return redirect(route('payment.success', $factor_callback));
             }
             return redirect(route('payment.reject', $factor_callback));

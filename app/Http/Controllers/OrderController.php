@@ -47,12 +47,11 @@ class OrderController extends Controller
 
     public function orderConfirm(Request $request)
     {
-
         if ($request->session()->has('template') && $request->session()->has('old_service')) {
             return redirect(route('home'))->withErrors('خطایی رخ داده ، دوباره تلاش کنید');
         }
         if (!$request->session()->has('template') && !$request->session()->has('old_service') ) {
-            return redirect(route(url('/templates/list')))->withErrors(' ابتدا یک قالب انتخاب کنید ');
+            return redirect(route('template.list'))->withErrors(' ابتدا یک قالب انتخاب کنید ');
         }
         if (!$request->session()->has('plan')) {
             return redirect(route('plan.index'))->withErrors(' ابتدا یک طرح انتخاب کنید ');

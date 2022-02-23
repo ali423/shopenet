@@ -49,7 +49,7 @@ Route::get('/contactus', [LandingController::class, 'contactus'])->name('contact
 
 Route::get('/select-template/{template:id}', [OrderController::class, 'selectTemplate'])->name('select.template');
 
-Route::get('/select-plan', [OrderController::class, 'selectPlan'])->middleware('select.plan')->name('select.plan');
+Route::get('/select-plan', [OrderController::class, 'selectPlan'])->name('select.plan');
 
 Route::get('/select-free-plan', [OrderController::class, 'selectFreePlan'])->name('select.free_plan');
 
@@ -93,9 +93,9 @@ Route::middleware('user.auth')->group(function () {
     Route::post('/check-discount',[\App\Http\Controllers\DiscountController::class,'checkDiscount']);
 
 });
-Route::get('/login', [LoginController::class, 'create'])->name('user.login');
 
 Route::middleware('user_guest')->group(function () {
+    Route::get('/login', [LoginController::class, 'create'])->name('user.login');
     Route::post('/login', [LoginController::class, 'login'])->name('user.login.store');
     Route::get('/verification', [LoginController::class, 'verification'])->name('user.verification');
     Route::post('/verification', [LoginController::class, 'verificationStore'])->name('user.verification.store');
@@ -105,18 +105,20 @@ Route::middleware('user_guest')->group(function () {
 });
 
 
-Route::prefix('admin')->group(function () {
+Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware('guest')->group(function () {
         Route::get('/login', [AdminRegisterController::class, 'create']);
-        Route::post('/login', [AdminRegisterController::class, 'login'])->name('admin.login');
+        Route::post('/login', [AdminRegisterController::class, 'login'])->name('login');
     });
     Route::middleware(['auth', 'admin'])->group(function () {
-        Route::get('/logout', [AdminRegisterController::class, 'destroy'])->name('admin.logout');
+        Route::get('/logout', [AdminRegisterController::class, 'destroy'])->name('logout');
+        Route::resource('plan', PlanController::class);
         Route::prefix('dashboard')->group(function () {
-            Route::get('/', [AdminDashboardController::class, 'index'])->name('admin.dashboard');
+            Route::get('/', [AdminDashboardController::class, 'index'])->name('dashboard');
             Route::resource('template', TemplateController::class);
             Route::resource('template-category', TemplateCategoryController::class);
             Route::resource('discount', DiscountController::class);
+                Route::resource('service', \App\Http\Controllers\Admin\ServiceController::class);
         });
     });
 

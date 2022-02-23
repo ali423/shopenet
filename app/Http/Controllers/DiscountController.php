@@ -57,7 +57,7 @@ class DiscountController extends Controller
             'plan' => $request->get('plan'),
             'percent' => $request->get('percent'),
         ]);
-        return redirect(route('discount.index'))->with('successful', 'اطلاعات  ثبت شد .');
+        return redirect(route('admin.discount.index'))->with('successful', 'اطلاعات  ثبت شد .');
 
     }
 
@@ -115,7 +115,7 @@ class DiscountController extends Controller
             'plan' => $request->get('plan'),
             'percent' => $request->get('percent'),
         ]);
-        return redirect(route('discount.index'))->with('successful', 'اطلاعات  ویرایش شد .');
+        return redirect(route('admin.discount.index'))->with('successful', 'اطلاعات  ویرایش شد .');
     }
 
     /**
@@ -130,7 +130,7 @@ class DiscountController extends Controller
             return redirect()->back()->withErrors('این کد در چندین فاکتور درج شده است  .');
         }
         $discount->delete();
-        return redirect(route('discount.index'))->with('successful', 'اطلاعات  حذف شد .');
+        return redirect(route('admin.discount.index'))->with('successful', 'اطلاعات  حذف شد .');
     }
 
     public function checkDiscount(Request $request)
