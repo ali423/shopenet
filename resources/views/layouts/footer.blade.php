@@ -11,7 +11,7 @@ START FOOTER AREA
                         <div class="info__logo">
                             <img src="{{asset('images/logo/combine.png')}}" height="70 px" alt="footer logo">
                         </div>
-                        <p class="info--text text-justify">شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیایی فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.</p>
+                        <p class="info--text text-justify">شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیای فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.</p>
                         <ul class="info-contact">
                             <li>
                                 <span class="lnr lnr-phone info-icon"></span>
@@ -23,7 +23,7 @@ START FOOTER AREA
                             </li>
                             <li>
                                 <span class="lnr lnr-map-marker info-icon"></span>
-                                <span class="info">تبریز ، خیابان ورزش </span>
+                                <span class="info">تبریز ، خیابان ورزش ، شرکت دانش بنیان دکاتک</span>
                             </li>
                         </ul>
                     </div>
