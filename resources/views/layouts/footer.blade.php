@@ -118,7 +118,7 @@ START FOOTER AREA
                     <div class="copyright-text">
                         <p>
                             <a href="#"></a>کپی رایت &copy; 2022 - تمام حقوق برای شاپی نت محفوظ است
-                            <a target="_blank" href="http://damandarya.ir">SHOPENET</a>
+                            <a target="_blank" href="https://shopenet.ir/">SHOPENET</a>
                         </p>
                     </div>
 
