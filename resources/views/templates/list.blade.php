@@ -65,28 +65,6 @@
         END MORE PRODUCT AREA
     ==============================================-->
 
-    <!--================================
-        START CALL TO ACTION AREA
-    =================================-->
-    <section class="call-to-action bgimage dir-rtl">
-        <div class="bg_image_holder">
-            <img src="{{ asset('images/new/calltobg.jpg') }}" alt="">
-        </div>
-        <div class="container content_above">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="call-to-wrap">
-                        <h1 class="text--white">آماده پیوستن به ما هستید !</h1>
-                        <h4 class="text--white">بیش از 25،000 طراح و توسعهدهنده به ما اعتماد دارند.</h4>
-                        <a href="#" class="btn btn--lg btn--round btn--white callto-action-btn">امروز به ما بپیوندید</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================================
-        END CALL TO ACTION AREA
-    =================================-->
 @endsection
 
 

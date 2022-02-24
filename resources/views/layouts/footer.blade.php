@@ -122,9 +122,6 @@ START FOOTER AREA
                         </p>
                     </div>
 
-                    <div class="go_top">
-                        <span class="lnr lnr-chevron-up"></span>
-                    </div>
                 </div>
             </div>
         </div>

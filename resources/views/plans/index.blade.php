@@ -100,7 +100,45 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                <tr>
+                    <th scope="row">پشتیبانی</th>
+                    <td data-col="1"></td>
+                    <td data-col="2"></td>
+                    <td data-col="3"></td>
+                </tr>
+                <tr>
+                    <th>پشتیبانی فنی</th>
+                    <td data-col="1">&#10004;</td>
+                    <td data-col="2">&#10004;</td>
+                    <td data-col="3">&#10004;</td>
+                </tr>
+                <tr>
+                    <th>ویدیو آموزشی</th>
+                    <td data-col="1">&#10004;</td>
+                    <td data-col="2">&#10004;</td>
+                    <td data-col="3">&#10004;</td>
+                </tr>
+                <tr>
+                    <th>مشاوره بازاریابی</th>
+                    <td data-col="1">&#10006;</td>
+                    <td data-col="2">&#10004;</td>
+                    <td data-col="3">&#10004;</td>
+                </tr>
+                <tr>
+                    <th>اخذ نماد اعتماد الکترونیکی</th>
+                    <td data-col="1">&#10006;</td>
+                    <td data-col="2">&#10006;</td>
+                    <td data-col="3">&#10004;</td>
+                </tr>
+                <tr>
+                    <th>سفارشی سازی وب سایت</th>
+                    <td data-col="1">&#10006;</td>
+                    <td data-col="2">&#10006;</td>
+                    <td data-col="3">&#10004;</td>
+                </tr>
+
+
+                <tr>
                     <th scope="row">هاست و دامنه</th>
                       <td data-col="1"></td>
                       <td data-col="2"></td>
@@ -162,7 +200,7 @@
                   </tr>
                   <tr>
                       <th>تعریف کد تخفیف</th>
-                      <td data-col="1">&#10004;</td>
+                      <td data-col="1">&#10006;</td>
                       <td data-col="2">&#10004;</td>
                       <td data-col="3">&#10004;</td>
                   </tr>
@@ -216,7 +254,7 @@
                   </tr>
                   <tr>
                       <th>مدیریت روش های ارسال</th>
-                      <td data-col="1">&#10004;</td>
+                      <td data-col="1">&#10006;</td>
                       <td data-col="2">&#10004;</td>
                       <td data-col="3">&#10004;</td>
                   </tr>
@@ -234,7 +272,7 @@
                   </tr>
                   <tr>
                       <th>ارسال پس کرایه</th>
-                      <td data-col="1">&#10004;</td>
+                      <td data-col="1">&#10006;</td>
                       <td data-col="2">&#10004;</td>
                       <td data-col="3">&#10004;</td>
                   </tr>
@@ -252,7 +290,7 @@
                   </tr>
                   <tr>
                       <th>محاسبه مالیات</th>
-                      <td data-col="1">&#10004;</td>
+                      <td data-col="1">&#10006;</td>
                       <td data-col="2">&#10004;</td>
                       <td data-col="3">&#10004;</td>
                   </tr>
@@ -289,12 +327,12 @@
                   <tr>
                       <th>فروش محصول دیجیتال</th>
                       <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
+                      <td data-col="2">&#10006;</td>
                       <td data-col="3">&#10004;</td>
                   </tr>
                   <tr>
                       <th>اشتراک گذاری محصولات</th>
-                      <td data-col="1">&#10004;</td>
+                      <td data-col="1">&#10006;</td>
                       <td data-col="2">&#10004;</td>
                       <td data-col="3">&#10004;</td>
                   </tr>
@@ -390,7 +428,7 @@
                   </tr>
                   <tr>
                       <th>نمونه کار ها</th>
-                      <td data-col="1">&#10004;</td>
+                      <td data-col="1">&#10006;</td>
                       <td data-col="2">&#10004;</td>
                       <td data-col="3">&#10004;</td>
                   </tr>
@@ -427,36 +465,6 @@
                   </tr>
                   <tr>
                       <th>اتصال خودکار به ترب</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
-                  </tr>
-                  <tr>
-                      <th scope="row">پشتیبانی</th>
-                      <td data-col="1"></td>
-                      <td data-col="2"></td>
-                      <td data-col="3"></td>
-                  </tr>
-                  <tr>
-                      <th>پشتیبانی فنی</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
-                  </tr>
-                  <tr>
-                      <th>ویدیو آموزشی</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
-                  </tr>
-                  <tr>
-                      <th>مشاوره بازاریابی</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
-                  </tr>
-                  <tr>
-                      <th>سفارشی سازی وب سایت</th>
                       <td data-col="1">&#10006;</td>
                       <td data-col="2">&#10006;</td>
                       <td data-col="3">&#10004;</td>

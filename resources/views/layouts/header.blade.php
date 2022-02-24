@@ -60,7 +60,7 @@ START MENU AREA
                                         <!--<p class="ammount">2000 تومان</p>-->
                                     </div>
                                 </div>
-                                
+
                                 <div class="dropdowns dropdown--author">
                                     <ul>
                                         <li>
@@ -106,7 +106,7 @@ START MENU AREA
                                     <a href="/templates/list">قالب ها</a>
                                 </li>
                                 <li class="has_dropdown">
-                                    <a href="{{route('plan.index')}}">قیمت گذاری</a>
+                                    <a href="{{route('plan.index')}}">تعرفه ها</a>
                                 </li>
                                 <li class="has_dropdown">
                                     <a href="{{route('template.custom')}}">درخواست قالب جدید</a>
