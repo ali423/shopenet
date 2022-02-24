@@ -51,27 +51,25 @@ START MENU AREA
                             </div>
                         @else
                             <div class="author-author__info inline has_dropdown">
-                                <div class="author__avatar">
+                                <div class="author__avatar loginbtn">
                                     <img src="{{asset("images/new/usr_avatar.png")}}" height="30 px" alt="user avatar">
-
+                                    <div class="autor__info">
+                                        <p class="name">
+                                            {{auth()->user()->name}}
+                                        </p>
+                                        <!--<p class="ammount">2000 تومان</p>-->
+                                    </div>
                                 </div>
-                                <div class="autor__info">
-                                    <p class="name">
-                                        {{auth()->user()->name}}
-                                    </p>
-                                    <!--<p class="ammount">2000 تومان</p>-->
-                                </div>
-
+                                
                                 <div class="dropdowns dropdown--author">
                                     <ul>
-
                                         <li>
                                             <a href="{{route('dashboard')}}">
                                                 <span class="lnr lnr-home"></span>داشبورد</a>
                                         </li>
                                         <li>
                                             <a href="{{route('factor.index')}}">
-                                                <span class="lnr lnr-list"></span> فاکتور ها</a>
+                                                <span class="lnr lnr-list"></span>فاکتور ها</a>
                                         </li>
                                         <li>
                                             <a href="{{url('profile')}}">

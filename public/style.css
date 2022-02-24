@@ -5370,6 +5370,7 @@ h6 {
 .dropdowns.dropdown--author {
   padding: 20px;
   left: 0;
+  z-index: 9999;
 }
 
 .dropdowns.dropdown--author:before {
@@ -7295,6 +7296,10 @@ ul.nav-tabs.nav--tabs2 li a::before {
 .author-author__info {
   padding: 24px 0;
   float: left;
+}
+
+.loginbtn {
+  z-index: 1;
 }
 
 /* start notification dropdown area */
@@ -10868,7 +10873,7 @@ span.counter {
 }
 
 .invoice .pricing_info {
-  padding: 0 30px 100px;
+  padding: 0 0px 100px;
   margin-top: 30px;
   text-align: left;
 }
@@ -12458,9 +12463,6 @@ span.counter {
   color: #000;
 }
 
-.faqs {
-  padding: 30px;
-}
 
 /***************************************
      END FAQ AREA
@@ -15911,4 +15913,12 @@ span.counter {
 }
 .dir-rtl{
   direction:rtl!important;
+}
+
+/* my query */
+@media only screen and (max-width: 355px) {
+  .mt-mobile-5{
+    margin-top: 10px !important;
+    min-width:170px;
+  }
 }
