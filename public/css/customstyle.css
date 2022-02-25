@@ -15,9 +15,12 @@
 }
 #pricing-table th[scope="row"]{
     line-break: anywhere; 
-    min-width: 130px;
+    min-width:130px;
     background-color: #6f00ff;
     color: white;
+}
+.title-row{
+    background-color: #6f00ff;
 }
 #pricing-table td{
     padding-right: 0 !important;
@@ -25,25 +28,28 @@
 #pricing-table th{
     padding-right: 16px !important;
 }
-/* table td:nth-child(3){
-    font-weight: 900 !important;
-    border-color: rgb(221, 221, 221);
-    border-style: solid;
-    border-width: 0px 1px 0px 1px;
-} */
+#pricing-table td[data-status="true"]{
+    font-weight: 900;
+    color: rgb(0, 209, 0);
+}
+#pricing-table td[data-status="false"]{
+    font-weight: 900;
+    color: rgb(255, 0, 0);
+}
 .bronze-head,.silver-head,.gold-head{
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .bronze-head{
-    background-color: #965A38;
+    background-color: #fff;
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
-    -webkit-box-shadow: 0px 0px 21px -6px #000000; 
-    box-shadow: 0px 0px 21px -6px #000000;
+    border: 1px solid rgb(204, 204, 204);
+    border-bottom: 0px;
 }
 .silver-head{
-    background-color: #A8A8A8;
+    position: relative;
+    background-color: #4b3c4e;
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
     -webkit-box-shadow: inset -27px 0px 28px -30px rgba(0,0,0,0.63); 
@@ -51,7 +57,9 @@
 }
 .gold-head{
     position: relative;
-    background-color: #C98910;
+    /* background-color: #7a39e4; */
+    background: rgb(137,58,214);
+    background: linear-gradient(180deg, rgba(137,58,214,1) 0%, rgba(146,87,204,1) 19%, rgba(57,124,228,1) 100%);
     padding-top: 1.5rem !important;
     padding-bottom: 1.5rem !important;
     -webkit-box-shadow: 0px 0px 21px -6px #000000; 
@@ -59,11 +67,28 @@
     overflow: hidden;
 }
 .bronze-body{
-    -webkit-box-shadow: 0px 0px 21px -6px #000000; 
-    box-shadow: 0px 0px 21px -6px #000000;
+    /* -webkit-box-shadow: 0px 0px 21px -6px #000000; 
+    box-shadow: 0px 0px 21px -6px #000000; */
 }
 .gold-body{
     background-color: #fff;
+}
+.sign-box{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    padding: 2.5px 0;
+    width: 75%;
+    overflow:hidden;
+    background: #fff;
+    border-right: 5px solid #4b3c4e;
+    clip-path: polygon(
+      0 100%,
+      100% 100%,
+      100% 0,
+      15% 0,
+      0 100%
+    )
 }
 .slider-btn span{
     display: block;
@@ -74,15 +99,16 @@
     color: white;
 }
 .bronze-mobile {
-    background-color: #965A38;
+    background-color: #fff;
     transform: translateY(40px);
+    color: #000 !important;
 }
 .silver-mobile {
-    background-color: #A8A8A8;
+    background-color: #4b3c4e;
     transform: translateY(20px);
 } 
 .gold-mobile {
-    background-color: #C98910;
+    background: rgb(137,58,214);
     height: 80px;
     transform: translateY(0px);
 }
@@ -112,6 +138,56 @@
     -o-animation: moves 4s infinite linear;
     animation: moves 4s infinite linear;
 }
+
+/* phone-call */
+.call-title{
+    display: none;
+    position:fixed;
+    bottom:85px;
+    left:55px;
+    -webkit-box-shadow: -1px 2px 15px 5px rgba(0,0,0,0.35); 
+  box-shadow: -1px 2px 15px 5px rgba(0,0,0,0.35);
+    padding:8px;
+    border-radius:10px;
+    border-bottom-left-radius:0 !important;
+    background: white;
+    z-index: 1000;
+  }
+  .call-title:before {
+    content: "";
+    position:absolute;
+    bottom:-12px;
+    left:0;
+    border-top: 6px solid rgb(255, 255, 255);
+    border-left: 12px solid rgb(255, 255, 255);
+    border-bottom: 6px solid transparent;
+    border-right: 6px solid transparent;
+  }
+  .phone{
+    position:fixed;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    bottom:16px;
+    left:16px;
+    background-color: rgb(255,150,0);
+    color:white !important;
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    text-decoration: none;
+    transition: 0.6s;
+    transform:rotate(0);
+    -webkit-transform:rotate(0);
+    -moz-transform:rotate(0);
+    -ms-transform:rotate(0);
+    -o-transform:rotate(0);
+    z-index: 1000;
+}
+  .phone:hover{
+    transform:rotate(360deg);
+  }
+/* -------  phone-call  ------ */
 
 /* dashboard */
 .dash-sub{
@@ -422,21 +498,24 @@
         display: none;
     }
     .bronze-head{
-        padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
     }
     .silver-head{
         padding-top: 1.5rem !important;
         padding-bottom: 1.5rem !important;
     }
     .gold-head{
-        padding-top: 2.5rem !important;
-        padding-bottom: 2.5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
     }
 }
 @media only screen and (min-width: 1200px) {
     .feature2{
         height: 415px;
     }
+    .call-title{
+        display: inline;
+      }
 }
 /*---===== end animation keyframes =====---*/

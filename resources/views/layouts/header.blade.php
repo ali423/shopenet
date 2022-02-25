@@ -18,7 +18,8 @@
 </head>
 
 <body class="preload home2 single-vendor">
-
+<span class="call-title">تماس بگیرید</span>
+<a class="phone" href="tel:+984134406859"><i class="fa fa-2x fa-phone"></i></a> 
 <!-- ================================
 START MENU AREA
 ================================= -->
