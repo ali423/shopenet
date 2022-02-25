@@ -553,19 +553,19 @@ START HERO AREA
                 <div class="col-md-12">
                     <div class="partners">
                         <div class="partner">
-                            <img class="owl-lazy"  src="{{ asset('images/customers/shafa.png') }}" height="120 px" alt="partner image">
+                            <img  src="{{ asset('images/customers/shafa.png') }}" height="120 px" alt="partner image">
                         </div>
                         <div class="partner">
-                            <img class="owl-lazy"  src="{{ asset('images/customers/resa.png') }}" height="120 px"  alt="partner image">
+                            <img src="{{ asset('images/customers/resa.png') }}" height="120 px"  alt="partner image">
                         </div>
                         <div class="partner">
-                            <img class="owl-lazy"  src="{{ asset('images/customers/exonyx.png') }}" height="120 px"  alt="partner image">
+                            <img src="{{ asset('images/customers/exonyx.png') }}" height="120 px"  alt="partner image">
                         </div>
                         <div class="partner">
-                            <img class="owl-lazy"  src="{{ asset('images/customers/villaipi.png') }}"  height="120 px" alt="partner image">
+                            <img  src="{{ asset('images/customers/villaipi.png') }}"  height="120 px" alt="partner image">
                         </div>
                         <div class="partner">
-                            <img class="owl-lazy"  src="{{ asset('images/customers/deka.png') }}" height="120 px"  alt="partner image">
+                            <img src="{{ asset('images/customers/deka.png') }}" height="120 px"  alt="partner image">
                         </div>
                     </div>
                 </div>
