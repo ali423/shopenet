@@ -43,8 +43,9 @@
                 <div class="col-md-12">
                     <div class="section-title">
                         <h1>
-                            <span class="highlighted">قیمت</span>
-                            عادلانه و ساده
+                            قیمت
+                            <span class="highlighted">سالیانه</span>
+                            طرح ها
                         </h1>
                         <p> با استفاده از شاپی نت فروشگاه اینترنتی دلخواه خود را با کمترین هزینه ایجاد کنید .
                             </p>
