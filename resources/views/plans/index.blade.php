@@ -46,8 +46,8 @@
                             <span class="highlighted">قیمت</span>
                             عادلانه و ساده
                         </h1>
-{{--                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک--}}
-{{--                            است.</p>--}}
+                        <p> با استفاده از شاپی نت فروشگاه اینترنتی دلخواه خود را با کمترین هزینه ایجاد کنید .
+                            </p>
                     </div>
                     <!-- end /.section-title -->
                 </div>
@@ -60,8 +60,8 @@
                     <th scope="col">
                         <div class="slider-btn">
                             <span class="bronze-mobile p-2 pb-4 mb-1">طرح پایه &#11164;</span>
-                            <span class="silver-mobile p-2 pb-4 mb-1">طرح پیشنهادی &#11164;</span>
-                            <span class="gold-mobile p-2">طرح حرفه ای &#11164;</span>
+                            <span class="silver-mobile p-2 pb-4 mb-1">طرح حرفه ای &#11164;</span>
+                            <span class="gold-mobile p-2">طرح پیشنهادی &#11164;</span>
                         </div>
                     </th>
                     <th scope="col" data-col="1">
