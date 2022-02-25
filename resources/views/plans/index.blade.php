@@ -66,8 +66,8 @@
                     </th>
                     <th scope="col" data-col="1">
                         <div class="bronze-head">
-                            <h3 class="text-light">طرح پایه</h3>
-                            <p class="text-light">(ویژه تازه کار ها)</p>
+                            <h3 class="text-dark">طرح پایه</h3>
+                            <p class="text-dark">(ویژه تازه کار ها)</p>
                         </div>
                         <div class="bronze-body bg-light p-3 mb-0">
                             <h4>{{ number_format(env('PLAN_A_AMOUNT')) }} تومان</h4>
@@ -79,6 +79,7 @@
                         <div class="gold-head">
                             <h3 class="text-light">طرح پیشنهادی</h3>
                             <p class="text-light">(پر فروش ترین بسته)</p>
+                            <span class="sign-box">پرفروش</span>
                         </div>
                         <div class="gold-body p-3 mb-0">
                             <h4>{{number_format(env('PLAN_B_AMOUNT')) }}  تومان</h4>
@@ -90,6 +91,7 @@
                         <div class="silver-head">
                             <h3 class="text-light">طرح حرفه ای</h3>
                             <p class="text-light">(ویژه کسب وکار های حرفه ای)</p>
+                            <span class="sign-box"><i class="fa fa-mobile"></i> اپلیکیشن + اقساطی</span>
                         </div>
                         <div class="bg-light p-3 mb-0">
                             <h4>{{ number_format(env('PLAN_C_AMOUNT')) }} تومان</h4>
@@ -100,7 +102,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                <tr>
+                <tr class="title-row">
                     <th scope="row">پشتیبانی</th>
                     <td data-col="1"></td>
                     <td data-col="2"></td>
@@ -108,37 +110,37 @@
                 </tr>
                 <tr>
                     <th>پشتیبانی فنی</th>
-                    <td data-col="1">&#10004;</td>
-                    <td data-col="2">&#10004;</td>
-                    <td data-col="3">&#10004;</td>
+                    <td data-col="1" data-status="true">&#10004;</td>
+                    <td data-col="2" data-status="true">&#10004;</td>
+                    <td data-col="3" data-status="true">&#10004;</td>
                 </tr>
                 <tr>
                     <th>ویدیو آموزشی</th>
-                    <td data-col="1">&#10004;</td>
-                    <td data-col="2">&#10004;</td>
-                    <td data-col="3">&#10004;</td>
+                    <td data-col="1" data-status="true">&#10004;</td>
+                    <td data-col="2" data-status="true">&#10004;</td>
+                    <td data-col="3" data-status="true">&#10004;</td>
                 </tr>
                 <tr>
                     <th>مشاوره بازاریابی</th>
-                    <td data-col="1">&#10006;</td>
-                    <td data-col="2">&#10004;</td>
-                    <td data-col="3">&#10004;</td>
+                    <td data-col="1" data-status="false">&#10006;</td>
+                    <td data-col="2" data-status="true">&#10004;</td>
+                    <td data-col="3" data-status="true">&#10004;</td>
                 </tr>
                 <tr>
                     <th>اخذ نماد اعتماد الکترونیکی</th>
-                    <td data-col="1">&#10006;</td>
-                    <td data-col="2">&#10006;</td>
-                    <td data-col="3">&#10004;</td>
+                    <td data-col="1" data-status="false">&#10006;</td>
+                    <td data-col="2" data-status="false">&#10006;</td>
+                    <td data-col="3" data-status="true">&#10004;</td>
                 </tr>
                 <tr>
                     <th>سفارشی سازی وب سایت</th>
-                    <td data-col="1">&#10006;</td>
-                    <td data-col="2">&#10006;</td>
-                    <td data-col="3">&#10004;</td>
+                    <td data-col="1" data-status="false">&#10006;</td>
+                    <td data-col="2" data-status="false">&#10006;</td>
+                    <td data-col="3" data-status="true">&#10004;</td>
                 </tr>
 
 
-                <tr>
+                <tr class="title-row">
                     <th scope="row">هاست و دامنه</th>
                       <td data-col="1"></td>
                       <td data-col="2"></td>
@@ -146,15 +148,15 @@
                   </tr>
                   <tr>
                       <th>دامنه ir رایگان</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>دامنه com رایگان</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>فضای ذخیره سازی</th>
@@ -164,23 +166,23 @@
                   </tr>
                   <tr>
                       <th>گواهی امنیت SSL</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                     <th>ایمیل تحت دامنه</th>
-                    <td data-col="1">&#10006;</td>
-                    <td data-col="2">&#10004;</td>
-                    <td data-col="3">&#10004;</td>
+                    <td data-col="1" data-status="false">&#10006;</td>
+                    <td data-col="2" data-status="true">&#10004;</td>
+                    <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>پشتیبان گیری خودکار</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
-                  <tr>
+                  <tr class="title-row">
                     <th scope="row">امکانات فروشگاه</th>
                     <td data-col="1"></td>
                     <td data-col="2"></td>
@@ -188,167 +190,167 @@
                   </tr>
                   <tr>
                       <th>ایجاد محصول نامحدود</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>ایجاد دسته بندی نامحدود</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>تعریف کد تخفیف</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>تخفیف پلکانی</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>فروش عمده</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>اپلیکیشن اندروید</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>سبد خرید</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>جستجو و فیلتر</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>لیست علاقه مندی ها</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>درگاه پرداخت بانکی</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>مقایسه محصولات</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>مدیریت روش های ارسال</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>محاسبه هزینه ارسال</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>تعریف هزینه ارسال</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>ارسال پس کرایه</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>پرداخت درب محل</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>صدور فاکتور</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>محاسبه مالیات</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>راهنمای تشخیص سایز</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>جمع آوری اطلاعات کاربران</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>ارسال اطلاعیه برای کاربران</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>اطلاعیه های فروش</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>فروش ویژه و مناسبتی</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>فروش محصول دیجیتال</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>اشتراک گذاری محصولات</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>گزارش گیری از فروشگاه</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>کنترل دسترسی کاربران</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
-                  <tr>
+                  <tr class="title-row">
                       <th scope="row">امکانات سایت</th>
                       <td data-col="1"></td>
                       <td data-col="2"></td>
@@ -356,90 +358,90 @@
                   </tr>
                   <tr>
                       <th>صفحات کاملا ریسپانسیو</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>داشبورد کاربران</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>ویرایش صفحات سایت</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>تعریف صفحات نامحدود</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>وبلاگ</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>چت آنلاین</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>پنل پیامکی</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>داشبورد مدیریت ساده و فارسی</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>مدیریت سایت با موبایل</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>ثبت نام و ورود کاربران</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>صفحه تماس با ما</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>صفحه درباره ما</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>نمونه کار ها</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>نظرات کاربران</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
 
-                  <tr>
+                  <tr class="title-row">
                       <th scope="row">امکانات سئو</th>
                       <td data-col="1"></td>
                       <td data-col="2"></td>
@@ -447,27 +449,27 @@
                   </tr>
                   <tr>
                       <th>معرفی به گوگل</th>
-                      <td data-col="1">&#10004;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="true">&#10004;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>بهینه سازی SEO</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10004;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="true">&#10004;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>سئو خودکار صفحات</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
                   <tr>
                       <th>اتصال خودکار به ترب</th>
-                      <td data-col="1">&#10006;</td>
-                      <td data-col="2">&#10006;</td>
-                      <td data-col="3">&#10004;</td>
+                      <td data-col="1" data-status="false">&#10006;</td>
+                      <td data-col="2" data-status="false">&#10006;</td>
+                      <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
 
                   <tr>
