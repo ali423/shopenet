@@ -511,12 +511,12 @@ a {
   padding-bottom: 53px;
 }
 
-.section-title h1 {
+.section-title h2 {
   font-weight: 400;
   margin-bottom: 24px;
 }
 
-.section-title h1 .highlighted {
+.section-title h2 .highlighted {
   color: #0674ec;
 }
 
@@ -3389,12 +3389,12 @@ h6 {
   padding-bottom: 53px;
 }
 
-.section-title h1 {
+.section-title h2 {
   font-weight: 400;
   margin-bottom: 24px;
 }
 
-.section-title h1 .highlighted {
+.section-title h2 .highlighted {
   color: #0674ec;
 }
 
@@ -4580,12 +4580,12 @@ h6 {
   padding-bottom: 53px;
 }
 
-.section-title h1 {
+.section-title h2 {
   font-weight: 400;
   margin-bottom: 24px;
 }
 
-.section-title h1 .highlighted {
+.section-title h2 .highlighted {
   color: #0674ec;
 }
 
@@ -6145,12 +6145,12 @@ div#ui-datepicker-div tbody tr td a:hover {
   padding-bottom: 53px;
 }
 
-.section-title h1 {
+.section-title h2 {
   font-weight: 400;
   margin-bottom: 24px;
 }
 
-.section-title h1 .highlighted {
+.section-title h2 .highlighted {
   color: #0674ec;
 }
 
@@ -7536,18 +7536,18 @@ ul.nav-tabs.nav--tabs2 li a::before {
   text-align: center;
 }
 
-.hero-area .hero__content__title h1 {
+.hero-area .hero__content__title h6 {
   color: #f3f3f8;
   text-shadow: -1px 2px 2px rgba(0, 0, 0, 0.2);
   font-size: 40px;
 }
 
-.hero-area .hero__content__title h1 .light {
+.hero-area .hero__content__title h6 .light {
   font-weight: 400;
   display: block;
 }
 
-.hero-area .hero__content__title h1 .bold {
+.hero-area .hero__content__title h6 .bold {
   font-weight: 500;
 }
 
@@ -7604,7 +7604,7 @@ ul.nav-tabs.nav--tabs2 li a::before {
   text-align: right;
 }
 
-.hero-area.hero--2 .hero__content__title h1 {
+.hero-area.hero--2 .hero__content__title h6 {
   font-weight: 400;
   font-size: 50px;
   line-height: 62px;
@@ -14194,7 +14194,7 @@ span.counter {
     padding: 0 125px;
   }
   /* hero area */
-  .hero-content .hero__content__title h1 {
+  .hero-content .hero__content__title h6 {
     font-size: 50px;
   }
   .hero-content .hero__content__title .tagline {
@@ -14741,7 +14741,7 @@ span.counter {
   .hero-area .hero__content__title .tagline {
     line-height: 30px;
   }
-  .hero-area .hero__content__title h1 {
+  .hero-area .hero__content__title h6 {
     font-size: 40px;
   }
   .hero-area .search_box {
@@ -15418,7 +15418,7 @@ span.counter {
     vertical-align: middle;
     margin-left: -3px;
   }
-  .hero-area.hero--2 .hero__content__title h1 {
+  .hero-area.hero--2 .hero__content__title h6 {
     font-size: 38px;
     line-height: 41px;
   }
@@ -15467,7 +15467,7 @@ span.counter {
   .hero-area .hero-content .content-wrapper {
     padding-top: 70px;
   }
-  .hero-area .hero__content__title h1 {
+  .hero-area .hero__content__title h6 {
     font-size: 25px;
     margin-bottom: 30px;
   }

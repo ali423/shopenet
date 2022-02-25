@@ -21,11 +21,11 @@ START HERO AREA
                     <div id="header-row" class="row">
                         <div class="col-lg-6">
                             <div class="hero__content__title">
-                                <h1>
+                                <h6 class="h1">
                                     <img class="owl-lazy"  src="{{ asset('images/logo/blacklogo.png') }}" height="50 px" alt="footer logo"><span>شاپی نت</span>
                                     <div><span class="typed-out"><span></span></span></div>
                                     <span>روش ساخت فروشگاه اینترنتی</span>
-                                </h1>
+                                </h6>
                                 <p class="text-white p-2">لذت یک تجربه عالی از فروش دیجیتال</p>
                             </div>
 
@@ -63,10 +63,10 @@ START HERO AREA
                 <!-- start col-md-12 -->
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>ساخت و آماده سازی وب سایت فروشگاهی شما
+                        <h2 class="h1">ساخت و آماده سازی وب سایت فروشگاهی شما
                             <span class="highlighted"> در سه مرحله</span>
-                        </h1>
-                        <p>شاپی نت سریع ترین ، بصرفه ترین ، پر بازده ترین و مطمئن ترین روش ساخت وب سایت فروشگاهی</p>
+                        </h2>
+                        <h1 class="h6">شاپی نت سریع ترین ، بصرفه ترین ، پر بازده ترین و مطمئن ترین روش ساخت وب سایت فروشگاهی</h1>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -188,7 +188,7 @@ START HERO AREA
             <div class="row">
                 <div class="col-md-12">
                     <div class="call-to-wrap">
-                        <h1 class="text--white">درخواست قالب جدید</h1>
+                        <h2 class="h1 text--white">درخواست قالب جدید</h2>
                         <h4 class="text--white">اگر از میان قالب های موجود ، قالب مناسب کسب و کار خود را پیدا نکردید ،
                             نگران نباشید .
                             ما در سریع ترین زمان قالب مناسب کسب و کار شما را اضافه میکنیم.</h4>
@@ -212,10 +212,10 @@ START HERO AREA
                 <!-- start col-md-12 -->
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>چرا
+                        <h2 class="h1">چرا
                             <span class="highlighted">شاپی نت</span>
                             را انتخاب می کنید
-                        </h1>
+                        </h2>
                         <p>شاپی نت تمام ویژگی های یک فروشگاه اینترنتی فوق العاده را در اختیار شما قرار میدهد. </p>
                     </div>
                 </div>
@@ -378,10 +378,10 @@ START HERO AREA
                 <!-- start col-md-12 -->
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>چرا می توانید به ما
+                        <h2 class="h2">چرا می توانید به ما
                             <span class="highlighted">اعتماد</span>
                             کنید
-                        </h1>
+                        </h2>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -459,9 +459,9 @@ START HERO AREA
                 <!-- start col-md-12 -->
                 <div class="col-md-12  dir-rtl ">
                     <div class="section-title">
-                        <h1> تعدادی از امکانات
+                        <h2 class="h1"> تعدادی از امکانات
                             <span class="highlighted">وب سایت فروشگاهی</span> شاپی نت
-                        </h1>
+                        </h2>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -540,9 +540,9 @@ START HERO AREA
                 <!-- start col-md-12 -->
                 <div class="col-md-12  dir-rtl ">
                     <div class="section-title">
-                        <h1> تعدادی از برند هایی که از خدمات
+                        <h2 class="h1"> تعدادی از برند هایی که از خدمات
                             <span class="highlighted">شاپی نت</span> استفاده می کنند
-                        </h1>
+                        </h2>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
@@ -590,10 +590,10 @@ START HERO AREA
                 <!-- start col-md-12 -->
                 <div class="col-md-12">
                     <div class="section-title">
-                        <h1>
+                        <h2>
                             <span class="highlighted">نظرات</span>
                             مشتریان
-                        </h1>
+                        </h2>
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
