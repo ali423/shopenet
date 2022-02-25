@@ -9,7 +9,7 @@ START HERO AREA
 =================================-->
     <section class="hero-area bgimage dir-rtl">
         <div class="bg_image_holder">
-            <img src="images/new/hero_area_bg.png" alt="background-image">
+            <img class="owl-lazy"  src="{{ asset('images/new/hero_area_bg.png') }}" alt="background-image">
         </div>
         <!-- start hero-content -->
         <div class="hero-content content_above">
@@ -22,7 +22,7 @@ START HERO AREA
                         <div class="col-lg-6">
                             <div class="hero__content__title">
                                 <h1>
-                                    <img src="images/logo/blacklogo.png" height="50 px" alt="footer logo"><span>شاپی نت</span>
+                                    <img class="owl-lazy"  src="{{ asset('images/logo/blacklogo.png') }}" height="50 px" alt="footer logo"><span>شاپی نت</span>
                                     <div><span class="typed-out"><span></span></span></div>
                                     <span>روش ساخت فروشگاه اینترنتی</span>
                                 </h1>
@@ -37,7 +37,7 @@ START HERO AREA
                             <!-- end .hero__btn-area-->
                         </div>
                         <div class="col-lg-6">
-                            <img src="images/svg/header.svg" class="header-mockup" style="z-index: 1000;position: relative;">
+                            <img class="owl-lazy"  src="{{ asset('images/svg/header.svg') }}" class="header-mockup" style="z-index: 1000;position: relative;" alt="طراحی فروشگاه اینترنتی با شاپی نت">
                         </div>
                     </div>
                     <!-- end /.row -->
@@ -77,7 +77,7 @@ START HERO AREA
 
                 <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                     <div class="overview-icon">
-                        <img src="images/new/fac1.png" alt="overview icon">
+                        <img class="owl-lazy"  src="{{asset('images/new/fac1.png')}}" alt="overview icon">
                     </div>
                 </div>
                 <!-- end /.col-md-4 -->
@@ -100,14 +100,14 @@ START HERO AREA
 
                 <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                     <div class="overview-icon">
-                        <img src="images/new/fac2.png" alt="overview icon">
+                        <img class="owl-lazy"  src="{{asset('images/new/fac2.png')}}" alt="overview icon">
                     </div>
                 </div>
                 <!-- end /.col-md-4 -->
 
                 <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                     <div class="overview-icon">
-                        <img src="images/new/fac3.png" alt="overview icon">
+                        <img class="owl-lazy"  src="{{ asset('images/new/fac3.png') }}" alt="overview icon">
                     </div>
                 </div>
                 <!-- end /.col-md-4 -->
@@ -183,9 +183,7 @@ START HERO AREA
         START CALL TO ACTION AREA
         =================================-->
     <section class="call-to-action bgimage dir-rtl">
-        <div class="bg_image_holder">
-            <img src="images/new/calltobg.jpg" alt="">
-        </div>
+
         <div class="container content_above">
             <div class="row">
                 <div class="col-md-12">
@@ -371,7 +369,7 @@ START HERO AREA
      =================================-->
     <section class="partner-area section--padding bgimage">
         <div class="bg_image_holder">
-            <img src="images/new/ptbg.png" alt="">
+            <img  class="owl-lazy" src="{{'images/new/ptbg.png'}}" alt="اعتماد">
         </div>
         <!-- start container -->
         <div class="container">
@@ -396,7 +394,7 @@ START HERO AREA
                 <div class="col-lg-4 col-md-6">
                     <div class="feature">
                         <div class="feature__img">
-                            <img src="images/new/icon/daneshbonyan2.png" height="150 px" alt="feature">
+                            <img class="owl-lazy"  src="{{asset('images/new/icon/daneshbonyan2.png')}}" height="150 px" alt="دانش بنیان">
                         </div>
                         <div class="feature__title">
                             <h3>مجوز شرکت دانش بنیان</h3>
@@ -412,7 +410,7 @@ START HERO AREA
                 <div class="col-lg-4 col-md-6">
                     <div class="feature">
                         <div class="feature__img">
-                            <img src="images/new/icon/eNamad.png" height="150 px" alt="feature">
+                            <img class="owl-lazy"  src="{{'images/new/icon/eNamad.png'}}" height="150 px" alt="نماد اعتماد الکترونیکی">
                         </div>
                         <div class="feature__title">
                             <h3>نماد اعتماد الکترونیکی</h3>
@@ -428,7 +426,7 @@ START HERO AREA
                 <div class="col-lg-4 col-md-6">
                     <div class="feature">
                         <div class="feature__img">
-                            <img src="images/new/icon/validate.png" height="150 px" alt="feature">
+                            <img class="owl-lazy"  src="{{asset('images/new/icon/validate.png')}}" height="150 px" alt="اعتبار">
                         </div>
                         <div class="feature__title">
                             <h3>اعتبار ما</h3>
@@ -505,7 +503,7 @@ START HERO AREA
                 </div>
                 <div class="col-6 col-sm-4 col-lg-2 text-center">
                     <i class="fa shadow p-3">
-                        <img src="images/new/icon/enamad2.png" width="41px">
+                        <img class="owl-lazy"  src="{{asset('images/new/icon/enamad2.png')}}" width="41px" alt="نماد اعتماد">
                     </i>
                     <p class="mt-3">نماد اعتماد</p>
                 </div>
@@ -533,7 +531,7 @@ START HERO AREA
   =================================-->
     <section class="partner-area section--padding bgimage">
         <div class="bg_image_holder">
-            <img src="images/new/ptbg.png" alt="">
+            <img class="owl-lazy"  src="{{asset('images/new/ptbg.png')}}" alt="customers">
         </div>
         <!-- start container -->
         <div class="container">
@@ -555,19 +553,19 @@ START HERO AREA
                 <div class="col-md-12">
                     <div class="partners">
                         <div class="partner">
-                            <img src="images/customers/shafa.png" height="120 px" alt="partner image">
+                            <img class="owl-lazy"  src="{{ asset('images/customers/shafa.png') }}" height="120 px" alt="partner image">
                         </div>
                         <div class="partner">
-                            <img src="images/customers/resa.png" height="120 px"  alt="partner image">
+                            <img class="owl-lazy"  src="{{ asset('images/customers/resa.png') }}" height="120 px"  alt="partner image">
                         </div>
                         <div class="partner">
-                            <img src="images/customers/exonyx.png" height="120 px"  alt="partner image">
+                            <img class="owl-lazy"  src="{{ asset('images/customers/exonyx.png') }}" height="120 px"  alt="partner image">
                         </div>
                         <div class="partner">
-                            <img src="images/customers/villaipi.png"  height="120 px" alt="partner image">
+                            <img class="owl-lazy"  src="{{ asset('images/customers/villaipi.png') }}"  height="120 px" alt="partner image">
                         </div>
                         <div class="partner">
-                            <img src="images/customers/deka.png" height="120 px"  alt="partner image">
+                            <img class="owl-lazy"  src="{{ asset('images/customers/deka.png') }}" height="120 px"  alt="partner image">
                         </div>
                     </div>
                 </div>
@@ -610,7 +608,7 @@ START HERO AREA
                         <div class="testimonial">
                             <div class="testimonial__about">
                                 <div class="avatar v_middle">
-                                    <img src="images/customers/rasa_admin.jpg" alt="Testimonial Avatar">
+                                    <img class="owl-lazy"  src="{{asset('images/customers/rasa_admin.jpg')}}" alt="Testimonial Avatar">
                                 </div>
                                 <div class="name-designation v_middle">
                                     <h4 class="name">خانم عباسی </h4>
@@ -629,7 +627,7 @@ START HERO AREA
                         <div class="testimonial">
                             <div class="testimonial__about">
                                 <div class="avatar v_middle">
-                                    <img src="images/customers/shfa_admin.jpeg" alt="Testimonial Avatar">
+                                    <img class="owl-lazy"  src="{{asset('images/customers/shfa_admin.jpeg')}}" alt="Testimonial Avatar">
                                 </div>
                                 <div class="name-designation v_middle">
                                     <h4 class="name">کامیز حسین زاده </h4>
@@ -647,7 +645,7 @@ START HERO AREA
                         <div class="testimonial">
                             <div class="testimonial__about">
                                 <div class="avatar v_middle">
-                                    <img src="images/customers/villaipi_admin.jpeg" alt="Testimonial Avatar">
+                                    <img class="owl-lazy"  src="{{asset('images/customers/villaipi_admin.jpeg')}}" alt="Testimonial Avatar">
                                 </div>
                                 <div class="name-designation v_middle">
                                     <h4 class="name">کیوان عباسی </h4>

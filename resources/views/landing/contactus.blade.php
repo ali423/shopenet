@@ -85,7 +85,7 @@
 
 @section('page_scripts')
     <script src="{{asset('https://maps.googleapis.com/maps/api/js?key=AIzaSyA0C5etf1GVmL_ldVAichWwFFVcDfa1y_c')}}"></script>
-    <script src="{{asset('js/map.js')}}"></script>
+    <script src="{{asset('js/map.min.js')}}"></script>
 
 @endsection
 

@@ -63,12 +63,12 @@ START FOOTER AREA
                         </div>
                             <div class="col-md-4 text-center">
                                 <a href="https://daneshbonyan.isti.ir/">
-                                <img src="{{asset('images/new/icon/daneshbonyan2.png')}}" class="p-2" width="360px">
+                                <img src="{{asset('images/new/icon/daneshbonyan2.png')}}" class="p-2" alt="دانش بنیان" width="360px">
                                 </a>
                             </div>
                         <div class="col-md-4 text-center">
                             <a href="https://www.eastp.ir/">
-                            <img src="{{ asset('images/new/icon/park.png') }}" class="p-2" width="360px">
+                            <img src="{{ asset('images/new/icon/park.png') }}" class="p-2" width="360px" alt="پارک علم و فناوری">
                             </a>
                         </div>
                     </div>
