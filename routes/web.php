@@ -13,6 +13,7 @@ use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PlanController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\SiteMapController;
 use App\Http\Controllers\TemplateCategoryController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\UserController;
@@ -52,6 +53,9 @@ Route::get('/select-template/{template:id}', [OrderController::class, 'selectTem
 Route::get('/select-plan', [OrderController::class, 'selectPlan'])->name('select.plan');
 
 Route::get('/select-free-plan', [OrderController::class, 'selectFreePlan'])->name('select.free_plan');
+
+Route::get('/sitemap.xml', [SiteMapController::class, 'index']);
+
 
 Route::middleware('user.auth')->group(function () {
 

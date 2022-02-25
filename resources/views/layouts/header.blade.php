@@ -52,7 +52,7 @@ START MENU AREA
                         @else
                             <div class="author-author__info inline has_dropdown">
                                 <div class="author__avatar loginbtn">
-                                    <img src="{{asset("images/new/usr_avatar.png")}}" height="30 px" alt="user avatar">
+                                    <img class="owl-lazy" src="{{asset("images/new/usr_avatar.png")}}" height="30 px" alt="user avatar">
                                     <div class="autor__info">
                                         <p class="name">
                                             {{auth()->user()->name}}
@@ -97,7 +97,7 @@ START MENU AREA
                         <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav">
                                 <li class="has_dropdown">
-                                    <a href="{{route('home')}}"><img src="{{asset('images/logo/combine.png')}}" height="45 px" alt="footer logo"></a>
+                                    <a class="owl-lazy" href="{{route('home')}}"><img src="{{asset('images/logo/combine.png')}}" height="45 px" alt="footer logo"></a>
                                 </li>
                                 <li class="has_dropdown">
                                     <a href="{{route('home')}}">خانه </a>
