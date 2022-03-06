@@ -82,6 +82,30 @@
                                 <div class="tab-pane product-tab fade show active" id="product-details1">
                                     <h1>{{ $template->title }}</h1>
                                     <p>{!! $template->about !!}</p>
+                                    <div class="job_detail_module">
+                                        <h3 class="job__title">امکانات  ویژه
+                                             
+                                        </h3>
+                                        <div class="job__content">
+                                            <ul class="content_list">
+                                                @foreach($template->templateDefaultOptions as $options)
+                                                    <li>{{$options->title}}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="job_detail_module">
+                                        <h3 class="job__title">امکانات سفارشی
+                                             
+                                        </h3>
+                                        <div class="job__content">
+                                            <ul class="content_list">
+                                                @foreach($template->templateProfessionalOptions as $options)
+                                                    <li>{{$options->title}}</li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!-- end /.tab-content -->
 
@@ -200,29 +224,6 @@
     <!--============================================
         END MORE PRODUCT AREA
     ==============================================-->
-
-    <!--================================
-        START CALL TO ACTION AREA
-    =================================-->
-    <section class="call-to-action bgimage dir-rtl">
-        <div class="bg_image_holder">
-            <img src="{{ asset('images/new/calltobg.jpg') }}" alt="">
-        </div>
-        <div class="container content_above">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="call-to-wrap">
-                        <h1 class="text--white">آماده پیوستن به ما هستید !</h1>
-                        <h4 class="text--white">بیش از 25،000 طراح و توسعهدهنده به ما اعتماد دارند.</h4>
-                        <a href="#" class="btn btn--lg btn--round btn--white callto-action-btn">امروز به ما بپیوندید</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================================
-        END CALL TO ACTION AREA
-    =================================-->
 @endsection
 
 

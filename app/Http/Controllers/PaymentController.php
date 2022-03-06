@@ -133,7 +133,6 @@ class PaymentController extends Controller
             if (!isset($response['data']['code'])  || $response['data']['code'] != '100') {
                 return redirect(route('payment.reject', $factor_callback));
             }
-
             DB::transaction(function () use ($request, $response, $factor_callback
             ) {
                 Payment::query()->create([

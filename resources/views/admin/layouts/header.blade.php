@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>هایپر سی</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta content="یک قالب مدیریتی با امکانات فراوان برای ساخت سی آر ام، سیستم مدیریت محتوا و ..." name="description" />
-    <meta content="قائم امیدی" name="author" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="با استفاده از شاپی نت در کمترین زمان و بدون نیاز به دانش فنی ، فروشگاه اینترنتی خودتون رو طراحی و راه اندازی کنید|شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیایی فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.">
+    <meta name="keywords" content="شاپی نت،شاپی،نت،اینستاگرام،فروشگاه،نماد,اعتماد،تضمین،امنیت،فروشگاه اینستاگرامی،فروشگاه ساز،ساخت فروشگاه،درگاه،درگاه بانکی اینستاگرام, فروشگاه ساز, فروشگاه اینترنتی">
+    <meta http-equiv="Content-Language" content="fa">
+    <title>شاپی نت|پنل ادمین</title>
+    <link href="{{asset('/images/logo/blacklogo.png')}}" rel="icon">
     <!-- App favicon -->
 @include('admin.layouts.styles')
 

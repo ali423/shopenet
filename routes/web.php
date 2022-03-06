@@ -18,6 +18,7 @@ use App\Http\Controllers\TemplateCategoryController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\UserController;
 use App\Models\Factor;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -61,16 +62,16 @@ Route::middleware('user.auth')->group(function () {
 
     Route::get('/logout', [LoginController::class, 'logout'])->name('user.logout');
 
-    Route::middleware(['awaiting_payment','available_service'])->group(function () {
+    Route::middleware(['awaiting_payment', 'available_service'])->group(function () {
 
         Route::get('/order/confirm', [OrderController::class, 'orderConfirm'])->name('order.confirm');
 
         Route::post('/order/confirm', [OrderController::class, 'orderConfirmStore'])->name('order.confirm.store');
 
     });
-  Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
-    Route::get('profile',[ProfileController::class,'show'])->name('profile');
+    Route::get('profile', [ProfileController::class, 'show'])->name('profile');
 
     Route::get('/order/delete', [OrderController::class, 'destroy'])->name('order.delete');
 
@@ -87,14 +88,14 @@ Route::middleware('user.auth')->group(function () {
 
     Route::get('/service/extension/{service:id}', [OrderController::class, 'extension'])->name('service.extension');
 
-    Route::get('payment/success/{factor:id}',[PaymentController::class,'success'])->name('payment.success');
+    Route::get('payment/success/{factor:id}', [PaymentController::class, 'success'])->name('payment.success');
 
-    Route::get('payment/free_success/',[PaymentController::class,'freePlanSuccess'])->name('free.success');
+    Route::get('payment/free_success/', [PaymentController::class, 'freePlanSuccess'])->name('free.success');
 
 
-    Route::get('payment/reject/{factor:id}',[PaymentController::class,'reject'])->name('payment.reject');
+    Route::get('payment/reject/{factor:id}', [PaymentController::class, 'reject'])->name('payment.reject');
 
-    Route::post('/check-discount',[\App\Http\Controllers\DiscountController::class,'checkDiscount']);
+    Route::post('/check-discount', [\App\Http\Controllers\DiscountController::class, 'checkDiscount']);
 
 });
 
@@ -115,6 +116,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
         Route::post('/login', [AdminRegisterController::class, 'login'])->name('login');
     });
     Route::middleware(['auth', 'admin'])->group(function () {
+        Route::get('/linkstorage', function () {
+            Artisan::call('storage:link');
+        });
         Route::get('/logout', [AdminRegisterController::class, 'destroy'])->name('logout');
         Route::resource('plan', PlanController::class);
         Route::prefix('dashboard')->group(function () {
@@ -122,7 +126,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
             Route::resource('template', TemplateController::class);
             Route::resource('template-category', TemplateCategoryController::class);
             Route::resource('discount', DiscountController::class);
-                Route::resource('service', \App\Http\Controllers\Admin\ServiceController::class);
+            Route::resource('service', \App\Http\Controllers\Admin\ServiceController::class);
         });
     });
 
