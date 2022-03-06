@@ -10,14 +10,14 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="page-title">طرح قیمت گذاری </h1>
+                    <h1 class="page-title">تعرفه ها </h1>
                     <div class="breadcrumb">
                         <ul>
                             <li>
                                 <a href="index.html">خانه </a>
                             </li>
                             <li class="active">
-                                <a href="#">طرح قیمت گذاری </a>
+                                <a href="#">تعرفه ها </a>
                             </li>
                         </ul>
                     </div>

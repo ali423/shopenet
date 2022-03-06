@@ -15,7 +15,7 @@ START FOOTER AREA
                         <ul class="info-contact">
                             <li>
                                 <span class="lnr lnr-phone info-icon"></span>
-                                <span class="info">تلفن :34406859 041</span>
+                                <span class="info">تلفن : <a href="tel:+984134406859">04134406859</a></span>
                             </li>
                             <li>
                                 <span class="lnr lnr-envelope info-icon"></span>
@@ -41,7 +41,7 @@ START FOOTER AREA
                                 <a href="/templates/list">قالب ها</a>
                             </li>
                             <li class="has_dropdown">
-                                <a href="{{route('plan.index')}}">قیمت گذاری</a>
+                                <a href="{{route('plan.index')}}">تعرفه ها</a>
                             </li>
                             <li class="has_dropdown">
                                 <a href="{{route('template.custom')}}">درخواست قالب جدید</a>

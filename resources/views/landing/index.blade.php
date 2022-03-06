@@ -88,22 +88,34 @@ START HERO AREA
                     <p>پس از بررسی قالب های شاپی نت و مشاهده پیش نمایش آنها یک قالب متناسب با زمینه فعالیت خود انتخاب کنید.</p>
                 </div>
                 <!-- end /.col-md-5 -->
+                
+                <div>
 
-                <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont">
-                    <div class="step_num">02</div>
-                    <h2 class="overview-title">انتخاب پلن
+                    <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont d-none d-md-inline-block">
+                        <div class="step_num">02</div>
+                        <h2 class="overview-title">انتخاب پلن
 
-                    </h2>
-                    <p>پس از بررسی مشخصات و امکانات طرح های موجود ، پلن متناسب با نیاز خود را انتخاب کنید.</p>
-                </div>
-                <!-- end /.col-md-5 -->
-
-                <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
-                    <div class="overview-icon">
-                        <img class="owl-lazy"  src="{{asset('images/new/fac2.png')}}" alt="overview icon">
+                        </h2>
+                        <p>پس از بررسی مشخصات و امکانات طرح های موجود ، پلن متناسب با نیاز خود را انتخاب کنید.</p>
                     </div>
+                    <!-- end /.col-md-5 -->
+
+                    <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont col-order-0">
+                        <div class="overview-icon">
+                            <img class="owl-lazy"  src="{{asset('images/new/fac2.png')}}" alt="overview icon">
+                        </div>
+                    </div>
+                    <!-- end /.col-md-4 -->
+                    
+                    <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont d-md-none">
+                        <div class="step_num">02</div>
+                        <h2 class="overview-title">انتخاب پلن
+
+                        </h2>
+                        <p>پس از بررسی مشخصات و امکانات طرح های موجود ، پلن متناسب با نیاز خود را انتخاب کنید.</p>
+                    </div>
+                    <!-- end /.col-md-5 -->
                 </div>
-                <!-- end /.col-md-4 -->
 
                 <div class="col-lg-4 offset-lg-1 col-md-6 v_middle overview_cont">
                     <div class="overview-icon">
@@ -143,7 +155,7 @@ START HERO AREA
                 <div class="col-md-12">
                     <div class="product-title-area">
                         <div class=" text-center">
-                            <a href="#">
+                            <a>
                                 <h2>برای شروع یک قالب انتخاب کنید</h2>
                             </a>
                         </div>
@@ -345,11 +357,11 @@ START HERO AREA
                 <div class="col-lg-3 col-md-6">
                     <!-- start .feature2 -->
                     <div class="feature2">
-                        <span class="feature2__count">100</span>
+                        <span class="feature2__count">8</span>
                         <div class="feature2__content">
                             <span class="lnr lnr-diamond mcolor4"></span>
                             <h3 class="text-justify">امکانات سفارشی</h3>
-                            <p class="text-justify">صد ها امکانت دیگر بجز موارد ذکر شده ، بر روی فروشگاه های شاپی نت فعال است که شما با توجه به نیاز خود می توانید از آنها استفاده نمایید .</p>
+                            <p class="text-justify">صد ها امکانات دیگر بجز موارد ذکر شده ، بر روی فروشگاه های شاپی نت فعال است که شما با توجه به نیاز خود می توانید از آنها استفاده نمایید .</p>
                         </div>
                         <!-- end /.feature2__content -->
                     </div>
@@ -619,7 +631,7 @@ START HERO AREA
                             <div class="testimonial__text">
                                 <p>سپاس از شما و همکاران خوبتون
                                     طراحی سایت آموزشگاه علمی ما رو به بهترین شکل انجام دادین با یک قالب بسیار زیبا و کاربردی و در کمترین زمان ممکن و پیگیری و پشتیبانی عالی بعد از تحویل سایت به بنده که سوالات و ایرادات رو برطرف میکردین
-                                    بی نهایت ممنونم تز کار حرفه ای و عالی شما. </p>
+                                    بی نهایت ممنونم از کار حرفه ای و عالی شما </p>
                             </div>
                         </div>
                         <!-- end /.testimonial -->
@@ -637,7 +649,7 @@ START HERO AREA
                             </div>
                             <div class="testimonial__text">
                                 <p>واقعلا هم راه اندازی سریع و با کیفیت بالای وب سایت ، هم پشتیبانی مداوم و البته فیلم های آموزشی که در اخیار ما قرار گرفتند ، همگی عالی بودند .
-                                شاپی نت هر امکاناتی که ما برای داشتن یه فروشگاه عالی نیاز داشتیم برامون فرهم کرد .
+                                شاپی نت هر امکاناتی که ما برای داشتن یه فروشگاه عالی نیاز داشتیم برامون فراهم کرد .
                                 با تشکر از شما</p>
                             </div>
                         </div>

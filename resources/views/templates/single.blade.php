@@ -55,7 +55,7 @@
                                 <div class="action-btns">
                                     <a href="/select-template/{{$template->id}}" class="btn btn--round btn--lg">انتخاب </a>
                                     <a href="/preview/{{$template->slug}}" class="btn btn--round btn--lg btn--icon">
-                                        <span class="lnr "></span>پیشنمایش</a>
+                                        <span class="lnr "></span>پیش نمایش</a>
                                 </div>
                             </div>
                             <!-- end /.item__action -->
