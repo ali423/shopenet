@@ -16,19 +16,13 @@ class CreatePaymentsTable extends Migration
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('factor_id')->constrained();
-            $table->bigInteger('status')->nullable();
-            $table->bigInteger('idpay_track_id')->nullable();
-            $table->bigInteger('payment_track_id')->nullable();
-            $table->text('payment_id')->nullable();
-            $table->bigInteger('order_id')->nullable();
-            $table->double('amount')->nullable();
-            $table->double('payment_amount')->nullable();
-            $table->string('date')->nullable();
-            $table->string('card_no')->nullable();
-            $table->string('pay_date')->nullable();
-            $table->string('verify_date')->nullable();
-            $table->text('error_message')->nullable();
-            $table->string('error_code')->nullable();
+            $table->string('code')->nullable();
+            $table->bigInteger('ref_id')->nullable();
+            $table->text('card_pan')->nullable();
+            $table->text('card_hash')->nullable();
+            $table->string('fee_type')->nullable();
+            $table->string('fee')->nullable();
+            $table->text('message')->nullable();
             $table->timestamps();
         });
     }

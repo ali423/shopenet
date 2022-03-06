@@ -92,133 +92,109 @@ class PaymentController extends Controller
     public function paymentCallBack(Request $request)
     {
         $validator = Validator::make($request->all(), [
-            'status' => 'required',
-            'track_id' => 'required',
-            'id' => 'required|exists:factors,payment_id',
-            'order_id' => 'required|exists:factors,number',
+            'Status' => 'required|in:OK,NOK',
+            'Authority' => 'required|exists:factors,payment_id',
         ]);
         if ($validator->fails()) {
             return redirect(route('home'))->withErrors('پرداخت موفقیت آمیز نبود ، در صورت کسر وجه ، حداکثر پس از 72 ساعت به حساب شما عودت خواهد شد ');
         }
-        $factor_callback = Factor::query()->where('payment_id', $request->get('id'))->where('number', $request->get('order_id'));
+
+        $factor_callback = Factor::query()->where('payment_id', $request->get('Authority'));
         if (!$factor_callback->exists()) {
             return redirect(route('home'))->withErrors('پرداخت موفقیت آمیز نبود ، در صورت کسر وجه ، حداکثر پس از 72 ساعت به حساب شما عودت خواهد شد ');
         }
-
         $factor_callback = $factor_callback->first();
-        if ($request->get('status') != 10) {
-            $factor_callback->update([
-                'payment_status' => $request->get('status'),
-                'idpay_track_id' => $request->get('track_id'),
-                'discount_id'=>null,
-
-            ]);
-            return redirect(route('payment.reject', $factor_callback));
+        if ($request->get('Status') == 'NOK') {
+            return redirect(route('factor.show', $factor_callback))->withErrors('پرداخت موفقیت آمیز نبود');
         }
-
+           if (isset($factor_callback->discount_id)){
+               $amount=$factor_callback->new_amount*10;
+           }else{
+               $amount=$factor_callback->amount*10;
+           }
         try {
             $response_json = Http::withHeaders([
+                'accept' => 'application/json',
                 'Content-Type' => 'application/json',
-                'X-API-KEY' => env('ID_PAY_KEY'),
-                'X-SANDBOX' => '1',
-            ])->post('https://api.idpay.ir/v1.1/payment/verify', [
-                'id' => $factor_callback->payment_id,
-                'order_id' => $factor_callback->number,
+            ])->post('https://api.zarinpal.com/pg/v4/payment/verify.json', [
+                'merchant_id' => env('ZARIN_PAL_KEY'),
+                'authority' => $factor_callback->payment_id,
+                'amount' => $amount,
             ]);
-            $status = $response_json->status();
             $response = json_decode($response_json, true);
-
-            if ($status != '200') {
+            if (!isset($response['data']['code']) && isset($response['errors']['code'])){
+                Payment::query()->create([
+                    'factor_id' => $factor_callback->id,
+                    'code' => $response['errors']['code'] ?? null,
+                    'message'=>$response['errors']['message'] ?? null,
+                ]);
+                return redirect(route('payment.reject', $factor_callback));
+            }
+            if (!isset($response['data']['code'])  || $response['data']['code'] != '100') {
                 return redirect(route('payment.reject', $factor_callback));
             }
 
             DB::transaction(function () use ($request, $response, $factor_callback
             ) {
-                $factor = Factor::query()->where('payment_id', $response['id'])->where('number', $response['order_id'])->first();
-                if ($factor_callback->id != $factor->id) {
-                    return redirect(route('home'))->withErrors('پرداخت موفقیت آمیز نبود ، در صورت کسر وجه ، حداکثر پس از 72 ساعت به حساب شما عودت خواهد شد ');
-                }
                 Payment::query()->create([
-                    'factor_id' => $factor->id,
-                    'status' => $response['status'] ?? null,
-                    'idpay_track_id' => $response['track_id'] ?? null,
-                    'payment_track_id' => $response['payment']['track_id'] ?? null,
-                    'payment_id' => $response['id'] ?? null,
-                    'order_id' => $response['order_id'] ?? null,
-                    'amount' => $response['amount'] ?? null,
-                    'payment_amount' => $response['payment']['amount'] ?? null,
-                    'date' => $response['date'] ?? null,
-                    'card_no' => $response['card_no'] ?? null,
-                    'pay_date' => $response['payment']['date'] ?? null,
-                    'verify_date' => $response['verify']['date'] ?? null,
-                    'error_message' => $response['error_message'] ?? null,
-                    'error_code' => $response['error_code'] ?? null,
+                    'factor_id' => $factor_callback->id,
+                    'code' => $response['data']['code'] ?? null,
+                    'ref_id' => $response['data']['ref_id']?? null,
+                    'card_pan' =>$response['data']['card_pan'] ?? null,
+                    'card_hash' => $response['data']['card_hash'] ?? null,
+                    'fee_type' =>$response['data']['fee_type'] ?? null,
+                    'fee' => $response['data']['fee'] ?? null,
+                ]);
+                $plan = $this->getPlanData($factor_callback->plan);
+                if (isset($factor_callback->extension_service_id)) {
+                    $service = Service::query()->findOrFail($factor_callback->extension_service_id);
+                    $service->update([
+                        'template_id' => $factor_callback->template_id,
+                        'plan' => $factor_callback->plan,
+                        'status' => 'activating',
+                        'expire_date' => $plan['expire_date'],
+                    ]);
+                } else {
+                    $service = Service::query()->create([
+                        'user_id' => auth()->user()->id,
+                        'template_id' => $factor_callback->template_id,
+                        'plan' => $factor_callback->plan,
+                        'status' => 'activating',
+                        'expire_date' => $plan['expire_date'],
+                    ]);
+                }
+                $factor_callback->update([
+                    'status' => 'paid',
+                    'payment_status' => $response['data']['code'] ?? null,
+                    'service_id' => $service->id,
                 ]);
 
-                if ($response['status'] == 100) {
-                    $plan = $this->getPlanData($factor->plan);
-                    if (isset($factor->extension_service_id)){
-                        $service=Service::query()->findOrFail($factor->extension_service_id);
-                        $service->update([
-                            'template_id' => $factor->template_id,
-                            'plan' => $factor->plan,
-                            'status' => 'activating',
-                            'expire_date' => $plan['expire_date'],
-                        ]);
-                    }else{
-                        $service = Service::query()->create([
-                            'user_id' => auth()->user()->id,
-                            'template_id' => $factor->template_id,
-                            'plan' => $factor->plan,
-                            'status' => 'activating',
-                            'expire_date' => $plan['expire_date'],
-                        ]);
-                    }
-                    $factor->update([
-                        'status' => 'paid',
-                        'payment_status' => $response['status'] ?? null,
-                        'idpay_track_id' => $response['track_id'] ?? null,
-                        'service_id' => $service->id,
-                        'amount'=>$response['payment']['amount'],
-                    ]);
-
-                }else{
-                    $factor->update([
-                        'discount_id'=>null,
-                    ]);
-                }
-
             });
-            if ($response['status'] == 100) {
             event(new OrderCreated($factor_callback));
-                return redirect(route('payment.success', $factor_callback));
-            }
-            return redirect(route('payment.reject', $factor_callback));
+            return redirect(route('payment.success', $factor_callback));
         } catch (\Exception $e) {
-            $factor_callback->update([
-                'discount_id'=>null,
-            ]);
             $data = (object)array();
             $data->withdrawError = ($e->getMessage());
             return redirect(route('payment.reject', $factor_callback));
         }
     }
 
-    public function success(Factor $factor=null)
+    public function success(Factor $factor = null)
     {
         return view('payment.success', [
             'factor_number' => $factor->number,
         ]);
     }
 
-    public function freePlanSuccess(){
+    public function freePlanSuccess()
+    {
         return view('payment.success');
     }
 
     public function reject(Factor $factor)
     {
         return view('payment.reject', [
-            'idpay_track_id' => $factor->idpay_track_id,
+            'factor_number' => $factor->number,
         ]);
     }
 }

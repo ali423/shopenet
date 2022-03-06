@@ -25,10 +25,10 @@ class CreateFactorsTable extends Migration
             $table->string('about')->nullable();
             $table->enum('status',['paid','failed','rejected','canceled','awaiting_payment'])->default('awaiting_payment');
             $table->double('amount')->nullable();
+            $table->double('new_amount')->nullable();
             $table->text('payment_id')->nullable();
             $table->text('description')->nullable();
             $table->string('payment_status')->nullable();
-            $table->bigInteger('idpay_track_id')->nullable();
             $table->timestamps();
         });
     }
