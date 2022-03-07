@@ -393,12 +393,12 @@
                       <td data-col="2" data-status="true">&#10004;</td>
                       <td data-col="3" data-status="true">&#10004;</td>
                   </tr>
-                  <tr>
-                      <th>پنل پیامکی</th>
-                      <td data-col="1" data-status="false">&#10006;</td>
-                      <td data-col="2" data-status="false">&#10006;</td>
-                      <td data-col="3" data-status="true">&#10004;</td>
-                  </tr>
+{{--                  <tr>--}}
+{{--                      <th>پنل پیامکی</th>--}}
+{{--                      <td data-col="1" data-status="false">&#10006;</td>--}}
+{{--                      <td data-col="2" data-status="false">&#10006;</td>--}}
+{{--                      <td data-col="3" data-status="true">&#10004;</td>--}}
+{{--                  </tr>--}}
                   <tr>
                       <th>داشبورد مدیریت ساده و فارسی</th>
                       <td data-col="1" data-status="true">&#10004;</td>
