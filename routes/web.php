@@ -3,6 +3,7 @@
 
 use App\Http\Controllers\admin\DashboardController as AdminDashboardController;
 use App\Http\Controllers\admin\RegisterController as AdminRegisterController;
+use App\Http\Controllers\admin\ServiceController as AdminServiceController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\FactorController;
@@ -17,7 +18,6 @@ use App\Http\Controllers\SiteMapController;
 use App\Http\Controllers\TemplateCategoryController;
 use App\Http\Controllers\TemplateController;
 use App\Http\Controllers\UserController;
-use App\Models\Factor;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -126,7 +126,7 @@ Route::prefix('admin')->name('admin.')->group(function () {
             Route::resource('template', TemplateController::class);
             Route::resource('template-category', TemplateCategoryController::class);
             Route::resource('discount', DiscountController::class);
-            Route::resource('service', \App\Http\Controllers\Admin\ServiceController::class);
+            Route::resource('service', AdminServiceController::class);
         });
     });
 
