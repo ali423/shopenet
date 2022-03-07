@@ -3,7 +3,7 @@
     <div class="product product--card ">
         <div class="product__thumbnail">
             <img src="{{ asset(str_replace('public','storage',$template->icon))}}"
-                 alt="Product Image">
+                 alt="Product Image" class="template-thumbnail">
             <div class="prod_btn">
                 <a href="/template/{{$template->id}}" class="transparent btn--sm btn--round">اطلاعات
                     بیشتر</a>
