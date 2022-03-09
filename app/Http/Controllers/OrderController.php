@@ -8,6 +8,7 @@ use App\Models\Service;
 use App\Models\Template;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
 
 class OrderController extends Controller
@@ -101,6 +102,7 @@ class OrderController extends Controller
         if ($plan['status'] == false) {
             return redirect(route('plan.index'))->withErrors(' ابتدا یک طرح انتخاب کنید ');
         }
+        try {
         if ($plan['amount'] == 0){
             $template = Template::query()->findOrFail($request->session()->get('template'));
              Service::query()->create([
@@ -113,6 +115,7 @@ class OrderController extends Controller
             $request->session()->forget('template');
             $request->session()->forget('plan');
             $request->session()->forget('old_service');
+            Http::post('https://api.kavenegar.com/v1/' . env('Sms_Key') . '/verify/lookup.json?receptor=' . auth()->user()->mobile . '&token=' . rand('10000','99999') . '&template=order');
             return redirect(route('free.success'));
         }
         $check_factor_number_unique = true;
@@ -150,6 +153,11 @@ class OrderController extends Controller
         $request->session()->forget('plan');
         $request->session()->forget('old_service');
         return redirect(route('factor.show', $factor));
+        } catch (\Exception $e) {
+            $data = (object)array();
+            $data->withdrawError = ($e->getMessage());
+            return redirect()->back()->withErrors('خطایی رخ داده ، لطفا مجددا تلاش کنید');
+        }
     }
 
     public function extension(Request $request,Service $service){
