@@ -14,17 +14,21 @@
                     <div class="breadcrumb">
                         <ul>
                             <li>
-                                <a href="index.html">خانه </a>
+                                <a  href="{{route('home')}}">خانه </a>
                             </li>
                             <li class="active">
-                                <a href="#">تعرفه ها </a>
+                                <a href="{{route('plan.index')}}">تعرفه ها </a>
                             </li>
                         </ul>
                     </div>
-
+                    <div class="text-center">
+                        <a href="{{route('select.free_plan')}}" class="btn btn--icon btn-md btn--round btn-success">
+                             14 روز تست رایگان</a>
+                    </div>
                 </div>
                 <!-- end /.col-md-12 -->
             </div>
+
             <!-- end /.row -->
         </div>
         <!-- end /.container -->
