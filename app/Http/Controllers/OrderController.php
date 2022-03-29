@@ -6,7 +6,6 @@ use App\Http\Requests\OrderConfirmRequest;
 use App\Models\Factor;
 use App\Models\Service;
 use App\Models\Template;
-use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
@@ -43,6 +42,9 @@ class OrderController extends Controller
 
     public function selectFreePlan(Request $request){
         $request->session()->put('plan', 'd');
+        if ($request->session()->has('template') && !$request->session()->has('old_service') ) {
+            return redirect(route('order.confirm'));
+        }
             return redirect(url('/templates/list'))->with('successful', 'لطفا یک قالب انتخاب کنید .');
     }
 
