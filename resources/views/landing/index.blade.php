@@ -159,13 +159,11 @@ START HERO AREA
                                 <h2>برای شروع یک قالب انتخاب کنید</h2>
                             </a>
                         </div>
-
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
             </div>
-            <!-- end /.row -->
-
+            
             <div class="row ">
                 <!-- start .col-md-4 -->
                 @foreach($templates as $template)
@@ -173,6 +171,20 @@ START HERO AREA
                 @endforeach
             </div>
             <!-- end /.row -->
+
+            <!-- end /.row -->
+            <div class="col-lg-4 col-md-6">
+                <!-- start .single-product -->
+                <div class="myjob">
+                    <a href="#">
+                        قالب متناسب با شغلت رو پیدا نکردی؟
+                    </br>
+                        می تونی با کلیک روی + قالب مورد نظرتو به ما اطلاع بدی تا در اسرع وقت روی سایت قرار بگیره.
+                        <p class="plus">+</p>
+                    </a>
+                </div>
+                <!-- end /.single-product -->
+            </div>
 
             <!-- start .row -->
             <div class="row">
