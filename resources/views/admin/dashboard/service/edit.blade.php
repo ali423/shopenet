@@ -37,6 +37,7 @@
                                            readonly>
                                 </div>
                             </div>
+                            @if($service->plan !='d')
                             <div class="form-row">
                                 <div class="form-group col-md-3">
                                     <label class="col-form-label">شماره فاکتو</label>
@@ -62,7 +63,7 @@
                                            readonly>
                                 </div>
                             </div>
-
+                            @endif
                             <div class="form-row">
                                 <div class="form-group col-md-3">
                                     <label class="col-form-label">پلن انتخابی</label>
