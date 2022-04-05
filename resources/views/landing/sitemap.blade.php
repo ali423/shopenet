@@ -3,31 +3,37 @@
     <url>
         <loc>https://shopenet.ir/</loc>
         <lastmod>2022-02-25T08:06:54+00:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.00</priority>
     </url>
     <url>
         <loc>https://shopenet.ir/login</loc>
         <lastmod>2022-02-25T08:06:54+00:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://shopenet.ir/templates/list</loc>
         <lastmod>2022-02-25T08:06:54+00:00</lastmod>
-        <priority>0.80</priority>
+        <changefreq>daily</changefreq>
+        <priority>0.90</priority>
     </url>
     <url>
         <loc>https://shopenet.ir/plan</loc>
         <lastmod>2022-02-25T08:06:54+00:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://shopenet.ir/template-custom</loc>
         <lastmod>2022-02-25T08:06:54+00:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
     <url>
         <loc>https://shopenet.ir/contactus</loc>
         <lastmod>2022-02-25T08:06:54+00:00</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.80</priority>
     </url>
 
@@ -36,7 +42,7 @@
             <loc>{{ url('/') }}/template/{{ $template->id }}</loc>
             <lastmod>{{ $template->created_at->tz('UTC')->toAtomString() }}</lastmod>
             <changefreq>weekly</changefreq>
-            <priority>0.8</priority>
+            <priority>0.90</priority>
         </url>
     @endforeach
 </urlset>
