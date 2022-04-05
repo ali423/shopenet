@@ -15919,6 +15919,12 @@ span.counter {
 }
 
 /* my custom classes */
+
+@media only screen and (max-width: 371px) {
+  .mainmenu__search{
+    font-size: 12px !important;
+  }
+}
 @media only screen and (max-width: 355px) {
   .mt-mobile-5{
     margin-top: 10px !important;

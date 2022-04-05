@@ -370,6 +370,56 @@
 }
 /*---====== end footer icon hover section ======---*/
 
+/*---====== start add my job section ======---*/
+.myjob{
+    background-color: rgba(0,0,0,0.35);
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgb(108 111 115 / 10%);
+    border-radius: 4px;
+    border: 2px dashed white;
+    height: 449px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.myjob a{
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+.myjob .plus{
+    background-color: #FFFFFF;
+    color: #999 !important;
+    padding: 20px;
+    font-size: 50px;
+    margin-top: 40px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.myjob .plus:hover{
+    background-color: #eee;
+    color: #999 !important;
+}
+/*---====== end add my job section ======---*/
+
+
+
 /*---===== start animation keyframes =====---*/
 
 /* header type character anime*/
