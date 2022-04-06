@@ -7,11 +7,14 @@
     <!-- viewport meta -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-{{--    <meta name="description" content="با استفاده از شاپی نت در کمترین زمان و بدون نیاز به دانش فنی ، فروشگاه اینترنتی خودتون رو طراحی و راه اندازی کنید|شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیایی فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.">--}}
-        <meta name="description" content="@yield('description')">
-    <meta name="keywords" content="@yield('keywords')">
+    <meta name="description" content="@yield('description','با استفاده از شاپی نت در کمترین زمان و بدون نیاز به دانش فنی , فروشگاه اینترنتی خودتون رو طراحی و راه اندازی کنید|شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیایی فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.')">
+    <meta name="keywords" content="@yield('keywords','شاپی نت,شاپی,نت,اینستاگرام,فروشگاه,نماد,اعتماد,تضمین,امنیت,فروشگاه اینستاگرامی,فروشگاه ساز,ساخت فروشگاه,درگاه,درگاه بانکی اینستاگرام, فروشگاه ساز, فروشگاه اینترنتی')">
     <meta http-equiv="Content-Language" content="fa">
-    <title>@yield('title')</title>
+    @if(Request::is('/'))
+        <title>شاپی نت : فروشگاه ساز اینترنتی</title>
+    @else
+        <title>@yield('title',' فروشگاه ساز اینترنتی ') - شاپی نت </title>
+    @endif
     <link href="{{asset('/images/logo/blacklogo.png')}}" rel="icon">
 
     @include('layouts.styles')

@@ -1,5 +1,5 @@
 @extends("layouts.main")
-
+@section('title','ورود به حساب کاربری')
 @section('content')
 
 

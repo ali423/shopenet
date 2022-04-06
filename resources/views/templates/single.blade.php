@@ -1,5 +1,7 @@
 @extends("layouts.main")
-
+@section('title',$template->title)
+@section('description',$template->description)
+@section('keywords',implode(',',array_column($template->KeyWords->toArray(),'title')))
 @section('content')
 
 

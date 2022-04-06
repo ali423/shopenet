@@ -1,5 +1,6 @@
 @extends("layouts.main")
-
+@section('title','درخواست ایجاد قالب جدید')
+@section('description','اگر قالب متناسب با کسب و کار خود را از میان لیست قالب های شاپی نت پیدا نمی کنید ، با تکمیل این فرم میتوانید درخواست اضافه شدن قالب خود را ثبت کنید .')
 @section('content')
 
     <section class="section--padding2 bgcolor dir-rtl">

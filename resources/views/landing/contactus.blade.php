@@ -1,7 +1,6 @@
-@section('page_styles')
-@endsection
 @extends("layouts.main")
-
+@section('title','تماس با ما')
+@section('description','برای ارتباط با شاپی نت میتوانید از تلفن های تماس و یا پیشتیبانی آنلاین وب سایت و یا شماره واتس آپ استفاده کنید .')
 @section('content')
     <!--================================
     START AFFILIATE AREA
