@@ -1,6 +1,7 @@
 @extends("layouts.main")
-
+{{--@section('title','شاپی نت')--}}
 @section('content')
+
     <!-- Main Content Area -->
 
 
@@ -88,7 +89,7 @@ START HERO AREA
                     <p>پس از بررسی قالب های شاپی نت و مشاهده پیش نمایش آنها یک قالب متناسب با زمینه فعالیت خود انتخاب کنید.</p>
                 </div>
                 <!-- end /.col-md-5 -->
-                
+
                 <div>
 
                     <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont d-none d-md-inline-block">
@@ -106,7 +107,7 @@ START HERO AREA
                         </div>
                     </div>
                     <!-- end /.col-md-4 -->
-                    
+
                     <div class="col-lg-5 offset-lg-1 col-md-6 v_middle overview_cont d-md-none">
                         <div class="step_num">02</div>
                         <h2 class="overview-title">انتخاب پلن
@@ -163,29 +164,25 @@ START HERO AREA
                 </div>
                 <!-- end /.col-md-12 -->
             </div>
-            
+
             <div class="row ">
                 <!-- start .col-md-4 -->
                 @foreach($templates as $template)
                     @include('layouts.product')
                 @endforeach
-            </div>
-            <!-- end /.row -->
-
-            <!-- end /.row -->
-            <div class="col-lg-4 col-md-6">
-                <!-- start .single-product -->
-                <div class="myjob">
-                    <a href="#">
-                        قالب متناسب با شغلت رو پیدا نکردی؟
-                    </br>
-                        می تونی با کلیک روی + قالب مورد نظرتو به ما اطلاع بدی تا در اسرع وقت روی سایت قرار بگیره.
-                        <p class="plus">+</p>
-                    </a>
+                <div class="col-lg-4 col-md-6">
+                    <!-- start .single-product -->
+                    <div class="myjob">
+                        <a href="{{route('template.custom')}}">
+                            قالب متناسب با شغلت رو پیدا نکردی؟
+                            </br>
+                            می تونی با کلیک روی + قالب مورد نظرتو به ما اطلاع بدی تا در اسرع وقت روی سایت قرار بگیره.
+                            <p class="plus">+</p>
+                        </a>
+                    </div>
+                    <!-- end /.single-product -->
                 </div>
-                <!-- end /.single-product -->
             </div>
-
             <!-- start .row -->
             <div class="row">
                 <div class="col-md-12">

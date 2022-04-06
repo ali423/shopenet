@@ -7,10 +7,14 @@
     <!-- viewport meta -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="با استفاده از شاپی نت در کمترین زمان و بدون نیاز به دانش فنی ، فروشگاه اینترنتی خودتون رو طراحی و راه اندازی کنید|شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیایی فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.">
-    <meta name="keywords" content="شاپی نت،شاپی،نت،اینستاگرام،فروشگاه،نماد,اعتماد،تضمین،امنیت،فروشگاه اینستاگرامی،فروشگاه ساز،ساخت فروشگاه،درگاه،درگاه بانکی اینستاگرام, فروشگاه ساز, فروشگاه اینترنتی">
+    <meta name="description" content="@yield('description','با استفاده از شاپی نت در کمترین زمان و بدون نیاز به دانش فنی , فروشگاه اینترنتی خودتون رو طراحی و راه اندازی کنید|شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیایی فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.')">
+    <meta name="keywords" content="@yield('keywords','شاپی نت,شاپی,نت,اینستاگرام,فروشگاه,نماد,اعتماد,تضمین,امنیت,فروشگاه اینستاگرامی,فروشگاه ساز,ساخت فروشگاه,درگاه,درگاه بانکی اینستاگرام, فروشگاه ساز, فروشگاه اینترنتی')">
     <meta http-equiv="Content-Language" content="fa">
-    <title>شاپی نت|فروشگاه ساز</title>
+    @if(Request::is('/'))
+        <title>شاپی نت : فروشگاه ساز اینترنتی</title>
+    @else
+        <title>@yield('title',' فروشگاه ساز اینترنتی ') - شاپی نت </title>
+    @endif
     <link href="{{asset('/images/logo/blacklogo.png')}}" rel="icon">
 
     @include('layouts.styles')
@@ -19,7 +23,7 @@
 
 <body class="preload home2 single-vendor">
 <span class="call-title">تماس بگیرید</span>
-<a class="phone" href="tel:+984134406859"><i class="fa fa-2x fa-phone"></i></a> 
+<a class="phone" href="tel:+984134406859"><i class="fa fa-2x fa-phone"></i></a>
 <!-- ================================
 START MENU AREA
 ================================= -->
@@ -61,7 +65,7 @@ START MENU AREA
                                         <!--<p class="ammount">2000 تومان</p>-->
                                     </div>
                                 </div>
-                                
+
                                 <div class="dropdowns dropdown--author">
                                     <ul>
                                         <li>
