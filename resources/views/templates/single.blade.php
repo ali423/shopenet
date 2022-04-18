@@ -199,6 +199,7 @@
     <!--============================================
         START MORE PRODUCT ARE
     ==============================================-->
+    @if($templates->count() > 1)
     <section class="more_product_area section--padding dir-rtl">
         <div class="container">
             <div class="row">
@@ -212,7 +213,7 @@
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
-
+                @php($own_id=$template->id)
                 @foreach($templates as $template)
                     @include('layouts.product')
                 @endforeach
@@ -226,6 +227,7 @@
     <!--============================================
         END MORE PRODUCT AREA
     ==============================================-->
+    @endif
 @endsection
 
 
