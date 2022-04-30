@@ -61,11 +61,11 @@ START FOOTER AREA
                         <div class="col-md-4 text-center">
                             <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=211063&amp;Code=QIuqSCjxNe6Ox8vvK5lW"><img referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=211063&amp;Code=QIuqSCjxNe6Ox8vvK5lW" alt="" style="cursor:pointer" id="QIuqSCjxNe6Ox8vvK5lW"></a>
                         </div>
-                            <div class="col-md-4 text-center">
-                                <a href="https://daneshbonyan.isti.ir/">
-                                <img src="{{asset('images/new/icon/daneshbonyan2.png')}}" class="p-2" alt="دانش بنیان" width="360px">
-                                </a>
-                            </div>
+                        <div class="col-md-4 text-center">
+                            <a href="https://daneshbonyan.isti.ir/">
+                            <img src="{{asset('images/new/icon/daneshbonyan2.png')}}" class="p-2" alt="دانش بنیان" width="360px">
+                            </a>
+                        </div>
                         <div class="col-md-4 text-center">
                             <a href="https://www.eastp.ir/">
                             <img src="{{ asset('images/new/icon/park.png') }}" class="p-2" width="360px" alt="پارک علم و فناوری">
@@ -90,17 +90,17 @@ START FOOTER AREA
                             <ul>
                                 <li>
                                     <a href="https://www.instagram.com/shopenet_ir/">
-                                        <i class="fa fa-instagram fa-3x"></i>
+                                        <i class="fa fa-instagram fa-2x"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://t.me/shopenet">
-                                        <i class="fa fa-telegram fa-3x"></i>
+                                        <i class="fa fa-telegram fa-2x"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://wa.me/989146955784">
-                                        <i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i>
+                                        <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
                                     </a>
                                 </li>
                             </ul>
