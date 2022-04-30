@@ -8513,7 +8513,7 @@ span.counter {
 }
 
 .info-contact {
-  margin-top: 21px;
+  margin-top: 0px;
 }
 
 .info-contact li {
@@ -8541,8 +8541,8 @@ span.counter {
 
 .footer-menu {
   display: inline-block;
-  width: 61%;
-  padding-right: 48px;
+  width: 100%;
+  padding-right: 0;
 }
 
 .footer-menu.footer-menu--1 {

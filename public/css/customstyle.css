@@ -354,8 +354,14 @@
 }
 /*---====== start footer section ======---*/
 .footer-big{
-    padding: 3rem 0 1rem 0;
+    padding: 3rem 0;
     background-color: #eff1f5;
+}
+.footer-menu h5{
+    padding: 15px 0;
+}
+.footer-menu li{
+    padding-right:20px;
 }
 /*---====== end footer section ======---*/
 /*---====== start footer icon hover section ======---*/

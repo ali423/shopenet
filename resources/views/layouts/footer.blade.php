@@ -11,7 +11,39 @@ START FOOTER AREA
                         <div class="info__logo">
                             <img src="{{asset('images/logo/combine.png')}}" height="70 px" alt="footer logo">
                         </div>
-                        <p class="info--text text-justify">شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیای فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.</p>
+                        <p class="info--text text-justify pt-2">شاپی نت یک فروشگاه ساز آنلاینه که تمامی امکاناتی که شما برای ورود به دنیای فروش دیجیتال و موفقیت در اون رو نیاز دارید براتون فراهم می‌کنه.</p>
+                    </div>
+                    <!-- end /.info-footer -->
+                </div>
+                <!-- end /.col-md-3 -->
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-menu">
+                        <h5>لینک های مفید</h5>
+                        <ul>
+                            <li class="has_dropdown">
+                                <a href="{{route('home')}}"> - خانه</a>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="/templates/list"> - قالب ها</a>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="{{route('plan.index')}}"> - تعرفه ها</a>
+                            </li>
+                            <li class="has_dropdown">
+                                <a href="{{route('template.custom')}}"> - درخواست قالب جدید</a>
+                            </li>
+                            <li>
+                                <a href="{{route('contactus')}}"> - تماس با ما</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- end /.footer-menu -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-menu">
+                        <h5>راه های ارتباطی</h5>
                         <ul class="info-contact">
                             <li>
                                 <span class="lnr lnr-phone info-icon"></span>
@@ -27,46 +59,21 @@ START FOOTER AREA
                             </li>
                         </ul>
                     </div>
-                    <!-- end /.info-footer -->
-                </div>
-                <!-- end /.col-md-3 -->
-
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-menu">
-                        <ul>
-                            <li class="has_dropdown">
-                                <a href="{{route('home')}}">خانه </a>
-                            </li>
-                            <li class="has_dropdown">
-                                <a href="/templates/list">قالب ها</a>
-                            </li>
-                            <li class="has_dropdown">
-                                <a href="{{route('plan.index')}}">تعرفه ها</a>
-                            </li>
-                            <li class="has_dropdown">
-                                <a href="{{route('template.custom')}}">درخواست قالب جدید</a>
-                            </li>
-                            <li>
-                                <a href="{{route('contactus')}}">تماس با ما</a>
-                            </li>
-
-                        </ul>
-                    </div>
                     <!-- end /.footer-menu -->
                 </div>
                 <!-- end /.col-md-5 -->
 
-                <div class="col-lg-5 col-md-12">
+                <div class="col-lg-3 col-md-12">
                     <div class="row">
-                        <div class="col-md-4 text-center">
+                        {{-- <div class="col-md-4 text-center">
                             <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=211063&amp;Code=QIuqSCjxNe6Ox8vvK5lW"><img referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=211063&amp;Code=QIuqSCjxNe6Ox8vvK5lW" alt="" style="cursor:pointer" id="QIuqSCjxNe6Ox8vvK5lW"></a>
-                        </div>
-                        <div class="col-md-4 text-center">
+                        </div> --}}
+                        <div class="col-md-6 text-center">
                             <a href="https://daneshbonyan.isti.ir/">
                             <img src="{{asset('images/new/icon/daneshbonyan2.png')}}" class="p-2" alt="دانش بنیان" width="360px">
                             </a>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-6 text-center">
                             <a href="https://www.eastp.ir/">
                             <img src="{{ asset('images/new/icon/park.png') }}" class="p-2" width="360px" alt="پارک علم و فناوری">
                             </a>
