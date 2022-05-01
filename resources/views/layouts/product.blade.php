@@ -1,3 +1,4 @@
+@if(!isset($own_id) || $own_id!=$template->id)
 <div class="col-lg-4 col-md-6">
     <!-- start .single-product -->
     <div class="product product--card ">
@@ -23,3 +24,4 @@
     </div>
     <!-- end /.single-product -->
 </div>
+@endif

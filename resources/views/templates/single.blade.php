@@ -49,7 +49,7 @@
                 <div class="col-lg-8">
                     <div class="item-preview item-preview2">
                         <div class="prev-slide text-center">
-                            <img src="{{ asset(str_replace('public','storage',$template->icon))}}" height="350 px" width="700 px">
+                            <img src="{{ asset(str_replace('public','storage',$template->icon))}}" alt="{{$template->title}}" height="350 px" width="700 px">
                         </div>
 
                         <div class="item__preview-thumb">
@@ -199,6 +199,7 @@
     <!--============================================
         START MORE PRODUCT ARE
     ==============================================-->
+    @if($templates->count() > 1)
     <section class="more_product_area section--padding dir-rtl">
         <div class="container">
             <div class="row">
@@ -212,7 +213,7 @@
                     </div>
                 </div>
                 <!-- end /.col-md-12 -->
-
+                @php($own_id=$template->id)
                 @foreach($templates as $template)
                     @include('layouts.product')
                 @endforeach
@@ -226,6 +227,7 @@
     <!--============================================
         END MORE PRODUCT AREA
     ==============================================-->
+    @endif
 @endsection
 
 
