@@ -66,7 +66,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12562.493597344903!2d46.2481075!3d38.0791508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe81ab80a63dc486f!2z2LTYsdqp2Kog2K_aqdin2KraqQ!5e0!3m2!1sfa!2s!4v1642775072899!5m2!1sfa!2s" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12562.493597344903!2d46.2481075!3d38.0791508!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbb497a79e5d11a4e!2z2LTYp9m-24wg2YbYqg!5e0!3m2!1sfa!2s!4v1651407427020!5m2!1sfa!2s" width="800" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                     <!-- end .row -->
