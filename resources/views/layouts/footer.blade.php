@@ -65,9 +65,9 @@ START FOOTER AREA
 
                 <div class="col-lg-3 col-md-12">
                     <div class="row">
-                        {{-- <div class="col-md-4 text-center">
+                         <div class="col-md-4 text-center">
                             <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=211063&amp;Code=QIuqSCjxNe6Ox8vvK5lW"><img referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=211063&amp;Code=QIuqSCjxNe6Ox8vvK5lW" alt="" style="cursor:pointer" id="QIuqSCjxNe6Ox8vvK5lW"></a>
-                        </div> --}}
+                        </div>
                         <div class="col-md-6 text-center">
                             <a href="https://daneshbonyan.isti.ir/">
                             <img src="{{asset('images/new/icon/daneshbonyan2.png')}}" class="p-2" alt="دانش بنیان" width="360px">
